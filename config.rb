@@ -5,6 +5,11 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :livereload
+
+# Pretty URLs
+activate :directory_indexes
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -18,6 +23,15 @@ page '/*.txt', layout: false
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
+
+require "airtable_data.rb"
+@data = AirtableData.new
+set :data, @data
+
+
+@data.practice_sessions.each do |practice_session|
+  proxy "/practice-sessions/#{practice_session.id}", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
+end
 
 # proxy(
 #   '/this-page-has-no-template.html',

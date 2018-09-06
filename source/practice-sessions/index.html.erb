@@ -1,0 +1,4 @@
+<h1>Practice Session Index</h1>
+<% config.data.practice_sessions.each do |practice_session| %>
+  <a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session.name %></a>
+<% end %>
