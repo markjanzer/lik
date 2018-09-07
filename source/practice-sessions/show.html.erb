@@ -1,13 +1,12 @@
 <h1>Practice Session</h1>
-<h2><%= practice_session.name %></h2>
-<div>Date: <%= practice_session.date %></div>
-<div>Notes: <%= practice_session.notes %></div>
+<h2><%= practice_session[:name] %></h2>
+<div>Date: <%= practice_session[:date] %></div>
+<div>Notes: <%= practice_session[:notes] %></div>
 
 <div>Practiced:</div>
 <ul>
-  <% practice_session.exercises_practice_sessions.each do |eps_id| %>
-    <% object = config.data.exercises_practice_sessions_table.find(eps_id) %>
-    <li><%= object.exercise %></li>
+  <% practice_session[:exercises].each do |exercise| %>
+    <li><%= exercise[:name] %></li>
   <% end %>
 </ul>
 

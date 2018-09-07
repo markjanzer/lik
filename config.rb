@@ -24,12 +24,9 @@ page '/*.txt', layout: false
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-require "airtable_data.rb"
-@data = AirtableData.new
-set :data, @data
+require "models.rb"
 
-
-@data.practice_sessions.each do |practice_session|
+PracticeSession.all.each do |practice_session|
   proxy "/practice-sessions/#{practice_session.id}", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
 end
 
