@@ -1,3 +1,5 @@
+require "secrets.rb"
+
 class AirtableData
   attr_accessor :keyboards_table
   attr_accessor :domains_table
@@ -8,7 +10,7 @@ class AirtableData
   attr_accessor :exercises_practice_sessions_table
 
   def initialize
-    @client = Airtable::Client.new("keyQK3bvtOJxX1AMC")
+    @client = Airtable::Client.new(AIRTABLE_API_KEY)
     self.keyboards_table = @client.table("appeUTAWBfz4YzHtJ", "Keyboards")
     self.domains_table = @client.table("appeUTAWBfz4YzHtJ", "Domains")
     self.sets_table = @client.table("appeUTAWBfz4YzHtJ", "Sets")
@@ -17,7 +19,6 @@ class AirtableData
     self.practice_sessions_table = @client.table("appeUTAWBfz4YzHtJ", "Practice_Sessions")
     self.exercises_practice_sessions_table = @client.table("appeUTAWBfz4YzHtJ", "Exercises_Practice_Sessions")
   end
-
 
   # Should these be set as attributes in the same fashion?
   # Not sure the best way to do this to get all of the data without breaking
