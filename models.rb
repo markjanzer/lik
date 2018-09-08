@@ -65,3 +65,74 @@ class ExercisePracticeSession < Airrecord::Table
   has_many :tk_completed, class: "ExerciseIncrement", column: "TK Completed"
   has_many :lik_completed, class: "ExerciseIncrement", column: "LIK Completed"
 end
+
+# ============================================
+# TK Intervals
+# ============================================
+
+class Interval < Airrecord::Table
+  self.base_key = "app74RODr0jANsrXt"
+  self.table_name = "Intervals"
+
+  has_many :interval_shapes, class: "IntervalShape", column: "Intverval Shapes"
+
+  def to_node
+    {
+      group: "nodes",
+      data: {
+        id: self.id,
+        parent: "Intervals",
+        name: self[:name]
+      },
+      position: {
+        x: 100,
+        y: self[:integer] * 100
+      }
+    }
+  end
+end
+
+class Shape < Airrecord::Table
+  self.base_key = "app74RODr0jANsrXt"
+  self.table_name ="Shapes"
+
+  has_many :interval_shapes, class: "IntervalShape", column: "Intverval Shapes"
+
+  def to_node
+    {
+      group: "nodes",
+      data: {
+        id: self.id,
+        parent: "Shapes",
+        name: self[:name]
+      },
+      position: {
+        x: 200,
+        y: self[:autonumber] * 100
+      }
+    }
+  end
+end
+
+class IntervalShape < Airrecord::Table
+  self.base_key = "app74RODr0jANsrXt"
+  self.table_name ="Intervals Shapes"
+
+  belongs_to :interval, class: "Interval", column: "Interval"
+  belongs_to :shape, class: "Shape", column: "Shape"
+
+  def to_edge
+    {
+      group: "edges",
+      data: {
+        id: self.id,
+        source: self[:interval][:id],
+        target: self[:shape][:id]
+      }
+    }
+  end
+end
+
+
+
+
