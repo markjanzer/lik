@@ -25,6 +25,7 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 require "models.rb"
+require "intervals_shapes.rb"
 
 PracticeSession.all.each do |practice_session|
   proxy "/practice-sessions/#{practice_session.id}", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
