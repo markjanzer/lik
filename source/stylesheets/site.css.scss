@@ -35,6 +35,8 @@ body {
   width: 25px;
   background-color: #bbb;
   border-radius: 50%;
+  border: 1px solid grey;
+  z-index: 2;
   /*display: inline-block;*/
 }
 .shapes svg {

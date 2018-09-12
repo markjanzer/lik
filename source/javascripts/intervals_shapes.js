@@ -47,9 +47,10 @@ var edges = [
 // https://stackoverflow.com/questions/4270485/drawing-lines-on-html-page
 function createLineElement(x, y, length, angle, lineWidth, lineColor) {
   var line = document.createElement("div");
-  var styles = 'border: ' + lineWidth + 'px solid ' + lineColor + '; '
-             + 'width: ' + (length - lineWidth * 2).toString() + 'px; '
-             + 'height: 0px; '
+  line.className = "edge";
+  var styles = 'border: 1px solid ' + "grey" + '; '
+             + 'width: ' + length.toString() + 'px; '
+             + 'height: ' + lineWidth + 'px; '
              + '-moz-transform: rotate(' + angle + 'rad); '
              + '-webkit-transform: rotate(' + angle + 'rad); '
              + '-o-transform: rotate(' + angle + 'rad); '  
@@ -59,6 +60,11 @@ function createLineElement(x, y, length, angle, lineWidth, lineColor) {
              + 'left: ' + x + 'px; '
              + 'background-color: ' + lineColor + '; ';
   line.setAttribute('style', styles);
+
+  // var tooltip = document.createElement("div");
+  // tooltip.className = "tooltip";
+  // tooltip.innerHTML = "Ab -> Eb, Eb -> D"
+  // line.appendChild(tooltip)
   return line;
 }
 
