@@ -1,14 +1,170 @@
-<script src="/javascripts/cytoscape.min.js"></script>
-
 <h1>The Hypotheses</h1>
-<div id="cy">
-  <div id="Intervals"></div>
-  <div id="Shapes"></div>
+<div class="intervals-shapes-graph">
+  <div class="nodes intervals">
+    <div class="node interval" id="rec0vNdSsnZkIcA4X" name="Minor 2nd">
+      <span class="label">Minor 2nd</span>
+      <div class="node__visual" style="background-color: #cfdfff"></div>
+    </div>
+    <div class="node interval" id="recS58DmkLKu2grR9" name="Major 2nd">
+      <span class="label">Major 2nd</span>
+      <div class="node__visual" style="background-color: #d0f0fd"></div>
+    </div>
+    <div class="node interval" id="recdeN9izKLz6FxLx" name="Minor 3rd">
+      <span class="label">Minor 3rd</span>
+      <div class="node__visual" style="background-color: #c2f5e9"></div>
+    </div>
+    <div class="node interval" id="reckvpdIs6Xuq1HVj" name="Major 3rd">
+      <span class="label">Major 3rd</span>
+      <div class="node__visual" style="background-color: #d1f7c4"></div>
+    </div>
+    <div class="node interval" id="recH91UnZq5M46BN2" name="Perfect 4th">
+      <span class="label">Perfect 4th</span>
+      <div class="node__visual" style="background-color: #ffeab6"></div>
+    </div>
+    <div class="node interval" id="receqRQ6G8fmCtEVx" name="Tritone">
+      <span class="label">Tritone</span>
+      <div class="node__visual" style="background-color: #fee2d5"></div>
+    </div>
+    <div class="node interval" id="recZbKFnM0QfVkOmm" name="Perfect 5th">
+      <span class="label">Perfect 5th</span>
+      <div class="node__visual" style="background-color: #ffdce5"></div>
+    </div>
+    <div class="node interval" id="recyMPEnGXy97mxll" name="Minor 6th">
+      <span class="label">Minor 6th</span>
+      <div class="node__visual" style="background-color: #ffdaf6"></div>
+    </div>
+    <div class="node interval" id="recLsI9cI3dAimpvR" name="Major 6th">
+      <span class="label">Major 6th</span>
+      <div class="node__visual" style="background-color: #ede2fe"></div>
+    </div>
+    <div class="node interval" id="reczsYyfXWbFv1v1d" name="Minor 7th">
+      <span class="label">Minor 7th</span>
+      <div class="node__visual" style="background-color: #9cc7ff"></div>
+    </div>
+    <div class="node interval" id="recyyC3ERyaf28Xn6" name="Major 7th">
+      <span class="label">Major 7th</span>
+      <div class="node__visual" style="background-color: #77d1f3"></div>
+    </div>
+    <div class="node interval" id="rec8sFmzq4bUF9g3D" name="Octave">
+      <span class="label">Octave</span>
+      <div class="node__visual" style="background-color: #72ddc3"></div>
+    </div>
+  </div>
+
+  <div class="nodes shapes">
+    <div class="node" id="recwYr1BR7SJOhV2K" name="WB1">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">1</span>
+    </div>
+    <div class="node" id="recpPTjrPCoWEqHqc" name="BW1">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">1</span>
+    </div>
+    <div class="node" id="recuYrPcvwNMSr4Sy" name="WW2">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">2</span>
+    </div>
+    <div class="node" id="recstZnrrXgGG0YOa" name="BB2">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">2</span>
+    </div>
+    <div class="node" id="reca2z9JHoJ599b0e" name="WB3">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">3</span>
+    </div>
+    <div class="node" id="recVEelstSUtfbWsw" name="BW3">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">3</span>
+    </div>
+    <div class="node" id="recI4GQgm65zG0mWf" name="WW4">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">4</span>
+    </div>
+    <div class="node" id="recIhXSA4YZRwrq4w" name="BB4">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">4</span>
+    </div>
+    <div class="node" id="recG4t1WiOR1DM2tc" name="WB5">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">5</span>
+    </div>
+    <div class="node" id="reclgFxnI22C1BFhd" name="BW5">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">5</span>
+    </div>
+    <div class="node" id="rec9HUG3nu1eZHs1L" name="WW6">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">6</span>
+    </div>
+    <div class="node" id="recEVTjwd7ySM8R4J" name="BB6">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">6</span>
+    </div>
+    <div class="node" id="rec7EU4KfVep7D6Sa" name="WB7">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">7</span>
+    </div>
+    <div class="node" id="recBxv0fvY0pkuVkJ" name="BW7">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">7</span>
+    </div>
+    <div class="node" id="recY743bibqUglxhX" name="WW8">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">8</span>
+    </div>
+    <div class="node" id="rectMuASyozV4jN2j" name="BB8">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">8</span>
+    </div>
+    <div class="node" id="rec4lvBafSjpf6iUm" name="WB9">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">9</span>
+    </div>
+    <div class="node" id="recOz4xQj9DEV4olt" name="BW9">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">9</span>
+    </div>
+    <div class="node" id="recQVcnBLRQycKSkz" name="WW10">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">10</span>
+    </div>
+    <div class="node" id="recxRi3kOFTsWucav" name="BB10">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">10</span>
+    </div>
+    <div class="node" id="recwgjsitkTZuMC7l" name="WB11">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">11</span>
+    </div>
+    <div class="node" id="recB9zg5H5TwGtp7e" name="BW11">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">11</span>
+    </div>
+    <div class="node" id="recppuCcNqM6FkJyH" name="WW12">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">12</span>
+    </div>
+    <div class="node" id="recBe3PY2ElHu4G6x" name="BB12">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">12</span>
+    </div>
+    <div class="node" id="reciaFs54NU3QcW5a" name="WB13">
+      <div class="node__visual"><%= svg "wb-circle" %></div>
+      <span class="label">13</span>
+    </div>
+    <div class="node" id="recwnb2NblRpgcTQH" name="BW13">
+      <div class="node__visual"><%= svg "bw-circle" %></div>
+      <span class="label">13</span>
+    </div>
+    <div class="node" id="recCBGfwxnRisN5v6" name="WW14">
+      <div class="node__visual"><%= svg "ww-circle" %></div>
+      <span class="label">14</span>
+    </div>
+    <div class="node" id="recwkWJhG5WlEHqAw" name="BB14">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">14</span>
+    </div>
+  </div>
 </div>
 
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.2.16/cytoscape.js"></script> -->
-<script>
-  var elements_json = <%= generate_elements_json %>
-</script>
 <%= javascript_include_tag 'intervals_shapes.js' %>

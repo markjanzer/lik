@@ -43,11 +43,15 @@ end
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  # https://cobwwweb.com/render-inline-svg-rails-middleman
+  def svg(name)
+    root = Middleman::Application.root
+    file_path = "#{root}/source/images/#{name}.svg"
+    return File.read(file_path) if File.exists?(file_path)
+    '(not found)'
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
