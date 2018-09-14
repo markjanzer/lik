@@ -10,10 +10,6 @@ class Interval < Airrecord::Table
         id: self.id,
         parent: "Intervals",
         name: self[:name]
-      },
-      position: {
-        x: number * 100 * 28/13.0,
-        y: 0
       }
     }
   end
@@ -34,10 +30,6 @@ class Shape < Airrecord::Table
         id: self.id,
         parent: "Shapes",
         name: self[:abbreviation]
-      },
-      position: {
-        x: number * 100,
-        y: 300
       }
     }
   end
@@ -55,7 +47,8 @@ class IntervalShape < Airrecord::Table
         id: self.id,
         source: self[:interval][0],
         target: self[:shape][0],
-        weight: 2
+        weight: 1,
+        names: [self[:name]]
       }
     }
   end
@@ -74,13 +67,14 @@ def generate_elements_json
   Shape.all(sort: { "Distance" => "asc" }).each_with_index do |shape, index|
     elements.push(shape.to_node(index + 1))
   end
-  puts elements.map { |e| e[:parent] }
 
   edges = []
   IntervalShape.all.each do |interval_shape|
     original_edge = edges.find { |edge| edge[:data][:source] == interval_shape[:interval][0] && edge[:data][:target] == interval_shape[:shape][0] }
     if (original_edge)
-      original_edge[:data][:weight] = original_edge[:data][:weight] + 2
+      original_edge[:data][:weight] += 1
+      puts original_edge[:data][:names]
+      original_edge[:data][:names].push(interval_shape[:name])
     else
       edges.push(interval_shape.to_edge)
     end

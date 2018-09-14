@@ -1,5 +1,8 @@
+<script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
+
 <h1>The Hypotheses</h1>
-<div class="intervals-shapes-graph">
+<h2>TK</h2>
+<div class="intervals-shapes-graph intervals-shapes-graph--tk">
   <div class="nodes intervals">
     <div class="node interval" id="rec0vNdSsnZkIcA4X" name="Minor 2nd">
       <span class="label">Minor 2nd</span>
@@ -166,5 +169,112 @@
     </div>
   </div>
 </div>
+
+<h2>LIK</h2>
+<div class="intervals-shapes-graph intervals-shapes-graph--lik">
+  <div class="nodes intervals">
+    <div class="node interval" id="lik-minor-2nd" name="Minor 2nd">
+      <span class="label">Minor 2nd</span>
+      <div class="node__visual" style="background-color: #cfdfff"></div>
+    </div>
+    <div class="node interval" id="lik-major-2nd" name="Major 2nd">
+      <span class="label">Major 2nd</span>
+      <div class="node__visual" style="background-color: #d0f0fd"></div>
+    </div>
+    <div class="node interval" id="lik-minor-3rd" name="Minor 3rd">
+      <span class="label">Minor 3rd</span>
+      <div class="node__visual" style="background-color: #c2f5e9"></div>
+    </div>
+    <div class="node interval" id="lik-major-3rd" name="Major 3rd">
+      <span class="label">Major 3rd</span>
+      <div class="node__visual" style="background-color: #d1f7c4"></div>
+    </div>
+    <div class="node interval" id="lik-perfect-4th" name="Perfect 4th">
+      <span class="label">Perfect 4th</span>
+      <div class="node__visual" style="background-color: #ffeab6"></div>
+    </div>
+    <div class="node interval" id="lik-tritone" name="Tritone">
+      <span class="label">Tritone</span>
+      <div class="node__visual" style="background-color: #fee2d5"></div>
+    </div>
+    <div class="node interval" id="lik-perfect-5th" name="Perfect 5th">
+      <span class="label">Perfect 5th</span>
+      <div class="node__visual" style="background-color: #ffdce5"></div>
+    </div>
+    <div class="node interval" id="lik-minor-6th" name="Minor 6th">
+      <span class="label">Minor 6th</span>
+      <div class="node__visual" style="background-color: #ffdaf6"></div>
+    </div>
+    <div class="node interval" id="lik-major-6th" name="Major 6th">
+      <span class="label">Major 6th</span>
+      <div class="node__visual" style="background-color: #ede2fe"></div>
+    </div>
+    <div class="node interval" id="lik-minor-7th" name="Minor 7th">
+      <span class="label">Minor 7th</span>
+      <div class="node__visual" style="background-color: #9cc7ff"></div>
+    </div>
+    <div class="node interval" id="lik-major-7th" name="Major 7th">
+      <span class="label">Major 7th</span>
+      <div class="node__visual" style="background-color: #77d1f3"></div>
+    </div>
+    <div class="node interval" id="lik-octave" name="Octave">
+      <span class="label">Octave</span>
+      <div class="node__visual" style="background-color: #72ddc3"></div>
+    </div>
+  </div>
+
+  <div class="nodes shapes">
+    <div class="node" id="lik-1">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">1</span>
+    </div>
+    <div class="node" id="lik-2">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">2</span>
+    </div>
+    <div class="node" id="lik-3">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">3</span>
+    </div>
+    <div class="node" id="lik-4">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">4</span>
+    </div>
+    <div class="node" id="lik-5">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">5</span>
+    </div>
+    <div class="node" id="lik-6">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">6</span>
+    </div>
+    <div class="node" id="lik-7">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">7</span>
+    </div>
+    <div class="node" id="lik-8">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">8</span>
+    </div>
+    <div class="node" id="lik-9">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">9</span>
+    </div>
+    <div class="node" id="lik-10">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">10</span>
+    </div>
+    <div class="node" id="lik-11">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">11</span>
+    </div>
+    <div class="node" id="lik-12">
+      <div class="node__visual"><%= svg "bb-circle" %></div>
+      <span class="label">12</span>
+    </div>
+  </div>
+</div>
+
+
 
 <%= javascript_include_tag 'intervals_shapes.js' %>
