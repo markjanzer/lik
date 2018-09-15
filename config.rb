@@ -5,6 +5,14 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Use Sprockets for asset pipeline
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
+
+# Pages with custom layouts
+# page "custom/*", layout: :custom_layou
+
 activate :livereload
 
 # Pretty URLs
@@ -56,7 +64,7 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end

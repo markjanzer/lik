@@ -15,8 +15,6 @@ class Interval < Airrecord::Table
   end
 end
 
-
-
   # has_many :interval_shapes, class: "IntervalShape", column: "Interval Shapes"
 class Shape < Airrecord::Table
   self.base_key = "app74RODr0jANsrXt"
@@ -53,10 +51,6 @@ class IntervalShape < Airrecord::Table
     }
   end
 end
-
-# intervals = Interval.all.map { |i| i.to_node }
-# shapes = Shape.all.map { |s| s.to_node }
-# interval_shapes = IntervalShape.all.map { |is| is.to_edge }
 
 def generate_elements_json
   elements = []

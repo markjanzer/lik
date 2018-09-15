@@ -1,12 +1,19 @@
 <h1>Practice Session</h1>
 <h2><%= practice_session[:name] %></h2>
-<div>Date: <%= practice_session[:date] %></div>
+<div>Date: <%= practice_session[:date].strftime("%B %e, %Y") %></div>
 <div>Notes: <%= practice_session[:notes] %></div>
 
-<div>Practiced:</div>
+<h3>Practiced</h3>
 <ul>
   <% practice_session[:exercises].each do |exercise| %>
     <li><%= exercise[:name] %></li>
+  <% end %>
+</ul>
+
+<h3>Completed</h3>
+<ul>
+  <% practice_session.completed_increments.each do |ci| %>
+    <li><%= ci[:name] %></li>
   <% end %>
 </ul>
 

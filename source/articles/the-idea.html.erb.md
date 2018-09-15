@@ -1,0 +1,131 @@
+There may be a better way to design the piano.
+
+It is known that to master an instrument you must learn to play it in
+every key. The first key a new pianist will learn to play is the key of
+C major. It is wonderfully simple: just play the white notes. But the
+price of a simple C major comes at the cost of increased difficulty and
+complexity for the other keys.
+
+But why is the piano designed this way? At first it may appear that the
+keyboard was made for beginners and we never took the training wheels
+off, but this is not the case.
+
+In 1361, Nicholas Faber designed an organ for Haberstaldt, Germany. This
+organ is the first known application of the traditional keyboard layout
+we know and use today. A couple significant musical advances occurred
+between the invention of the Haberstaldt keyboard (which I will call the
+traditional keyboard) and its implementation on the first piano 350
+years later.
+
+Equal temperament was discovered in 1584, which meant that an instrument
+could be tuned in a way that would allow it to play in any key. Before
+equal temperament, instruments could only be tuned to play in one
+key.^1^
+
+Throughout the 17th century, Western music transitioned from modality to
+tonality. To put it way too simply, one of the effects of this switch to
+tonality was that people wanted to play in more than one key.^2^
+
+The traditional keyboard layout is perfect if you only want to play in C
+major. The traditional keyboard layout was not designed for beginners,
+but for a different musical era.
+
+So how can we improve the keyboard? Remove the C major bias and make all
+keys equally difficult to play?
+
+We can do better. Make all keys equal, and in the process, make all keys
+the same.
+
+\[LIK image\]
+
+This is the Linear Isomorphic Keyboard.
+
+The term isomorphism, when applied to musical instruments, means that
+any distinct musical phrase---be it a chord or a sonata---can be played
+the same way regardless of the note that it starts on.^3^
+
+What does this mean? On the linear isomorphic keyboard (LIK) there is
+one way to play all of the major scales. You don't learn to play *a*
+major scale, you learn how to play *the* major scale. There is one way
+to play a perfect fifth, instead of four.^4^ If you can play "Für Elise"
+in one key, you can play it in every key.
+
+This has been done before. There are plenty of isomorphic keyboards.
+Most of them feature a grid of square or hexagonal tiles, with the
+relation between adjacent tiles determined by particular intervals. But
+I think that similarities the LIK shares with the traditional keyboard
+gives it an edge over other isomorphic keyboards **link to LIK: Other
+Isomorphic Keyboards**.
+
+Even the LIK isn't a new concept. The keyboard [[was patented in
+1953]{.underline}](https://www.google.com/patents/US2627777), and last
+year there was [[a Kickstarter for a
+prototype]{.underline}](https://www.kickstarter.com/projects/176239/dodeka-music-finally-within-everyones-reach/)
+courtesy of [[Dodeka]{.underline}](http://www.dodeka.info/), but none
+are currently available for purchase.
+
+But the most important question about the LIK (and other isomorphic
+keyboards) still demands an answer: Is it better than the traditional
+keyboard?
+
+I'm not sure. But I'm going to find out.
+
+I'm performing an experiment, comparing my improvement on two keyboards:
+the LIK and the traditional keyboard. I will practice the same content
+for the same amount of time on each keyboard, record all of the practice
+sessions, and periodically publish assessments. It is not a perfect
+study **link to the experiment imperfect section**, but I think the
+findings will still provide valuable insight about the viability of the
+LIK.
+
+I have a couple goals in mind. First, I want to begin to fill the dearth
+of studies comparing efficacy of the isomorphic keyboard to the
+traditional keyboard. If I find the LIK to be superior to the
+traditional keyboard, my next goal would be to gain publicity,
+facilitate adoption, and encourage further research. Ideally, this would
+incentivise companies with experience making musical keyboards to make
+LIKs so I don't have to 3D print keys for the rest of my life.
+
+If this is successful, we could collectively save the pianists around
+the world countless of hours of practice. The piano would be easier and
+more enjoyable to play. Pianists could spend less time on technique and
+transposition and spend more time making music.
+
+If you're still interested, you can read:
+
+An in depth description of the experiment **LIK: The Experiment**
+
+The details of how I will practice **LIK: The Practice Routine**
+
+Why not another isomorphic keyboard? **LIK: Other Isomorphic Keyboards**
+
+How you can get one **LIKE: How to purchase**
+
+Stay tuned.
+
+1.  Here is an example of what it sounds like to play in the wrong key
+    > on a non equal temperament keyboard:
+    > [[https://www.youtube.com/watch?v=Yqa2Hbb\_eIs]{.underline}](https://www.youtube.com/watch?v=Yqa2Hbb_eIs)
+
+2.  Discussion of the differences between modality and tonality as well
+    > as the transition between the two extends far beyond the scope of
+    > this article. And this statement is partially false because
+    > pre-tonality people played in modes, not keys, and they used
+    > harmonizations with notes that didn't occur in the key they played
+    > in (if they were playing in keys). To learn a little more check
+    > out this:
+    > [[https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music]{.underline}](https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music).
+    > For a deeper dive, with a good look at the transition from
+    > modality to tonality, check out this article:
+    > [[https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer\_research]{.underline}](https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer_research)
+
+3.  "Isomorphism applied to musical instruments means that every
+    > distinct musical performance is executed in the same way,
+    > regardless of key or location."
+    > [[http://smcnetwork.org/system/files/smc2011\_submission\_169.pdf]{.underline}](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
+
+4.  The traditional keyboard has four different ways to play a perfect
+    > fifth: White key to white key (eg. C -\> G), white key to black
+    > key (eg. B -\> F\#), black key to white key (eg. Bb -\> F), and
+    > black key to black key (C\# -\> G\#). For more on this, check out
+    > The Experiment **Link to The Experiment**.

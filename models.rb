@@ -51,6 +51,19 @@ class PracticeSession < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
   self.table_name = "Practice Sessions"
 
+  def completed_increments
+    completed_increments = []
+    keyboard = self[:keyboard][:acronym]
+    self[:exercises_practice_sessions].each do |eps|
+      if keyboard == "TK" && eps[:tk_completed]
+        completed_increments.concat(eps[:tk_completed])
+      elsif keyboard == "LIK" && eps[:lik_completed]
+        completed_increments.concat(eps[:lik_completed])
+      end
+    end
+    return completed_increments
+  end
+
   belongs_to :keyboard, class: "Keyboard", column: "Keyboard"
   has_many :exercises_practice_sessions, class: "ExercisePracticeSession", column: "Exercises Practice Sessions"
   has_many :exercises, class: "Exercise", column: "Exercises"
@@ -65,10 +78,6 @@ class ExercisePracticeSession < Airrecord::Table
   has_many :tk_completed, class: "ExerciseIncrement", column: "TK Completed"
   has_many :lik_completed, class: "ExerciseIncrement", column: "LIK Completed"
 end
-
-# ============================================
-# TK Intervals
-# ============================================
 
 
 
