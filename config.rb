@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 # Use Sprockets for asset pipeline
+require "sprockets/es6"
 activate :sprockets do |s|
   s.supported_output_extensions << '.es6'
 end
@@ -64,7 +65,7 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-end
+  # configure :build do
+  #   activate :minify_css
+  #   activate :minify_javascript
+  # end

@@ -613,5 +613,7 @@ similarities between different starting notes as there are between
 rooms, and I am mostly convinced that humans will do better than dogs at
 recognizing different contexts.
 
-
-<%= javascript_include_tag 'intervals_shapes.js' %>
+<script>
+  var scripts = <%= data.scripts %>
+</script>
+<script src="/javascripts/the-hypotheses.js"></script>
