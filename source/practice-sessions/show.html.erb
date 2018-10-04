@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
 <h1>Practice Session</h1>
 <h2><%= practice_session[:name] %></h2>
 <div>Date: <%= practice_session[:date].strftime("%B %e, %Y") %></div>
@@ -16,5 +19,14 @@
     <li><%= ci[:name] %></li>
   <% end %>
 </ul>
+
+<div class="ct-chart" style="width: 800px; height: 600px;">
+</div>
+
+
+<script>
+  var data = <%= practice_session_progress_data(practice_session).to_json %>
+  new Chartist.Line('.ct-chart', data);
+</script>
 
 <%= link_to("Back", "/practice-sessions") %>

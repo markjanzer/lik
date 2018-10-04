@@ -64,6 +64,10 @@ class PracticeSession < Airrecord::Table
     return completed_increments
   end
 
+  def completed_increment_count
+    self.completed_increments.count
+  end
+
   belongs_to :keyboard, class: "Keyboard", column: "Keyboard"
   has_many :exercises_practice_sessions, class: "ExercisePracticeSession", column: "Exercises Practice Sessions"
   has_many :exercises, class: "Exercise", column: "Exercises"

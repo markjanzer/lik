@@ -7,36 +7,39 @@
 <div style="width: 68%; margin: auto;">
   <div class="ct-chart ct-perfect-fourth"></div>
   <div class="ct-chart-2 ct-perfect-fourth"></div>
-  
-
 </div>
 
 <script>
-  var data = {
-    // A labels array that can contain any sort of values
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-    // Our series array that contains series objects or in this case series data arrays
-    series: [
-      [59, 61, 62, 64, 65],
-      [0, 2, 10, 16, 28]
-    ]
-  };
+  var data = <%= progress_data.to_json %>
+  new Chartist.Line('.ct-chart', data);
+</script>
+
+<script>
+  // var data = {
+  //   // A labels array that can contain any sort of values
+  //   labels: ['Mon'],
+  //   // Our series array that contains series objects or in this case series data arrays
+  //   series: [
+  //     [59],
+  //     [0]
+  //   ]
+  // };
 
   // Create a new line chart object where as first parameter we pass in a selector
   // that is resolving to our chart container element. The Second parameter
   // is the actual data object.
-  new Chartist.Line('.ct-chart', data);
+  // new Chartist.Line('.ct-chart', data);
 
 
 
-  var data2 = {
-    labels: ['TK', 'LIK'],
-    series: [59, 0]
-  };
+  // var data2 = {
+  //   labels: ['TK', 'LIK'],
+  //   series: [59, 0]
+  // };
 
-  var options = {
-    distributeSeries: true
-  };
+  // var options = {
+  //   distributeSeries: true
+  // };
 
   // var responsiveOptions = [
   //   ['screen and (max-width: 640px)', {
@@ -49,8 +52,5 @@
   //   }]
   // ];
 
-  new Chartist.Bar('.ct-chart-2', data2, options);
+  // new Chartist.Bar('.ct-chart-2', data2, options);
 </script>
-
-
-<%# javascript_include_tag "progress" %>
