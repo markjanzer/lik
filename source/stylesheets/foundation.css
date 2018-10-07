@@ -1247,16 +1247,16 @@ select {
       background-color: #cc8b00;
       color: #0a0a0a; }
   .button.body-font {
-    background-color: #000;
+    background-color: #222222;
     color: #fefefe; }
     .button.body-font:hover, .button.body-font:focus {
-      background-color: black;
+      background-color: #1b1b1b;
       color: #fefefe; }
   .button.header {
-    background-color: #000;
+    background-color: #222222;
     color: #fefefe; }
     .button.header:hover, .button.header:focus {
-      background-color: black;
+      background-color: #1b1b1b;
       color: #fefefe; }
   .button.disabled, .button[disabled] {
     opacity: 0.25;
@@ -1298,13 +1298,13 @@ select {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.body-font, .button.disabled.body-font:hover, .button.disabled.body-font:focus, .button[disabled].body-font, .button[disabled].body-font:hover, .button[disabled].body-font:focus {
-        background-color: #000;
+        background-color: #222222;
         color: #fefefe; }
     .button.disabled.header, .button[disabled].header {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.header, .button.disabled.header:hover, .button.disabled.header:focus, .button[disabled].header, .button[disabled].header:hover, .button[disabled].header:focus {
-        background-color: #000;
+        background-color: #222222;
         color: #fefefe; }
   .button.hollow {
     border: 1px solid #2ba6cb;
@@ -1365,23 +1365,23 @@ select {
           border: 1px solid #ffae00;
           color: #ffae00; }
     .button.hollow.body-font {
-      border: 1px solid #000;
-      color: #000; }
+      border: 1px solid #222222;
+      color: #222222; }
       .button.hollow.body-font:hover, .button.hollow.body-font:focus {
-        border-color: black;
-        color: black; }
+        border-color: #111111;
+        color: #111111; }
         .button.hollow.body-font:hover.disabled, .button.hollow.body-font:hover[disabled], .button.hollow.body-font:focus.disabled, .button.hollow.body-font:focus[disabled] {
-          border: 1px solid #000;
-          color: #000; }
+          border: 1px solid #222222;
+          color: #222222; }
     .button.hollow.header {
-      border: 1px solid #000;
-      color: #000; }
+      border: 1px solid #222222;
+      color: #222222; }
       .button.hollow.header:hover, .button.hollow.header:focus {
-        border-color: black;
-        color: black; }
+        border-color: #111111;
+        color: #111111; }
         .button.hollow.header:hover.disabled, .button.hollow.header:hover[disabled], .button.hollow.header:focus.disabled, .button.hollow.header:focus[disabled] {
-          border: 1px solid #000;
-          color: #000; }
+          border: 1px solid #222222;
+          color: #222222; }
   .button.clear {
     border: 1px solid #2ba6cb;
     color: #2ba6cb; }
@@ -1453,25 +1453,25 @@ select {
       .button.clear.warning, .button.clear.warning.disabled, .button.clear.warning[disabled], .button.clear.warning:hover, .button.clear.warning:hover.disabled, .button.clear.warning:hover[disabled], .button.clear.warning:focus, .button.clear.warning:focus.disabled, .button.clear.warning:focus[disabled] {
         border-color: transparent; }
     .button.clear.body-font {
-      border: 1px solid #000;
-      color: #000; }
+      border: 1px solid #222222;
+      color: #222222; }
       .button.clear.body-font:hover, .button.clear.body-font:focus {
-        border-color: black;
-        color: black; }
+        border-color: #111111;
+        color: #111111; }
         .button.clear.body-font:hover.disabled, .button.clear.body-font:hover[disabled], .button.clear.body-font:focus.disabled, .button.clear.body-font:focus[disabled] {
-          border: 1px solid #000;
-          color: #000; }
+          border: 1px solid #222222;
+          color: #222222; }
       .button.clear.body-font, .button.clear.body-font.disabled, .button.clear.body-font[disabled], .button.clear.body-font:hover, .button.clear.body-font:hover.disabled, .button.clear.body-font:hover[disabled], .button.clear.body-font:focus, .button.clear.body-font:focus.disabled, .button.clear.body-font:focus[disabled] {
         border-color: transparent; }
     .button.clear.header {
-      border: 1px solid #000;
-      color: #000; }
+      border: 1px solid #222222;
+      color: #222222; }
       .button.clear.header:hover, .button.clear.header:focus {
-        border-color: black;
-        color: black; }
+        border-color: #111111;
+        color: #111111; }
         .button.clear.header:hover.disabled, .button.clear.header:hover[disabled], .button.clear.header:focus.disabled, .button.clear.header:focus[disabled] {
-          border: 1px solid #000;
-          color: #000; }
+          border: 1px solid #222222;
+          color: #222222; }
       .button.clear.header, .button.clear.header.disabled, .button.clear.header[disabled], .button.clear.header:hover, .button.clear.header:hover.disabled, .button.clear.header:hover[disabled], .button.clear.header:focus, .button.clear.header:focus.disabled, .button.clear.header:focus[disabled] {
         border-color: transparent; }
   .button.dropdown::after {
@@ -1501,9 +1501,9 @@ select {
   .button.dropdown.hollow.warning::after {
     border-top-color: #ffae00; }
   .button.dropdown.hollow.body-font::after {
-    border-top-color: #000; }
+    border-top-color: #222222; }
   .button.dropdown.hollow.header::after {
-    border-top-color: #000; }
+    border-top-color: #222222; }
   .button.arrow-only::after {
     top: -0.1em;
     float: none;
@@ -1597,16 +1597,16 @@ a.button:hover, a.button:focus {
       background-color: #cc8b00;
       color: #0a0a0a; }
   .button-group.body-font .button {
-    background-color: #000;
+    background-color: #222222;
     color: #fefefe; }
     .button-group.body-font .button:hover, .button-group.body-font .button:focus {
-      background-color: black;
+      background-color: #1b1b1b;
       color: #fefefe; }
   .button-group.header .button {
-    background-color: #000;
+    background-color: #222222;
     color: #fefefe; }
     .button-group.header .button:hover, .button-group.header .button:focus {
-      background-color: black;
+      background-color: #1b1b1b;
       color: #fefefe; }
   .button-group.stacked, .button-group.stacked-for-small, .button-group.stacked-for-medium {
     -ms-flex-wrap: wrap;
@@ -3107,10 +3107,10 @@ a.button:hover, a.button:focus {
     background-color: #fff3d9;
     color: #0a0a0a; }
   .callout.body-font {
-    background-color: #d9d9d9;
+    background-color: #dedede;
     color: #0a0a0a; }
   .callout.header {
-    background-color: #d9d9d9;
+    background-color: #dedede;
     color: #0a0a0a; }
   .callout.small {
     padding-top: 0.5rem;
@@ -3387,10 +3387,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     background: #ffae00;
     color: #0a0a0a; }
   .badge.body-font {
-    background: #000;
+    background: #222222;
     color: #fefefe; }
   .badge.header {
-    background: #000;
+    background: #222222;
     color: #fefefe; }
 
 .label {
@@ -3419,10 +3419,10 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     background: #ffae00;
     color: #0a0a0a; }
   .label.body-font {
-    background: #000;
+    background: #222222;
     color: #fefefe; }
   .label.header {
-    background: #000;
+    background: #222222;
     color: #fefefe; }
 
 .progress {
@@ -3441,9 +3441,9 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .progress.warning .progress-meter {
     background-color: #ffae00; }
   .progress.body-font .progress-meter {
-    background-color: #000; }
+    background-color: #222222; }
   .progress.header .progress-meter {
-    background-color: #000; }
+    background-color: #222222; }
 
 .progress-meter {
   position: relative;
