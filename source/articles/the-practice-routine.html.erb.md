@@ -7,7 +7,7 @@ decided to play and why.**
 
 **Then discuss the method of practicing.**
 
-**Content**
+#The Practice Routine
 
 I had a few things in mind when developing the curriculum for the
 keyboards to practice. Most importantly, I want to address the three

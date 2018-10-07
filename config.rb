@@ -26,6 +26,7 @@ activate :directory_indexes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/articles/*.html', layout: "article"
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

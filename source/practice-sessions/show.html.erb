@@ -1,27 +1,45 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
 <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
-<h1>Practice Session</h1>
-<h2><%= practice_session[:name] %></h2>
-<div>Date: <%= practice_session[:date].strftime("%B %e, %Y") %></div>
-<div>Notes: <%= practice_session[:notes] %></div>
-<div><a href="<%= practice_session[:recording] %>">Recording</a></div>
+<div class="grid-container">
+  <div class="section--top">
+    <div class="grid-x grid-padding-x">
+      <div class="cell large-12"><h1><%= practice_session[:name] %></h1></div>
+    </div>
+    <div>Practice Session #: <%= practice_session[:number] %></div>
+    <div>Date: <%= practice_session[:date].strftime("%B %e, %Y") %></div>
+    <div>Notes: <%= practice_session[:notes] %></div>
+    <div><a href="<%= practice_session[:recording] %>" class="recording-link">Recording</a></div>
+  </div>
 
-<h3>Practiced</h3>
-<ul>
-  <% practice_session[:exercises].each do |exercise| %>
-    <li><%= exercise[:name] %></li>
-  <% end %>
-</ul>
+  <div class="section">
+    <div class="grid-x grid-padding-x">
+      <div class="cell large-6">
+        <h3>Practiced</h3>
+        <ul>
+          <% practice_session[:exercises].each do |exercise| %>
+            <li><%= exercise[:name] %></li>
+          <% end %>
+        </ul>
+      </div>
 
-<h3>Completed</h3>
-<ul>
-  <% practice_session.completed_increments.each do |ci| %>
-    <li><%= ci[:name] %></li>
-  <% end %>
-</ul>
-
-<div class="ct-chart" style="width: 800px; height: 600px;">
+      <div class="cell large-6">
+        <h3>Completed</h3>
+        <ul>
+          <% practice_session.completed_increments.each do |ci| %>
+            <li><%= ci[:name] %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>Progress</h3>
+    <div class="grid-x grid-padding-x">
+      <div class="ct-chart ct-octave cell large-8"></div>
+    </div>
+  </div>
 </div>
 
 
@@ -29,5 +47,3 @@
   var data = <%= practice_session_progress_data(practice_session).to_json %>
   new Chartist.Line('.ct-chart', data);
 </script>
-
-<%= link_to("Back", "/practice-sessions") %>

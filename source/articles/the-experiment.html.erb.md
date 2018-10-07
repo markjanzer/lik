@@ -2,7 +2,7 @@
 
 Sam
 
-**The Experiment**
+#The Experiment
 
 I am conducting an experiment to determine whether or not the Linear
 Isomorphic Keyboard is easier to play than the traditional piano

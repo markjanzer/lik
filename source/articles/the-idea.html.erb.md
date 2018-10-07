@@ -1,3 +1,5 @@
+#The Idea
+
 There may be a better way to design the piano.
 
 It is known that to master an instrument you must learn to play it in

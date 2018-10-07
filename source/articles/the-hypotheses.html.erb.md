@@ -277,7 +277,7 @@
 
 **My audience is Sam Walder, Dr. Brown, and Emily.**
 
-**The Hypotheses**
+#The Hypotheses
 
 I think that the linear isomorphic keyboard (LIK) will outperform the
 traditional keyboard (TK). I predict that I will improve faster on the

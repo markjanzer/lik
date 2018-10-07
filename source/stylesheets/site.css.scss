@@ -57,6 +57,18 @@ body {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #333
+}
+
 .navbar__link {
   margin-left: 2.5rem;
   color: #000;
@@ -64,5 +76,9 @@ body {
 
 .navbar__link:hover {
   color: #333;
+}
+
+.recording-link {
+  text-decoration: underline;
 }
 

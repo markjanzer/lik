@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <nav class="navbar grid-container">
+      <div class="navbar__logo "><a href="/"><%= svg "LIK-logo" %></a></div>
+      <ul class="navbar__nav ">
+        <li class="navbar__item">
+          <%= link_to "Articles", "/articles", {class: "navbar__link" } %>
+        </li>
+        <li class="navbar__item">
+          <%= link_to "Practice Sessions", "/practice-sessions", {class: "navbar__link" } %>
+        </li>
+        <li class="navbar__item">
+          <%= link_to "Progress", "/progress", {class: "navbar__link" } %>
+        </li>
+        <li class="navbar__item">
+          <%= link_to "Contact", "#", {class: "navbar__link" } %>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="section--top grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-8">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

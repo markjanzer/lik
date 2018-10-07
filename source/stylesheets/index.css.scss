@@ -8,5 +8,56 @@
 .hero__text {
   position: absolute;
   bottom: 3rem;
-  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.main-description {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section--top {
+  margin-top: 8rem;
+}
+
+.hr-top {
+  margin-top: 0;
+}
+
+.hr-bottom {
+  margin-bottom: 0;
+}
+
+.article {
+  margin: 1.5rem 0;
+}
+
+// progress is used in foundation
+.keyboard-progress {
+  margin: 3rem 0;
+  height: 100%;
+}
+
+.section__footer {
+  text-align: right;
+}
+
+.footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #848484;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__contact {  
+  color: #fff;
 }
