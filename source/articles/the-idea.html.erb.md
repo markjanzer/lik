@@ -38,7 +38,7 @@ keys equally difficult to play?
 We can do better. Make all keys equal, and in the process, make all keys
 the same.
 
-\[LIK image\]
+<%= image_tag "LIK-solo.png" %>
 
 This is the Linear Isomorphic Keyboard.
 
@@ -95,39 +95,37 @@ transposition and spend more time making music.
 
 If you're still interested, you can read:
 
-An in depth description of the experiment **LIK: The Experiment**
+<a href="/articles/the-experiment">An in depth description of the experiment</a>
 
-The details of how I will practice **LIK: The Practice Routine**
+<a href="/articles/the-practice-routine">The details of how I will practice</a>
 
-Why not another isomorphic keyboard? **LIK: Other Isomorphic Keyboards**
-
-How you can get one **LIKE: How to purchase**
+<a href="/articles/other-isomorphic-keyboards">Why not another isomorphic keyboard?</a>
 
 Stay tuned.
 
 1.  Here is an example of what it sounds like to play in the wrong key
-    > on a non equal temperament keyboard:
-    > [[https://www.youtube.com/watch?v=Yqa2Hbb\_eIs]{.underline}](https://www.youtube.com/watch?v=Yqa2Hbb_eIs)
+    on a non equal temperament keyboard:
+    [[https://www.youtube.com/watch?v=Yqa2Hbb\_eIs]{.underline}](https://www.youtube.com/watch?v=Yqa2Hbb_eIs)
 
 2.  Discussion of the differences between modality and tonality as well
-    > as the transition between the two extends far beyond the scope of
-    > this article. And this statement is partially false because
-    > pre-tonality people played in modes, not keys, and they used
-    > harmonizations with notes that didn't occur in the key they played
-    > in (if they were playing in keys). To learn a little more check
-    > out this:
-    > [[https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music]{.underline}](https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music).
-    > For a deeper dive, with a good look at the transition from
-    > modality to tonality, check out this article:
-    > [[https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer\_research]{.underline}](https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer_research)
+    as the transition between the two extends far beyond the scope of
+    this article. And this statement is partially false because
+    pre-tonality people played in modes, not keys, and they used
+    harmonizations with notes that didn't occur in the key they played
+    in (if they were playing in keys). To learn a little more check
+    out this:
+    [[https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music]{.underline}](https://music.stackexchange.com/questions/6401/whats-the-difference-between-modal-music-and-tonal-music).
+    For a deeper dive, with a good look at the transition from
+    modality to tonality, check out this article:
+    [[https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer\_research]{.underline}](https://soundideas.pugetsound.edu/cgi/viewcontent.cgi?article=1079&context=summer_research)
 
 3.  "Isomorphism applied to musical instruments means that every
-    > distinct musical performance is executed in the same way,
-    > regardless of key or location."
-    > [[http://smcnetwork.org/system/files/smc2011\_submission\_169.pdf]{.underline}](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
+    distinct musical performance is executed in the same way,
+    regardless of key or location."
+    [[http://smcnetwork.org/system/files/smc2011\_submission\_169.pdf]{.underline}](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
 
 4.  The traditional keyboard has four different ways to play a perfect
-    > fifth: White key to white key (eg. C -\> G), white key to black
-    > key (eg. B -\> F\#), black key to white key (eg. Bb -\> F), and
-    > black key to black key (C\# -\> G\#). For more on this, check out
-    > The Experiment **Link to The Experiment**.
+    fifth: White key to white key (eg. C -\> G), white key to black
+    key (eg. B -\> F\#), black key to white key (eg. Bb -\> F), and
+    black key to black key (C\# -\> G\#). For more on this, check out
+    The Experiment **Link to The Experiment**.

@@ -8,7 +8,7 @@ I am conducting an experiment to determine whether or not the Linear
 Isomorphic Keyboard is easier to play than the traditional piano
 keyboard.
 
-**The Plan**
+##The Plan
 
 In order to compare the Linear Isomorphic Keyboard (LIK) and the
 traditional keyboard (TK), I am going to practice the same content on
@@ -22,7 +22,7 @@ Now here's a question that could be fun(damental to the integrity of the
 experiment): how do you assess assess and compare the playability of two
 musical instruments?
 
-**Playability**
+###Playability
 
 Playability, or the ease of playing music on an instrument, is
 determined by a few variables. The most important variable is the
@@ -44,7 +44,7 @@ For a given set of musical content, playability can be measured as the
 function of two variables, the presence of technical limitations, and
 the rate of improvement.
 
-**Technical Limitations**
+###Technical Limitations
 
 Technical limitations are manifested in musical patterns that are
 practically impossible to play. Playing a large leap between two notes
@@ -64,7 +64,7 @@ traditional keyboard. Perhaps in the future there will be music that is
 written for the LIK that is unplayable on the TK, but the music has yet
 to be written, so the limitations will go relatively unexplored.
 
-**The Rate of Improvement**
+###The Rate of Improvement
 
 The rate of improvement is important when evaluating the playability of
 instruments. If there was an instrument with no limitations that could
@@ -85,7 +85,7 @@ for white notes. Because of this, I fully expect Hannon's exercises to
 be more difficult for the LIK than the TK, so the LIK's improvement
 might be slower.
 
-**The Method**
+##The Method
 
 In order to compare the playability of both keyboards on, I am going to
 practice the same content, for the same amount of time two keyboards of
@@ -99,7 +99,7 @@ Using the same basic keyboard is a good control for the quality of the
 instruments, but the practice session is a bit more difficult to
 control.
 
-**Controlling the practice sessions**
+###Controlling the practice sessions
 
 If I were to keep practice sessions exactly the same between keyboards,
 it would be unfair to the keyboard that was more advanced and thus
@@ -132,7 +132,7 @@ still lets each keyboard practice what is best for it.
 You can find out more about the curriculum and the reasoning behind it
 here **link to the Practice Routine**.
 
-**Evaluation**
+###Evaluation
 
 **Revise this point onwards**
 
@@ -148,7 +148,7 @@ I hope that with this data, I will be able to come to a conclusion about
 the playability of the linear isomorphic keyboard and how it compares to
 the traditional keyboard.
 
-**The Flaws**
+##The Flaws
 
 In order for me to assert that the experiment can have a meaningful
 result in spite of its flaws, I need to show that I'm aware of the
@@ -200,7 +200,7 @@ there is an incredible wave of improvement in one week on a keyboard,
 but it might be from me revisiting old material and finding that I've
 improved.
 
-**The caveats**
+###The caveats
 
 There are a couple factors that will help control against a few of these
 flaws. The varying difficulties of increments is controlled for when
@@ -223,7 +223,7 @@ nullified. From that point, if one keyboard has a faster rate of
 improvement than the other, I am not going to attribute it to my worse
 skill on the other keyboard.
 
-**In Conclusion**
+##In Conclusion
 
 There are a lot of flaws and confounding variables in this experiment,
 several being theoretically disadvantageous to the LIK. I think that if
@@ -231,83 +231,16 @@ the difference between the rate of improvement is great enough, the
 findings of this experiment will carry weight.
 
 1.  Long-tones are an exercise essential for wind instruments, in which
-    > the instrumentalist sustains a note to improve their tone quality.
-    > This exercise is not nearly as useful on the piano as pianists do
-    > not have control over sustained tone. This is an extreme example,
-    > but it illustrates that exercises might not benefit each
-    > instrument equally.
-
-> It is not clear whether or not Hannon's finger exercises for piano
-> will provide the same benefit the LIK as they will the traditional
-> piano, or if the LIK will benefit from practicing scales and arpeggios
-> for the same amount of time as the traditional keyboard. This could
-> theoretically put the LIK at a disadvantage, but whether it actually
-> will and to what extent will be difficult to determine.
+    the instrumentalist sustains a note to improve their tone quality.
+    This exercise is not nearly as useful on the piano as pianists do
+    not have control over sustained tone. This is an extreme example,
+    but it illustrates that exercises might not benefit each
+    instrument equally.
+      It is not clear whether or not Hannon's finger exercises for piano
+    will provide the same benefit the LIK as they will the traditional
+    piano, or if the LIK will benefit from practicing scales and arpeggios
+    for the same amount of time as the traditional keyboard. This could
+    theoretically put the LIK at a disadvantage, but whether it actually
+    will and to what extent will be difficult to determine.
 
 **Using the stats to evaluate.**
-
-**Retired Darlings**
-
-I don't intend on spending time attempting impossible tasks on each
-keyboard. Instead I hope that any notable discrepancy in the keyboards'
-technical limitations will surface as I progress. I also have no reason
-to believe that there will be any difference in technical limitations
-save for a few tone clusters, because the spacing between keys is
-identical between the keyboards, and the layouts are very similar
-(meaning that someone's hands should be able to reach the same set of
-keys on the traditional keyboard and the LIK). **Is this how I want to
-do this explanation? I don't like it.**
-
-The rate of improvement will be measured by reflecting on performances
-in my assessments. Early assessments might be more difficult to
-interpret, as I think that the transferable skills between both
-keyboards will make unfairly alter my rate of improvement on the
-keyboard I am worse at playing. Thus, I predict that initially my
-abilities on the LIK will improve faster, as I will benefit from my
-traditional keyboard experience. However, if my prowess on both
-keyboards become relatively equal for a particular skill (fundamentals,
-sight reading, or playing by ear), improvement will be much easier to
-gauge. The transferable skills from each keyboard should be negated, and
-improvements could be taken at face value.
-
-**Assessing Quality of Musical Instruments**
-
-There are many ways to assess the quality of musical instruments. The
-harmonica is the most popular instrument because it's cheap and it's
-easy for a beginner to sound good. The recorder does a great job of
-teaching woodwind fingerings and annoying roommates. However neither of
-these instruments seem to have the same qualities of other instruments
-with far more recordings such as guitars or drum sets.
-
-There are an innumerable amount of ways to measure the quality of the
-instrument (popularity, cost, ability to annoy roommates, etc.). **I am
-going to measure the quality of instrument by playability**, or the ease
-of use as people us the instrument to manifest these musical ideas that
-are in their minds or on paper.
-
-I'll break this vague concept of playability into two more concrete
-aspects of playing an instrument: technical limitations and rate of
-improvement.
-
-~~Ideally: People who have already read "The Idea" article, and who want
-to know more about the experiment, be it the reasoning, the methodology,
-or the hypotheses. This article is for the curious and skeptical
-alike.~~
-
-Note that this comparison of technical limitations is not perfect. If
-you compare the technical limitations of a saxophone and a piano, you
-would be disappointed by the saxophone's lack of ability to harmonize,
-and piano's inability to bend notes or achieve the same reedy tone.
-
-Most music is composed with technical limitations in mind (with some
-exceptions **link to mom's song**). Composers will not write songs with
-impossible fingerings because they want their music to be played (making
-some big assumptions here, I know). Thus the assessment of technical
-limitations is biased towards the instrument that the music was written
-for.
-
-However, I think that comparing technical limitations of the two
-keyboards is much more fair than comparing the saxophone to the
-keyboard. The LIK was designed to be a replacement to the TK, the
-saxophone was not. It is reasonable to expect backwards compatibility
-when moving forwards.

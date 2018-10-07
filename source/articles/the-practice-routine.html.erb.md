@@ -1,12 +1,3 @@
-**What am I trying to say and who is my Audience?**
-
-**My audience is Sam.**
-
-**I want to talk about the criteria for picking the content, and what I
-decided to play and why.**
-
-**Then discuss the method of practicing.**
-
 #The Practice Routine
 
 I had a few things in mind when developing the curriculum for the
@@ -57,7 +48,7 @@ well to expose technical limitations on either keyboard. If there was
 any content that is not written for the TK (as I mention **here**), it
 would be the Thesaurus.
 
-**An Incomplete Practice**
+##An Incomplete Practice
 
 There is content that is missing. Notably, I'm not going to be
 practicing chords in fundamentals, sight reading, or playing by ear, and
@@ -72,7 +63,7 @@ to change the practice routine in the future. I think the practice
 sessions will be fair as long as I am practicing the same exercise sets
 for the same amount of time on each keyboard.
 
-**The Method of Practicing**
+##The Method of Practicing
 
 I will practice each set of exercises for the same amount of time (and
 thus each domain of musical prowess for the same amount of time), but I
@@ -94,12 +85,12 @@ the practice sessions here. You can find the detailed content of what I
 am going to practice here. You can see my progress here.
 
 1.  There is a potential confounding variable in the order that I
-    > practice the keyboards if I practice both in the same day. If I
-    > always play the LIK first and the TK second, the LIK might benefit
-    > from my mind being fresh, or the TK might benefit from me already
-    > being warmed up. I am going to keep track of each time I practice
-    > both keyboards in one day, so the next time I practice both
-    > keyboards I can alternate the order.
+    practice the keyboards if I practice both in the same day. If I
+    always play the LIK first and the TK second, the LIK might benefit
+    from my mind being fresh, or the TK might benefit from me already
+    being warmed up. I am going to keep track of each time I practice
+    both keyboards in one day, so the next time I practice both
+    keyboards I can alternate the order.
 
 Need to do melodic (with one hand at a time), and harmonic.
 

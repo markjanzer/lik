@@ -275,8 +275,6 @@
   </div>
 </div>
 
-**My audience is Sam Walder, Dr. Brown, and Emily.**
-
 #The Hypotheses
 
 I think that the linear isomorphic keyboard (LIK) will outperform the
@@ -291,7 +289,7 @@ The reasonings behind these hypotheses are based on yet another
 hypothesis: I believe that isomorphic keyboards have an advantage over
 non-isomorphic keyboards in regards to playability.
 
-**The Isomorphic Instruments**
+##The Isomorphic Instruments
 
 When applied to the keyboard, "Isomorphism applied to musical
 instruments means that every distinct musical performance is executed in
@@ -305,7 +303,7 @@ for the LIK. The implications are far reaching and amorphous, but I have
 done my best to break the idea down into three advantages the
 transpositional, the observational, and the rudimentary.
 
-**The transpositional advantage**
+###The transpositional advantage
 
 The most obvious benefit of isomorphism is that transposition becomes as
 simple as shifting your hand. On non-isomorphic keyboards, each musical
@@ -329,7 +327,7 @@ for intervals in a given octave. Breaking this all down to the interval
 makes more sense. For LIK its 1-1. POOOP. I think it's LCS time.
 
 
-**The observational advantage**
+###The observational advantage
 
 The irregular pattern of the TK makes the notes easier to recognize at
 the cost of obfuscating musical patterns. You can identify a note using
@@ -358,7 +356,7 @@ chord that starts on F.
 These create the observational advantage, making it is easier to
 identify and apply music theory to the keyboard.
 
-**The rudimentary advantage**
+###The rudimentary advantage
 
 The rudimentary advantage is the transpositional advantage applied at
 the intervallic level. Melodies and harmonies can be broken down into
@@ -383,13 +381,13 @@ building blocks of melody and harmony---and thus make it significantly
 easier to translate musical ideas into our head into physical
 performances.
 
-**How the benefits of isomorphism apply to the hypothesis**
+##How the benefits of isomorphism apply to the hypothesis
 
 Now that I have covered the hypotheses of the benefits of isomorphism in
 regard to playability, I am going to apply them as the reasoning for my
 hypotheses for the experiment.
 
-**Fundamentals**
+###Fundamentals
 
 I think that I will improve faster on the fundamentals primarily because
 of the transpositional advantage. Scales won't be easier to play on the
@@ -399,7 +397,7 @@ ascending/descending patterns will be easier to learn because once the
 first iteration of the pattern is learned, the other iterations will
 have the same shape.
 
-**Sight reading**
+###Sight reading
 
 I think that the LIK and TK will perform equally well at sight reading.
 This is particularly difficult for me to predict, due to the complexity
@@ -494,7 +492,7 @@ TK's advantages would disappear and the strength of the third step of
 sight reading will make the LIK a slightly better instrument for sight
 reading.
 
-**Playing by ear**
+###Playing by ear
 
 I think that the rudimental advantage of isomorphic keyboards will make
 playing by ear significantly easier on the LIK than on the traditional
@@ -503,7 +501,7 @@ play any given interval, and that there is no context switching
 depending on the starting note means that the LIK will be superior at
 interfacing musical concepts to real sounds.
 
-**Conclusion**
+##Conclusion
 
 To conclude, here is the collection of all of my hypotheses.
 
@@ -526,92 +524,35 @@ The similarity between
 general.**
 
 1.  [["Isomorphism applied to musical instruments means that every
-    > distinct musical performance is executed in the same way,
-    > regardless of key or
-    > location."]{.underline}](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
+    distinct musical performance is executed in the same way,
+    regardless of key or
+    location."]{.underline}](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
 
 2.  There are competing definitions of isomorphism, and according to
-    > some the LIK isn't truly isomorphic. Wikipedia's definition
-    > [[https://en.wikipedia.org/wiki/Isomorphic\_keyboard]{.underline}](https://en.wikipedia.org/wiki/Isomorphic_keyboard)
-    > , which I assume uses this article as a source
-    > [[https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15]{.underline}](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15)
-    > asserts that isomorphic keyboards must be tuning invariant, which
-    > the LIK is not (the LIK is only isomorphic for equal tone
-    > temperaments). I intend on exploring this more fully in another
-    > article.
+    some the LIK isn't truly isomorphic. Wikipedia's definition
+    [[https://en.wikipedia.org/wiki/Isomorphic\_keyboard]{.underline}](https://en.wikipedia.org/wiki/Isomorphic_keyboard)
+    , which I assume uses this article as a source
+    [[https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15]{.underline}](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15)
+    asserts that isomorphic keyboards must be tuning invariant, which
+    the LIK is not (the LIK is only isomorphic for equal tone
+    temperaments). I intend on exploring this more fully in another
+    article.
 
 3.  Geometry or shape, when applied to keyboards describes the shape
-    > made by the physical location of the keys. Fingering describes
-    > which fingers hit which notes. There is correlation between the
-    > two; generally one shape will be fingered one way. However, this
-    > is not always true. You can play the first five notes of the C
-    > major scale with all five fingers (1-2-3-4-5) but if you were had
-    > to complete the scale, you would finger the same shape as
-    > (1-2-3-1-2) so that you could finish the scale with 3-4-5. **show
-    > image demonstrating this here**. Realistically, change in
-    > fingerings for a particular shape are dependent on what has been
-    > played prior or what needs to be played immediately after.
+    made by the physical location of the keys. Fingering describes
+    which fingers hit which notes. There is correlation between the
+    two; generally one shape will be fingered one way. However, this
+    is not always true. You can play the first five notes of the C
+    major scale with all five fingers (1-2-3-4-5) but if you were had
+    to complete the scale, you would finger the same shape as
+    (1-2-3-1-2) so that you could finish the scale with 3-4-5. **show
+    image demonstrating this here**. Realistically, change in
+    fingerings for a particular shape are dependent on what has been
+    played prior or what needs to be played immediately after.
 
-4.  
+4.  Reflections on the advantages of isomorphic keyboards (notably 1-1
+    isomorphic keyboards).
 
-Reflections on the advantages of isomorphic keyboards (notably 1-1
-isomorphic keyboards).
-
-Okay one of the differences is that the keyboard is geared towards
-recognition of musical patterns, not notes. Notes will be more difficult
-to identify, but musical patterns will be easier to identify and apply.
-
-Then I could do the other one about transposition. But transposition
-doesn't completely cover it. I mean, yes, on a fundamental level
-everything is composed of intervals and the piano has multiple shapes
-per interval.
-
-Things are twelve times more familiar? I can wrap that in with the
-larger transposition one. I can say that practicing a song is like
-practicing it in every key.
-
-Something like, there is one twelfth the amount of shapes with the same
-amount of musical patterns. You have to learn toplya
-
-**Retired darlings**
-
-The observational advantage is manifested in the relative ease of
-recognizing and applying musical patterns on isomorphic instruments. On
-the traditional keyboard, notes are easier to identify as both color and
-shape help the player identify the note. However, on the LIK, the
-relationship between notes is easier to identify. The irregular pattern
-of white keys and black keys on the traditional keyboard obfuscates
-musical patterns, as there can be up to twelve different shapes for any
-given pattern. Isomorphic keyboards remove this obfuscation and it
-results in easier recognition and application of music theory.
-
-**Play the notes, recognize the pattern**
-
-When you play a F\# to a Bb, you might not know off the top of your head
-that it is a major third, but on an isomorphic keyboard you could
-recognize the interval by the shape that is played. You might not
-recognize that you are playing a transposed variation of a melody in a
-sonata, but but on an isomorphic keyboard you would feel the familiarity
-because you played the same shape before.
-
-**Know the pattern to play the notes**
-
-The reverse works too, if you know you want to play a Ab minor seventh
-chord, you might not know off the top of your head that you need to play
-a Ab, Cb, Eb, and Gb, but instead you can play the shape of a minor
-seventh chord starting on Ab.
-
-I think that this added layer of context can be very difficult. Consider
-which is more difficult: teaching a dog to sit when you say "sit", or
-teaching a dog that in this room and two others, "sit" means sit, but in
-four other rooms, "shake" means sit, in three other rooms "roll over"
-means sit, and in the last two rooms "come" means sit. There are also
-twelve other commands to teach the dog.
-
-Now that is not the most fair comparison, as there, as there are more
-similarities between different starting notes as there are between
-rooms, and I am mostly convinced that humans will do better than dogs at
-recognizing different contexts.
 
 <script>
   // var edges = <% data.intervals_and_shapes %>
