@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 261 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- <svg width="261px" height="100px" viewBox="0 0 261 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> -->
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>LIK-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="LIK-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Group-3-Copy-6" transform="translate(24.000000, 0.000000)">
+                <path d="M142,0 L175.02958,0 L175.02958,23.0884558 L194.296834,0 L234.207577,0 L198.272617,45.7271364 L236.042553,100 L196.74347,100 L175.02958,69.3508572 L175.02958,94.4444444 C175.02958,97.5126931 172.542273,100 169.474024,100 L147.555556,100 C144.487307,100 142,97.5126931 142,94.4444444 L142,0 Z" id="LIK" fill="#838383"></path>
+                <path d="M142,0 L175,0 L175,94.4444444 C175,97.5126931 172.512693,100 169.444444,100 L147.555556,100 C144.487307,100 142,97.5126931 142,94.4444444 L142,0 Z" id="Rectangle" fill="#000000"></path>
+                <path d="M76,0 L109,0 L109,94.4444444 C109,97.5126931 106.512693,100 103.444444,100 L81.5555556,100 C78.4873069,100 76,97.5126931 76,94.4444444 L76,0 Z" id="Rectangle-6" fill="#000000"></path>
+                <rect id="Rectangle-7" fill="#838383" x="0" y="72" width="42" height="28"></rect>
+            </g>
+            <path d="M0,0 L33,0 L33,94.4444444 C33,97.5126931 30.5126931,100 27.4444444,100 L5.55555556,100 C2.48730695,100 8.55120869e-15,97.5126931 0,94.4444444 L0,0 Z" id="Rectangle-6-Copy-3" fill="#000000"></path>
+        </g>
+    </g>
+</svg>
