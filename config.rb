@@ -37,7 +37,7 @@ configure :development do
   # instantiate_shit(AIRRECORD_API_KEY)
   # ENV["AIRRECORD_API_KEY"] = AIRRECORD_API_KEY
   # ENV["AIRRECORD_API_KEY"] = "TESTEROOOOOOOONI"
-  Airrecord.api_key = AIRRECORD_API_KEY
+  # Airrecord.api_key = AIRRECORD_API_KEY
 
   class Keyboard < Airrecord::Table
     self.base_key = "appeUTAWBfz4YzHtJ"
