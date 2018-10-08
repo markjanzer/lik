@@ -89,3 +89,13 @@ traditional keyboard (TK), I am going to practice... </div>
   // new Chartist.Line('.ct-chart', data);
 </script>
 
+<script>
+  // FIX NEED TO DEBOUNCE
+  window.addEventListener('scroll', function(e) {
+    if (window.pageYOffset > 570) {
+      $(".navbar")[0].classList.add("navbar--translucent");
+    } else {
+      $(".navbar")[0].classList.remove("navbar--translucent");
+    }
+  });
+</script>

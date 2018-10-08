@@ -27,7 +27,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,13 +36,24 @@ body {
   overflow: hidden;
 
   // box-shadow: 0 0 .125em 0 rgba(0,0,0,.5);
+  // &::after {
+  //   background: rgba(white,.6);
+  //   position: absolute;
+  //   display: block;
+  //   content: '';
+  //   top: 0; right: 0; bottom: 0; left: 0;
+  //   z-index: 4;
+  // }
+}
+
+.navbar--translucent {
   &::after {
     background: rgba(white,.6);
     position: absolute;
     display: block;
     content: '';
     top: 0; right: 0; bottom: 0; left: 0;
-    z-index: 3;
+    z-index: 4;
   }
 }
 
@@ -57,7 +68,7 @@ body {
   height: 3rem;
   line-height: inherit;
   white-space: nowrap;
-  z-index: 5;
+  z-index: 6;
 }
 
 .navbar__nav {
@@ -66,7 +77,7 @@ body {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  z-index: 5;
+  z-index: 6;
 }
 
 ul {
