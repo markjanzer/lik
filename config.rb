@@ -129,7 +129,7 @@ end
 
 configure :build do
 
-  Airrecord.api_key = AIRRECORD_API_KEY
+  Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
   class Keyboard < Airrecord::Table
     self.base_key = "appeUTAWBfz4YzHtJ"
