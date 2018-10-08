@@ -1,4 +1,5 @@
-require "secrets.rb"
+# require "secrets.rb"
+Airrecord.api_key = AIRRECORD_API_KEY
 
 class Keyboard < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
