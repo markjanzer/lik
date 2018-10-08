@@ -1,6 +1,8 @@
 # require "secrets.rb"
-# Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
+# Airrecord.api_key = "keyOwXzTZ5jrZ0Vta"
+
+# def instantiate_shit(api_key)
 class Keyboard < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
   self.table_name = "Keyboards"
@@ -83,6 +85,7 @@ class ExercisePracticeSession < Airrecord::Table
   has_many :tk_completed, class: "ExerciseIncrement", column: "TK Completed"
   has_many :lik_completed, class: "ExerciseIncrement", column: "LIK Completed"
 end
+# end
 
 
 
