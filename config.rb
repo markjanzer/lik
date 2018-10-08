@@ -37,7 +37,8 @@ end
 
 configure :build do
   puts ENV
-  Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
+  Airrecord.api_key = ENV[:AIRRECORD_API_KEY]
+  puts Airrecord.api_key
 end
 
 require "models.rb"
