@@ -28,11 +28,17 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page '/articles/*.html', layout: "article"
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
 
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
+configure :development do
+  require "secrets.rb"
+  Airrecord.api_key = AIRRECORD_API_KEY
+  # ENV["AIRRECORD_API_KEY"] = "TESTEROOOOOOOONI"
+end
+
+configure :build do
+  puts ENV
+  Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
+end
 
 require "models.rb"
 require "intervals_shapes.rb"
@@ -63,6 +69,9 @@ helpers do
     '(not found)'
   end
 end
+
+# configure :production do
+  # ENV["AIRRECORD_API_KEY"]
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
