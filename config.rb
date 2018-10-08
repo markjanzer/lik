@@ -33,7 +33,7 @@ require "intervals_shapes.rb"
 require "progress.rb"
 
 configure :development do
-  require "secrets.rb"
+  # require "secrets.rb"
   # instantiate_shit(AIRRECORD_API_KEY)
   # ENV["AIRRECORD_API_KEY"] = AIRRECORD_API_KEY
   # ENV["AIRRECORD_API_KEY"] = "TESTEROOOOOOOONI"
