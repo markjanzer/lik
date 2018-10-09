@@ -3,4 +3,5 @@
 .DS_Store
 .sass-cache
 build/
-secrets.rb
+.env*
+.byebug_history
