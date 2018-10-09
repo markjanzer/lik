@@ -142,5 +142,8 @@ DEPENDENCIES
   middleman-sprockets (~> 4)
   sprockets-es6
 
+RUBY VERSION
+   ruby 2.4.3p205
+
 BUNDLED WITH
-   1.12.5
+   1.16.5
