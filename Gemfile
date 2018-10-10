@@ -9,4 +9,4 @@ gem "middleman-livereload"
 # gem "redcarpet", "~> 3"
 gem "airrecord"
 gem "byebug"
-# gem 'middleman-dotenv', '~> 2.0'
+gem 'middleman-dotenv', '~> 2.0'

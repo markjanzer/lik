@@ -1,5 +1,4 @@
-# VIEW ONLY API KEY 
-Airrecord.api_key = "keysAO1HhWYhDvhCV"
+Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
 class Keyboard < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
