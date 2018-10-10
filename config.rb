@@ -31,7 +31,7 @@ require "intervals_shapes.rb"
 require "progress.rb"
 
 PracticeSession.all.each do |practice_session|
-  proxy "/practice-sessions/#{practice_session.id}", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
+  proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
 end
 
 # proxy(
