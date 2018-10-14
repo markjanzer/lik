@@ -15,23 +15,7 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <nav class="navbar grid-container">
-      <div class="navbar__logo "><a href="/"><%= svg "LIK-logo" %></a></div>
-      <ul class="navbar__nav ">
-        <li class="navbar__item">
-          <%= link_to "Articles", "/articles", {class: "navbar__link" } %>
-        </li>
-        <li class="navbar__item">
-          <%= link_to "Practice Sessions", "/practice-sessions", {class: "navbar__link" } %>
-        </li>
-        <li class="navbar__item">
-          <%= link_to "Progress", "/progress", {class: "navbar__link" } %>
-        </li>
-        <li class="navbar__item">
-          <%= link_to "Contact", "#", {class: "navbar__link" } %>
-        </li>
-      </ul>
-    </nav>
+    <%= partial "partials/header" %>
     <%= yield %>
   </body>
 </html>
