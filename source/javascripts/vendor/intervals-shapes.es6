@@ -1,5 +1,3 @@
-console.log("in intervals-shapes.es6");
-
 var edges = [
   {"group":"edges","data":{"id":"rec0JNcCR6mWbIUC4","source":"reckvpdIs6Xuq1HVj","target":"recI4GQgm65zG0mWf","weight":3,"names":["G to B","F to A","C to E"]}},
   {"group":"edges","data":{"id":"rec0NGLEXI55bl58C","source":"recdeN9izKLz6FxLx","target":"recVEelstSUtfbWsw","weight":3,"names":["Ab to B","C# to E","F# to A"]}},

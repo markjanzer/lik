@@ -2,8 +2,13 @@
 title: The Linear Isomorphic Keybaord
 ---
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" /> -->
 <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="/javascripts/vendor/chartist-plugin-axistitle.min.js"></script>
+<script src="/javascripts/vendor/chartist-plugin-axistitle.min.js"></script>
+<script src="/javascripts/vendor/chartist-plugin-accessibility.min.js"></script>
+<script src="/javascripts/vendor/chartist-plugin-legend.js"></script>
+
 
 <div class="hero">
   <div class="hero__space"></div>
@@ -68,7 +73,8 @@ traditional keyboard (TK)... </div>
 
     <div class="grid-x grid-padding-x keyboard-progress">
       <div class="cell large-2"></div>
-      <div class="cell large-8 ct-chart ct-octave" style="border: 1px solid #848484;">
+      <div class="cell large-8">
+        <div class="ct-chart ct-golden-section"></div>
       </div>
       <div class="cell large-2"></div>
     </div>
@@ -85,7 +91,43 @@ traditional keyboard (TK)... </div>
 
 <script>
   // var data = <%# progress_data.to_json %>
-  // new Chartist.Line('.ct-chart', data);
+  var data = {
+    labels: [1],
+    series: [
+      {name: "LIK", data: [59]},
+      {name: "TK", data: [0]},
+    ]
+  }
+  options = {
+    plugins: [
+      Chartist.plugins.ctAxisTitle({
+        axisX: {
+          axisTitle: "Practice Sessions",
+          offset: {
+            x: 0,
+            y: 30
+          },
+        },
+        axisY: {
+          axisTitle: "Completed Increments",
+        }
+      }),
+      Chartist.plugins.ctAccessibility({
+        caption: "Increments completed by each keyboard",
+        seriesHeader: 'Keyboard',
+        summary: 'A graphic that shows the rate of improvement for the LIK and the TK',
+        valueTransform: function(value) {
+          return value + ' completed increments';
+        },
+        // Use this if you want to make accessibility table visible
+        // visuallyHiddenStyles: 'position: absolute; top: 100%; width: 100%; font-size: 11px; overflow-x: auto; background-color: rgba(0, 0, 0, 0.1); padding: 10px'
+      }),
+      Chartist.plugins.legend({
+        legendNames: ["TK", "LIK"],
+      })
+    ]
+  }
+  new Chartist.Line('.ct-chart', data, options);
 </script>
 
 <script>

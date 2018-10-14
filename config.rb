@@ -12,7 +12,7 @@ activate :sprockets do |s|
 end
 
 # Live Reload
-activate :livereload
+# activate :livereload
 # Secret storage
 activate :dotenv
 # Pretty URLs

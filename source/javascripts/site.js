@@ -6,6 +6,6 @@ function $(selector) {
   }
 }
 
-function deleteElement(el) {``
+function deleteElement(el) {
   el.parentNode.removeChild(el);
 }

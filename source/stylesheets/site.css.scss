@@ -1,20 +1,8 @@
 // @import "settings.scss";
 @import "foundation.css";
-
 @import "index.css.scss";
+@import "chartist.css.scss";
 @import "the-hypotheses.css.scss";
-
-// body {
-//   // background-color: #929292;
-//   background-color: #fff;
-//   // color: #333;
-//   // font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-//   //   "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-//   //   "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-//   //   "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-//   // padding: 18vh 1rem;
-//   // text-align: center;
-// }
 
 body {
   font-family: 'Libre Baskerville', serif;
@@ -139,3 +127,51 @@ a:hover {
   background: white;
 }
 
+
+// Chartist legend css
+.ct-legend {
+  display: flex;
+  justify-content: center;
+
+  li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+  }
+
+  li.inactive:before {
+    background: transparent;
+  }
+
+  &.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @for $i from 0 to length($ct-series-colors) {
+    .ct-series-#{$i}:before {
+      background-color: nth($ct-series-colors, $i + 1);
+      border-color: nth($ct-series-colors, $i + 1);
+    }
+  }
+}
+
+// This overwrites top: 0 on .ct-golden-section > svg
+// Gives space for the legend
+.ct-golden-section > svg {
+  top: auto;
+}
