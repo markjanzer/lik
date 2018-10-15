@@ -172,10 +172,21 @@ a:hover {
 
 // This overwrites top: 0 on .ct-golden-section > svg
 // Gives space for the legend
-.ct-golden-section > svg {
-  top: auto;
+// .ct-golden-section > svg {
+//   top: auto;
+// }
+
+.chart--medium {
+  height: 26rem;
+  margin-bottom: 4rem;
 }
 
 .draft-tag {
   color: #848484; 
+}
+
+.progress-alert {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
 }
