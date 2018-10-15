@@ -1,3 +1,6 @@
+<div class="grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="cell large-8 section section--top" markdown="1">
 #The Practice Routine
 
 I had a few things in mind when developing the curriculum for the
@@ -103,3 +106,6 @@ Need to do melodic (with one hand at a time), and harmonic.
 10 minutes of sight reading
 
 10 minutes of melodic transcription
+    </div>
+  </div>
+</div>

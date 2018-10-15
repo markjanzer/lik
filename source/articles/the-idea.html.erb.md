@@ -1,3 +1,7 @@
+<div class="grid-container">
+  <div class="grid-x grid-padding-x">
+    <div class="cell large-8 section section--top" markdown="1">
+
 #The Idea
 
 There may be a better way to design the piano.
@@ -129,3 +133,7 @@ Stay tuned.
     key (eg. B -\> F\#), black key to white key (eg. Bb -\> F), and
     black key to black key (C\# -\> G\#). For more on this, check out
     The Experiment **Link to The Experiment**.
+
+    </div>
+  </div>
+</div>
