@@ -130,8 +130,8 @@ traditional keyboard (TK)... </div>
 </script>
 
 <script>
-  setNavOpacity() {
-    var heroHeight = $(".hero")[0].offsetHeight;
+  var heroHeight = $(".hero")[0].offsetHeight;
+  function setNavOpacity() {
     if (window.pageYOffset > heroHeight) {
       $(".navbar")[0].classList.add("navbar--translucent");
     } else {
