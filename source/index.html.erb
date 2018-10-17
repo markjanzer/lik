@@ -130,13 +130,14 @@ traditional keyboard (TK)... </div>
 </script>
 
 <script>
-  var heroHeight = $(".hero")[0].offsetHeight;
-  window.addEventListener('scroll', function(e) {
-    console.log(window.pageYOffset, heroHeight);
+  setNavOpacity() {
+    var heroHeight = $(".hero")[0].offsetHeight;
     if (window.pageYOffset > heroHeight) {
       $(".navbar")[0].classList.add("navbar--translucent");
     } else {
       $(".navbar")[0].classList.remove("navbar--translucent");
     }
-  });
+  }
+  setNavOpacity();
+  window.addEventListener('scroll', setNavOpacity);
 </script>
