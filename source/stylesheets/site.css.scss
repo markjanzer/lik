@@ -80,7 +80,9 @@ a:hover {
   color: #333;
 }
 
-.recording-link {
+// Refactor this, text-decoration underline shouldn't be the exception.
+.recording-link,
+.reflection-link {
   text-decoration: underline;
 }
 

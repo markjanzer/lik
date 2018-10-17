@@ -12,6 +12,9 @@
         <div>Date: <%= practice_session[:date].strftime("%B %e, %Y") %></div>
         <div>Notes: <%= practice_session[:notes] %></div>
         <div><a href="<%= practice_session[:recording] %>" class="recording-link">Recording</a></div>
+        <% if practice_session[:reflection_url] %>
+          <div><a href="<%= practice_session[:reflection_url] %>" class="reflection-link">Reflection</a></div>
+        <% end %>
       </div>
     </div>
   </div>
