@@ -22,6 +22,7 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   overflow: hidden;
+  font-size: 16px;
 }
 
 .navbar--translucent {
@@ -189,4 +190,8 @@ a:hover {
   width: 100%;
   text-align: center;
   margin-top: 3rem;
+}
+
+body {
+  font-size: 21px;
 }
