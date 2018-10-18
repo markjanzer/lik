@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="688px" height="251px" viewBox="0 0 688 251" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-18">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-19">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-20">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-21">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-22">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-23">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-24">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-25">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-26">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-27">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-28">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-29">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-30">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-31">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-32">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-33">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-34">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-35">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-36">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-37">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-38">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Wiki-Hayden" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-371.000000, -699.000000)">
+            <g id="Group-Copy" transform="translate(371.000000, 699.000000)">
+                <path d="M67.5,180.716777 L37.4905801,197.865017 L37.4905801,232.134983 L67.5,249.283223 L97.5094199,232.134983 L97.5094199,197.865017 L67.5,180.716777 Z" id="Polygon-Copy-37" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-1)"></path>
+                <path d="M137.5,180.716777 L107.49058,197.865017 L107.49058,232.134983 L137.5,249.283223 L167.50942,232.134983 L167.50942,197.865017 L137.5,180.716777 Z" id="Polygon-Copy-38" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-2)"></path>
+                <path d="M206.5,180.716777 L176.49058,197.865017 L176.49058,232.134983 L206.5,249.283223 L236.50942,232.134983 L236.50942,197.865017 L206.5,180.716777 Z" id="Polygon-Copy-39" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-3)"></path>
+                <path d="M275.5,180.716777 L245.49058,197.865017 L245.49058,232.134983 L275.5,249.283223 L305.50942,232.134983 L305.50942,197.865017 L275.5,180.716777 Z" id="Polygon-Copy-40" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-4)"></path>
+                <path d="M344.5,180.716777 L314.49058,197.865017 L314.49058,232.134983 L344.5,249.283223 L374.50942,232.134983 L374.50942,197.865017 L344.5,180.716777 Z" id="Polygon-Copy-41" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-5)"></path>
+                <path d="M414.5,180.716777 L384.49058,197.865017 L384.49058,232.134983 L414.5,249.283223 L444.50942,232.134983 L444.50942,197.865017 L414.5,180.716777 Z" id="Polygon-Copy-42" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-6)"></path>
+                <path d="M483.5,180.716777 L453.49058,197.865017 L453.49058,232.134983 L483.5,249.283223 L513.50942,232.134983 L513.50942,197.865017 L483.5,180.716777 Z" id="Polygon-Copy-43" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-7)"></path>
+                <path d="M553.5,180.716777 L523.49058,197.865017 L523.49058,232.134983 L553.5,249.283223 L583.50942,232.134983 L583.50942,197.865017 L553.5,180.716777 Z" id="Polygon-Copy-44" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-8)"></path>
+                <path d="M622.5,180.716777 L592.49058,197.865017 L592.49058,232.134983 L622.5,249.283223 L652.50942,232.134983 L652.50942,197.865017 L622.5,180.716777 Z" id="Polygon-Copy-45" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-9)"></path>
+                <path d="M33.5,121.716777 L3.49058015,138.865017 L3.49058015,173.134983 L33.5,190.283223 L63.5094199,173.134983 L63.5094199,138.865017 L33.5,121.716777 Z" id="Polygon-Copy-36" stroke="#676767" stroke-width="2.98116029" opacity="0.900000036" filter="url(#filter-10)"></path>
+                <path d="M102.5,121.716777 L72.4905801,138.865017 L72.4905801,173.134983 L102.5,190.283223 L132.50942,173.134983 L132.50942,138.865017 L102.5,121.716777 Z" id="Polygon-Copy-37" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-11)"></path>
+                <path d="M170.5,121.716777 L140.49058,138.865017 L140.49058,173.134983 L170.5,190.283223 L200.50942,173.134983 L200.50942,138.865017 L170.5,121.716777 Z" id="Polygon-Copy-38" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-12)"></path>
+                <path d="M240.5,121.716777 L210.49058,138.865017 L210.49058,173.134983 L240.5,190.283223 L270.50942,173.134983 L270.50942,138.865017 L240.5,121.716777 Z" id="Polygon-Copy-39" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-13)"></path>
+                <path d="M309.5,121.716777 L279.49058,138.865017 L279.49058,173.134983 L309.5,190.283223 L339.50942,173.134983 L339.50942,138.865017 L309.5,121.716777 Z" id="Polygon-Copy-40" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-14)"></path>
+                <path d="M380.5,121.716777 L350.49058,138.865017 L350.49058,173.134983 L380.5,190.283223 L410.50942,173.134983 L410.50942,138.865017 L380.5,121.716777 Z" id="Polygon-Copy-41" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-15)"></path>
+                <path d="M448.5,121.716777 L418.49058,138.865017 L418.49058,173.134983 L448.5,190.283223 L478.50942,173.134983 L478.50942,138.865017 L448.5,121.716777 Z" id="Polygon-Copy-42" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-16)"></path>
+                <path d="M518.5,121.716777 L488.49058,138.865017 L488.49058,173.134983 L518.5,190.283223 L548.50942,173.134983 L548.50942,138.865017 L518.5,121.716777 Z" id="Polygon-Copy-43" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-17)"></path>
+                <path d="M587.5,121.716777 L557.49058,138.865017 L557.49058,173.134983 L587.5,190.283223 L617.50942,173.134983 L617.50942,138.865017 L587.5,121.716777 Z" id="Polygon-Copy-44" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-18)"></path>
+                <path d="M656.5,121.716777 L626.49058,138.865017 L626.49058,173.134983 L656.5,190.283223 L686.50942,173.134983 L686.50942,138.865017 L656.5,121.716777 Z" id="Polygon-Copy-45" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-19)"></path>
+                <path d="M67.5,61.7167773 L37.4905801,78.8650172 L37.4905801,113.134983 L67.5,130.283223 L97.5094199,113.134983 L97.5094199,78.8650172 L67.5,61.7167773 Z" id="Polygon-Copy-36" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-20)"></path>
+                <path d="M136.5,61.7167773 L106.49058,78.8650172 L106.49058,113.134983 L136.5,130.283223 L166.50942,113.134983 L166.50942,78.8650172 L136.5,61.7167773 Z" id="Polygon-Copy-37" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-21)"></path>
+                <path d="M205.5,61.7167773 L175.49058,78.8650172 L175.49058,113.134983 L205.5,130.283223 L235.50942,113.134983 L235.50942,78.8650172 L205.5,61.7167773 Z" id="Polygon-Copy-38" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-22)"></path>
+                <path d="M275.5,61.7167773 L245.49058,78.8650172 L245.49058,113.134983 L275.5,130.283223 L305.50942,113.134983 L305.50942,78.8650172 L275.5,61.7167773 Z" id="Polygon-Copy-39" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-23)"></path>
+                <path d="M343.5,61.7167773 L313.49058,78.8650172 L313.49058,113.134983 L343.5,130.283223 L373.50942,113.134983 L373.50942,78.8650172 L343.5,61.7167773 Z" id="Polygon-Copy-40" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-24)"></path>
+                <path d="M413.5,61.7167773 L383.49058,78.8650172 L383.49058,113.134983 L413.5,130.283223 L443.50942,113.134983 L443.50942,78.8650172 L413.5,61.7167773 Z" id="Polygon-Copy-41" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-25)"></path>
+                <path d="M482.5,61.7167773 L452.49058,78.8650172 L452.49058,113.134983 L482.5,130.283223 L512.50942,113.134983 L512.50942,78.8650172 L482.5,61.7167773 Z" id="Polygon-Copy-42" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-26)"></path>
+                <path d="M552.5,61.7167773 L522.49058,78.8650172 L522.49058,113.134983 L552.5,130.283223 L582.50942,113.134983 L582.50942,78.8650172 L552.5,61.7167773 Z" id="Polygon-Copy-43" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-27)"></path>
+                <path d="M621.5,61.7167773 L591.49058,78.8650172 L591.49058,113.134983 L621.5,130.283223 L651.50942,113.134983 L651.50942,78.8650172 L621.5,61.7167773 Z" id="Polygon-Copy-44" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-28)"></path>
+                <path d="M31.5,1.71677733 L1.49058015,18.8650172 L1.49058015,53.1349828 L31.5,70.2832227 L61.5094199,53.1349828 L61.5094199,18.8650172 L31.5,1.71677733 Z" id="Polygon-Copy-35" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-29)"></path>
+                <path d="M101.5,1.71677733 L71.4905801,18.8650172 L71.4905801,53.1349828 L101.5,70.2832227 L131.50942,53.1349828 L131.50942,18.8650172 L101.5,1.71677733 Z" id="Polygon-Copy-36" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-30)"></path>
+                <path d="M170.5,1.71677733 L140.49058,18.8650172 L140.49058,53.1349828 L170.5,70.2832227 L200.50942,53.1349828 L200.50942,18.8650172 L170.5,1.71677733 Z" id="Polygon-Copy-37" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-31)"></path>
+                <path d="M239.5,1.71677733 L209.49058,18.8650172 L209.49058,53.1349828 L239.5,70.2832227 L269.50942,53.1349828 L269.50942,18.8650172 L239.5,1.71677733 Z" id="Polygon-Copy-38" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-32)"></path>
+                <path d="M309.5,1.71677733 L279.49058,18.8650172 L279.49058,53.1349828 L309.5,70.2832227 L339.50942,53.1349828 L339.50942,18.8650172 L309.5,1.71677733 Z" id="Polygon-Copy-39" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-33)"></path>
+                <path d="M379.5,1.71677733 L349.49058,18.8650172 L349.49058,53.1349828 L379.5,70.2832227 L409.50942,53.1349828 L409.50942,18.8650172 L379.5,1.71677733 Z" id="Polygon-Copy-40" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-34)"></path>
+                <path d="M447.5,1.71677733 L417.49058,18.8650172 L417.49058,53.1349828 L447.5,70.2832227 L477.50942,53.1349828 L477.50942,18.8650172 L447.5,1.71677733 Z" id="Polygon-Copy-41" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-35)"></path>
+                <path d="M517.5,1.71677733 L487.49058,18.8650172 L487.49058,53.1349828 L517.5,70.2832227 L547.50942,53.1349828 L547.50942,18.8650172 L517.5,1.71677733 Z" id="Polygon-Copy-42" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-36)"></path>
+                <path d="M586.5,1.71677733 L556.49058,18.8650172 L556.49058,53.1349828 L586.5,70.2832227 L616.50942,53.1349828 L616.50942,18.8650172 L586.5,1.71677733 Z" id="Polygon-Copy-43" stroke="#676767" stroke-width="2.98116029" fill="#E3E3E3" filter="url(#filter-37)"></path>
+                <path d="M655.5,1.71677733 L625.49058,18.8650172 L625.49058,53.1349828 L655.5,70.2832227 L685.50942,53.1349828 L685.50942,18.8650172 L655.5,1.71677733 Z" id="Polygon-Copy-44" stroke="#676767" stroke-width="2.98116029" filter="url(#filter-38)"></path>
+                <text id="C" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="265" y="226">C</tspan>
+                </text>
+                <text id="C-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="264" y="107">C</tspan>
+                </text>
+                <text id="D" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="333" y="226">D</tspan>
+                </text>
+                <text id="D-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="333" y="107">D</tspan>
+                </text>
+                <text id="E" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="404" y="226">E</tspan>
+                </text>
+                <text id="E-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="403" y="107">E</tspan>
+                </text>
+                <text id="F#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="49" y="226">F#</tspan>
+                </text>
+                <text id="F#-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="48" y="107">F#</tspan>
+                </text>
+                <text id="G#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="116" y="226">G#</tspan>
+                </text>
+                <text id="G#-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="116" y="107">G#</tspan>
+                </text>
+                <text id="Bb" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="187" y="226">Bb</tspan>
+                </text>
+                <text id="Bb-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="186" y="107">Bb</tspan>
+                </text>
+                <text id="F#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="465" y="226">F#</tspan>
+                </text>
+                <text id="F#-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="464" y="107">F#</tspan>
+                </text>
+                <text id="G#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="533" y="226">G#</tspan>
+                </text>
+                <text id="G#-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="531" y="107">G#</tspan>
+                </text>
+                <text id="Bb" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="602" y="226">Bb</tspan>
+                </text>
+                <text id="Bb" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="602" y="107">Bb</tspan>
+                </text>
+                <text id="B" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="23" y="167">B</tspan>
+                </text>
+                <text id="B-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="21" y="48">B</tspan>
+                </text>
+                <text id="Eb" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="152" y="167">Eb</tspan>
+                </text>
+                <text id="Eb-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="151" y="48">Eb</tspan>
+                </text>
+                <text id="C#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="82" y="167">C#</tspan>
+                </text>
+                <text id="C#-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="81" y="48">C#</tspan>
+                </text>
+                <text id="F" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="230" y="167">F</tspan>
+                </text>
+                <text id="F-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="229" y="48">F</tspan>
+                </text>
+                <text id="G" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="298" y="167">G</tspan>
+                </text>
+                <text id="G-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="297" y="48">G</tspan>
+                </text>
+                <text id="A" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="369" y="167">A</tspan>
+                </text>
+                <text id="A-Copy" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="368" y="48">A</tspan>
+                </text>
+                <text id="B-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="438" y="48">B</tspan>
+                </text>
+                <text id="B-Copy-3" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="438" y="167">B</tspan>
+                </text>
+                <text id="C#" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="497" y="167">C#</tspan>
+                </text>
+                <text id="C#-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="497" y="48">C#</tspan>
+                </text>
+                <text id="F" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="648" y="167">F</tspan>
+                </text>
+                <text id="F-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="646" y="48">F</tspan>
+                </text>
+                <text id="Eb" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="568" y="167">Eb</tspan>
+                </text>
+                <text id="Eb-Copy-2" font-family="Helvetica" font-size="31.302183" font-weight="normal" fill="#676767">
+                    <tspan x="567" y="48">Eb</tspan>
+                </text>
+                <g id="Group-2" opacity="0.899999976" transform="translate(258.000000, 208.000000)">
+                    <circle id="Oval" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" opacity="0.796641791" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="2" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">2</tspan>
+                    </text>
+                </g>
+                <g id="Group-2-Copy" opacity="0.899999976" transform="translate(224.000000, 149.000000)">
+                    <circle id="Oval" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" opacity="0.796641791" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="2" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">2</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" opacity="0.899999976" transform="translate(329.000000, 208.000000)">
+                    <circle id="Oval-Copy-5" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="3" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">3</tspan>
+                    </text>
+                </g>
+                <g id="Group-3-Copy" opacity="0.899999976" transform="translate(294.000000, 149.000000)">
+                    <circle id="Oval-Copy-5" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="3" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">3</tspan>
+                    </text>
+                </g>
+                <g id="Group-4" opacity="0.899999976" transform="translate(398.000000, 208.000000)">
+                    <circle id="Oval-Copy-6" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="4" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">4</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy" opacity="0.899999976" transform="translate(363.000000, 149.000000)">
+                    <circle id="Oval-Copy-6" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="4" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">4</tspan>
+                    </text>
+                </g>
+                <g id="Group-4-Copy-2" opacity="0.899999976" transform="translate(432.000000, 149.000000)">
+                    <circle id="Oval-Copy-6" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="5" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">5</tspan>
+                    </text>
+                </g>
+                <g id="Group-2-Copy-2" opacity="0.899999976" transform="translate(258.000000, 89.000000)">
+                    <circle id="Oval" stroke="#979797" stroke-width="0.655855288" fill="#A4F493" opacity="0.796641791" cx="16.3963816" cy="16.3963816" r="16.3963816"></circle>
+                    <text id="2" font-family="Helvetica" font-size="18.3639481" font-weight="normal" fill="#000000">
+                        <tspan x="11.1793511" y="23.2170305">2</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
