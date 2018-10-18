@@ -86,6 +86,10 @@
   align-items: center;
 }
 
-.footer__contact {  
+.footer__contact {
+  margin: 0 3rem;
   color: #fff;
+  @media screen and (max-width: 640px) {
+    font-size: 12px;
+  }
 }
