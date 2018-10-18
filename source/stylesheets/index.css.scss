@@ -11,7 +11,10 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  margin: 0 8rem;
+  margin: 0 1rem;
+  @media screen and (min-width: 641px) {
+    margin: 0 8rem;
+  }
 }
 // .hero__image--inner {
 //   display: inline-block;
@@ -30,6 +33,7 @@
   margin-top: 2rem;
   color: #fff;
   font-weight: 600;
+  text-align: center;
 }
 
 .main-description {

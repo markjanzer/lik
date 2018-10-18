@@ -17,6 +17,9 @@
   align-items: center;
   // background-color: white;
 }
+.interval {
+  margin: 0 0.5rem;
+}
 .interval .node__visual {
   height: 2rem;
   width: 2rem;
@@ -44,3 +47,9 @@
 // .intervals-shapes-graph--tk .shapes {
 //   flex-direction: row-reverse;
 // }
+
+.legend {
+  @media screen and (max-width: 640px) {
+    width: 94vw;
+  }
+}

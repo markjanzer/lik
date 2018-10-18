@@ -22,7 +22,7 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .navbar--translucent {
@@ -42,7 +42,7 @@ body {
   width: 6rem;
   padding-top: .3125rem;
   padding-bottom: .3125rem;
-  margin-right: 1rem;
+  // margin-right: 1rem;
   // font-size: 1.25rem;
   height: 3rem;
   line-height: inherit;
@@ -72,7 +72,12 @@ a:hover {
 }
 
 .navbar__link {
-  margin-left: 2.5rem;
+  margin-left: 0.6rem;
+  font-size: 0.8rem;
+  @media screen and (min-width: 641px) {
+    margin-left: 2.5rem;
+    font-size: 1rem;
+  }
   color: #000;
 }
 
@@ -85,6 +90,25 @@ a:hover {
 .reflection-link {
   text-decoration: underline;
 }
+
+.article-body a {
+  white-space: pre-wrap; /* css-3 */    
+  word-wrap: break-word;
+}
+
+.article-body p {
+  margin: 1rem 0;
+}
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  margin: 3rem 0 2rem;
+  @media screen and (max-width: 640px) {
+    font-weight: 600;
+  }
+}
+
 
 
 // http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
@@ -195,7 +219,7 @@ a:hover {
 }
 
 body {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .article-body a {
