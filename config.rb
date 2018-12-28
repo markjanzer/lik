@@ -28,6 +28,7 @@ require "intervals_shapes.rb"
 require "progress.rb"
 
 PracticeSession.all.each do |practice_session|
+  # sleep(0.3)
   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
 end
 

@@ -24,7 +24,10 @@ def practice_session_progress_data(practice_session)
   final_number = practice_session["Number"]
   # Don't think we need this
   # numbers = (0..final_number).to_a
+  # sleep(0.3)
   PracticeSession.all(filter: "{Number} <= #{final_number}", sort: { "Number": "asc" }).each do |ps|
+    # sleep(0.3)
+
     if ps["Keyboard"]["Acronym"] == "TK"
       cumulative_completed_increments = tk_data.last ? tk_data.last + ps.completed_increment_count : ps.completed_increment_count
       tk_data.push(cumulative_completed_increments)
