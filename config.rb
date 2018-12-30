@@ -26,11 +26,12 @@ page '/*.txt', layout: false
 require "models.rb"
 require "intervals_shapes.rb"
 require "progress.rb"
+require "export_to_json.rb"
 
-PracticeSession.all.each do |practice_session|
-  # sleep(0.3)
-  proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
-end
+
+# PracticeSession.all.each do |practice_session|
+#   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
+# end
 
 # Helpers
 # Methods defined in the helpers block are available in templates
