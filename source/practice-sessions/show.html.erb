@@ -42,8 +42,12 @@
       <div class="cell large-6">
         <h3>Completed</h3>
         <ul>
-          <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
-            <li><%= completed_increment.name %></li>
+          <% if completed_increments(practice_session).empty? %>
+            <li>None</li>
+          <% else %>
+            <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
+              <li><%= completed_increment.name %></li>
+            <% end %>
           <% end %>
         </ul>
       </div>
@@ -63,6 +67,9 @@
   var data = <%= practice_session_progress_data(practice_session).to_json %>
 
   options = {
+    axisY: {
+      onlyInteger: true
+    },
     plugins: [
       Chartist.plugins.ctAxisTitle({
         axisX: {
