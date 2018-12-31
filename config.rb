@@ -26,9 +26,8 @@ page '/*.txt', layout: false
 # This gets rid of the wave of duplicate key warnings.
 Middleman::Util::EnhancedHash.disable_warnings
 
-Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
-require "intervals_shapes.rb"
 require "import_data.rb"
+require "helpers.rb"
 require "progress.rb"
 
 

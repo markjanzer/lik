@@ -120,6 +120,9 @@ title: The Linear Isomorphic Keybaord
   //   ]
   // }
   options = {
+    axisY: {
+      onlyInteger: true
+    },
     plugins: [
       Chartist.plugins.ctAxisTitle({
         axisX: {
@@ -145,7 +148,7 @@ title: The Linear Isomorphic Keybaord
       }),
       Chartist.plugins.legend({
         legendNames: ["TK", "LIK"],
-      })
+      }),
     ]
   }
   new Chartist.Line('.ct-chart', data, options);
