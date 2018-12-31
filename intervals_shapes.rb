@@ -1,3 +1,5 @@
+Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
+
   # has_many :interval_shapes, class: "IntervalShape", column: "Interval Shapes"
 class Interval < Airrecord::Table
   self.base_key = "app74RODr0jANsrXt"
