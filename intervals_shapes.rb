@@ -20,7 +20,6 @@ class Shape < Airrecord::Table
   self.base_key = "app74RODr0jANsrXt"
   self.table_name ="Shapes"
 
-
   def to_node(number)
     {
       group: "nodes",

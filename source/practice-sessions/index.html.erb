@@ -4,9 +4,9 @@
       <div class="cell large-12"><h1>Practice Sessions</h1></div>
     </div>
     <ul>
-      <% PracticeSession.all(sort: { "Number": "asc" }).each do |practice_session| %>
+      <% data.practice_sessions.sort { |ps1, ps2| ps1.number <=> ps2.number }.each do |practice_session| %>
         <li class="article">
-          <div><h3><a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session[:name] %></a></h3></div>
+          <div><h3><a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session.name %></a></h3></div>
         </li>
       <% end %>
     </ul>

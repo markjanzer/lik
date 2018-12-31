@@ -23,15 +23,18 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-require "models.rb"
+# This gets rid of the wave of duplicate key warnings.
+Middleman::Util::EnhancedHash.disable_warnings
+
+Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 require "intervals_shapes.rb"
+require "import_data.rb"
 require "progress.rb"
-require "export_to_json.rb"
 
 
-# PracticeSession.all.each do |practice_session|
-#   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
-# end
+data.practice_sessions.each do |practice_session|
+  proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
+end
 
 # Helpers
 # Methods defined in the helpers block are available in templates

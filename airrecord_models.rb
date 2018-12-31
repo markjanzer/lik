@@ -2,7 +2,6 @@
 # Airrecord::Table.client.connection.request :circuit_breaker, timeout: 20, threshold: 5
 Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
-
 class Keyboard < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
   self.table_name = "Keyboards"
