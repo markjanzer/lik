@@ -45,7 +45,7 @@
           <% if completed_increments(practice_session).empty? %>
             <li>None</li>
           <% else %>
-            <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
+            <% completed_increments(practice_session).each do |completed_increment| %>
               <li><%= completed_increment.name %></li>
             <% end %>
           <% end %>
