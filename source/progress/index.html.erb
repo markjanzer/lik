@@ -24,14 +24,14 @@
 </div>
 
 <script>
-  // var data = <%# progress_data.to_json %>
-  var data = {
-    labels: [1],
-    series: [
-      {name: "LIK", data: [59]},
-      {name: "TK", data: [0]},
-    ]
-  }
+  var data = <%= progress_data.to_json %>
+  // var data = {
+  //   labels: [1],
+  //   series: [
+  //     {name: "LIK", data: [59]},
+  //     {name: "TK", data: [0]},
+  //   ]
+  // }
   options = {
     plugins: [
       Chartist.plugins.ctAxisTitle({

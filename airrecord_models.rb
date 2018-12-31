@@ -1,3 +1,5 @@
+# Airrecord::Table.client.connection.request :retry, max: 8, interval: 10, interval_randomness: 2, backoff_factor: 2
+# Airrecord::Table.client.connection.request :circuit_breaker, timeout: 20, threshold: 5
 Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
 class Keyboard < Airrecord::Table
@@ -54,7 +56,9 @@ class PracticeSession < Airrecord::Table
   def completed_increments
     completed_increments = []
     keyboard = self[:keyboard][:acronym]
+    # sleep(0.21)
     self[:exercises_practice_sessions].each do |eps|
+      # sleep(0.21)
       if keyboard == "TK" && eps[:tk_completed]
         completed_increments.concat(eps[:tk_completed])
       elsif keyboard == "LIK" && eps[:lik_completed]
