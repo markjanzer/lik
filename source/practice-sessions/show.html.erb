@@ -13,7 +13,9 @@
       <div class="cell large-6">
         <div>Practice Session #<%= practice_session.number %></div>
         <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
-        <div>Notes: <%= practice_session.notes %></div>
+        <% if practice_session.notes %>
+          <div>Notes: <%= practice_session.notes %></div>
+        <% end %>
         <% if practice_session.recording %>
           <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
         <% else %>
@@ -59,17 +61,7 @@
 
 <script>
   var data = <%= practice_session_progress_data(practice_session).to_json %>
-  // new Chartist.Line('.ct-chart', data);
 
-
-  // var data = <%# progress_data.to_json %>
-  // var data = {
-  //   labels: [1],
-  //   series: [
-  //     {name: "LIK", data: [59]},
-  //     {name: "TK", data: [0]},
-  //   ]
-  // }
   options = {
     plugins: [
       Chartist.plugins.ctAxisTitle({
