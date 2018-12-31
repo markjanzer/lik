@@ -40,8 +40,12 @@
       <div class="cell large-6">
         <h3>Completed</h3>
         <ul>
-          <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
-            <li><%= completed_increment.name %></li>
+          <% if completed_increments(practice_session).empty? %>
+            <li>None</li>
+          <% else %>
+            <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
+              <li><%= completed_increment.name %></li>
+            <% end %>
           <% end %>
         </ul>
       </div>
@@ -59,18 +63,11 @@
 
 <script>
   var data = <%= practice_session_progress_data(practice_session).to_json %>
-  // new Chartist.Line('.ct-chart', data);
 
-
-  // var data = <%# progress_data.to_json %>
-  // var data = {
-  //   labels: [1],
-  //   series: [
-  //     {name: "LIK", data: [59]},
-  //     {name: "TK", data: [0]},
-  //   ]
-  // }
   options = {
+    axisY: {
+      onlyInteger: true
+    },
     plugins: [
       Chartist.plugins.ctAxisTitle({
         axisX: {
