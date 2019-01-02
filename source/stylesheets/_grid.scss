@@ -1,0 +1,123 @@
+.grid {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+
+  max-width: $grid-xs-width;
+  padding-left: $grid-xs-padding;
+  padding-right: $grid-xs-padding;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    max-width: $grid-sm-width;
+    padding-left: $grid-sm-padding;
+    padding-right: $grid-sm-padding;
+  }
+  @media only screen and (min-width: $screen-md-min) {
+    max-width: $grid-md-width;
+    padding-left: $grid-md-padding;
+    padding-right: $grid-md-padding;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    max-width: $grid-lg-width;
+    padding-left: $grid-lg-padding;
+    padding-right: $grid-lg-padding;
+  }
+  // @media only screen and (min-width: $screen-xl-min) {
+  //   max-width: $grid-xl-max;
+  //   padding-left: $grid-xl-padding;
+  //   padding-right: $grid-xl-padding;
+  // }
+}
+
+
+.grid .grid {
+  // Instead of 1 rem, should this be $grid-gutter * 2?
+  width: calc(100% + 1rem);
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
+}
+@media only screen {
+  @for $i from 0 through $grid-columns {
+    $p: percentage($i / $grid-columns);
+    .grid-xs-#{$i} {
+      position: relative;
+      flex: 0 1 auto;
+      width: $p;
+      max-width: $p;
+      padding-left: $grid-gutter;
+      padding-right: $grid-gutter;
+    }
+    .grid-xs-#{$i}-offset {
+      margin-left: $p !important;
+    }
+  }
+}
+@media only screen and (min-width: $screen-sm-min) {
+  @for $i from 0 through $grid-columns {
+    $p: percentage($i / $grid-columns);
+    .grid-sm-#{$i} {
+      position: relative;
+      flex: 0 1 auto;
+      width: $p;
+      max-width: $p;
+      padding-left: $grid-gutter;
+      padding-right: $grid-gutter;
+    }
+    .grid-sm-#{$i}-offset {
+      margin-left: $p !important;
+    }
+  }
+}
+@media only screen and (min-width: $screen-md-min) {
+  @for $i from 0 through $grid-columns {
+    $p: percentage($i / $grid-columns);
+    .grid-md-#{$i} {
+      position: relative;
+      flex: 0 1 auto;
+      width: $p;
+      max-width: $p;
+      padding-left: $grid-gutter;
+      padding-right: $grid-gutter;
+    }
+    .grid-md-#{$i}-offset {
+      margin-left: $p !important;
+    }
+  }
+}
+@media only screen and (min-width: $screen-lg-min) {
+  @for $i from 0 through $grid-columns {
+    $p: percentage($i / $grid-columns);
+    .grid-lg-#{$i} {
+      position: relative;
+      flex: 0 1 auto;
+      width: $p;
+      max-width: $p;
+      padding-left: $grid-gutter;
+      padding-right: $grid-gutter;
+    }
+    .grid-lg-#{$i}-offset {
+      margin-left: $p !important;
+    }
+  }
+}
+@media only screen and (min-width: $screen-xl-min) {
+  @for $i from 0 through $grid-columns {
+    $p: percentage($i / $grid-columns);
+    .grid-xl-#{$i} {
+      position: relative;
+      flex: 0 1 auto;
+      width: $p;
+      max-width: $p;
+      padding-left: $grid-gutter;
+      padding-right: $grid-gutter;
+    }
+    .grid-xl-#{$i}-offset {
+      margin-left: $p !important;
+    }
+  }
+}
