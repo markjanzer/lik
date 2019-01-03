@@ -1,14 +1,14 @@
-<div class="grid-container">
-  <div class="section section--top">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-12"><h1>Practice Sessions</h1></div>
+<div class="section section--top">
+  <div class="grid">
+    <div class="grid-lg-12"><h1>Practice Sessions</h1></div>
+    <div class="grid-lg-12">
+      <ul>
+        <% data.practice_sessions.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
+          <li class="article">
+            <div><h3><a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session.name %></a></h3></div>
+          </li>
+        <% end %>
+      </ul>
     </div>
-    <ul>
-      <% data.practice_sessions.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
-        <li class="article">
-          <div><h3><a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session.name %></a></h3></div>
-        </li>
-      <% end %>
-    </ul>
   </div>
 </div>

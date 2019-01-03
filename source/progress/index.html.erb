@@ -6,32 +6,24 @@
 <script src="/javascripts/vendor/chartist-plugin-accessibility.min.js"></script>
 <script src="/javascripts/vendor/chartist-plugin-legend.js"></script>
 
-<div class="grid-container">
-  <div class="section--top">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-12"><h1>Progress</h1></div>
-    </div>
+<div class="section--top">
+  <div class="grid">
+    <div class="grid-lg-12"><h1>Progress</h1></div>
+  </div>
 
-    <div class="grid-x grid-padding-x keyboard-progress">
-      <div class="cell large-2"></div>
-      <div class="cell large-8">
-        <div class="ct-chart chart--medium"></div>
-      </div>
-      <div class="cell large-2"></div>
-      <h3 class="progress-alert">More coming soon!</h3>
+  <div class="grid keyboard-progress">
+    <div class="grid-lg-2"></div>
+    <div class="grid-lg-8">
+      <div class="ct-chart chart--medium"></div>
     </div>
+    <div class="grid-lg-2"></div>
+    <h3 class="progress-alert">More coming soon!</h3>
   </div>
 </div>
 
 <script>
   var data = <%= progress_data.to_json %>
-  // var data = {
-  //   labels: [1],
-  //   series: [
-  //     {name: "LIK", data: [59]},
-  //     {name: "TK", data: [0]},
-  //   ]
-  // }
+
   options = {
     axisY: {
       onlyInteger: true

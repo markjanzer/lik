@@ -4,13 +4,13 @@
 <script src="/javascripts/vendor/chartist-plugin-accessibility.min.js"></script>
 <script src="/javascripts/vendor/chartist-plugin-legend.js"></script>
 
-<div class="grid-container">
-  <div class="section--top">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-12"><h1><%= practice_session.name %></h1></div>
+<div class="grid">
+  <div class="section--top grid-xs-12">
+    <div class="grid">
+      <div class="grid-lg-12"><h1><%= practice_session.name %></h1></div>
     </div>
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-6">
+    <div class="grid">
+      <div class="grid-lg-6">
         <div>Practice Session #<%= practice_session.number %></div>
         <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
         <% if practice_session.notes %>
@@ -29,8 +29,8 @@
   </div>
 
   <div class="section">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-6">
+    <div class="grid">
+      <div class="grid-lg-6">
         <h3>Practiced</h3>
         <ul>
           <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
@@ -39,7 +39,7 @@
         </ul>
       </div>
 
-      <div class="cell large-6">
+      <div class="grid-lg-6">
         <h3>Completed</h3>
         <ul>
           <% if completed_increments(practice_session).empty? %>
@@ -54,10 +54,10 @@
     </div>
   </div>
   
-  <div class="section">
+  <div class="grid-xs-12 section">
     <h3>Progress</h3>
-    <div class="grid-x grid-padding-x">
-      <div class="ct-chart ct-octave cell large-8"></div>
+    <div class="grid">
+      <div class="ct-chart ct-octave grid-lg-8"></div>
     </div>
   </div>
 </div>
