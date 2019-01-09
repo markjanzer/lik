@@ -27,9 +27,9 @@ page '/*.txt', layout: false
 Middleman::Util::EnhancedHash.disable_warnings
 
 require "import_data.rb"
+require "intervals_shapes.rb"
 require "helpers.rb"
 require "progress.rb"
-
 
 data.practice_sessions.each do |practice_session|
   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
@@ -52,7 +52,9 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  import_data
+
+  # activate :minify_css
+  # activate :minify_javascript
+end

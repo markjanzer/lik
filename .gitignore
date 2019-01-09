@@ -2,7 +2,8 @@
 .cache
 .DS_Store
 .sass-cache
-build/
 .env
 .byebug_history
 .netlify
+build/
+data/
