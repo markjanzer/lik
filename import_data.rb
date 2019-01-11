@@ -18,10 +18,13 @@ def write_file(table)
   file.close
 end
 
-write_file(Keyboard)
-write_file(Domain)
-write_file(Exercise)
-write_file(ExerciseSet)
-write_file(ExerciseIncrement)
-write_file(PracticeSession)
-write_file(ExercisePracticeSession)
+def import_data
+  write_file(Keyboard)
+  write_file(Domain)
+  write_file(Exercise)
+  write_file(ExerciseSet)
+  write_file(ExerciseIncrement)
+  write_file(PracticeSession)
+  write_file(ExercisePracticeSession)
+end
+
