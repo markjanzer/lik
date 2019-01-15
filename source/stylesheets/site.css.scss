@@ -5,6 +5,7 @@
 @import "index.css.scss";
 @import "chartist.css.scss";
 @import "the-hypotheses.css.scss";
+@import "grid.css";
 
 body {
   font-family: 'Libre Baskerville', serif;
@@ -109,6 +110,10 @@ a:hover {
   @media screen and (max-width: 640px) {
     font-weight: 600;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 
