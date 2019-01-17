@@ -25,66 +25,58 @@ title: The Linear Isomorphic Keybaord
     </div>
   </div>
 </div>
-
-<!--   <div class="grid-container" style="height: 200px;">
-    <div class="grid-x grid-padding-x" style="height: 200px;">
-      <div class="cell small-1" style="border: 1px solid black; height: 200px;"></div>
-      <div class="cell small-1" style="border: 1px solid black; height: 200px;"></div>
-      <div class="cell small-2" style="border: 1px solid black; height: 200px;"></div>
-      <div class="cell small-2" style="border: 1px solid black; height: 200px;"></div>
-      <div class="cell small-3" style="border: 1px solid black; height: 200px;"></div>
-      <div class="cell small-3" style="border: 1px solid black; height: 200px;"></div>
-    </div>
-  </div>
-
-  <div class="grid" style="height: 200px;">
-    <div class="grid-lg-1" style="border: 1px solid blue;"></div>
-    <div class="grid-lg-1" style="border: 1px solid blue;"></div>
-    <div class="grid-lg-2" style="border: 1px solid blue;"></div>
-    <div class="grid-lg-2" style="border: 1px solid blue;"></div>
-    <div class="grid-lg-3" style="border: 1px solid blue;"></div>
-    <div class="grid-lg-3" style="border: 1px solid blue;"></div>
-  </div> -->
   
   <section class="container">
     <hr class="hr-top"/><hr class="hr-bottom"/>
   </section>
-  <br/>
-  <br/>
 
   <div class="container section">
-    <div class="summary-section">
-      <div><h2>Two keyboards</h2></div>
-      <div>
-        <img src="/images/mini-lik.svg" class="summary__keyboard" />
-        <img src="/images/mini-tk.svg" class="summary__keyboard" />
+    <div class="row">
+      <div class="col col-md-8">
+        <div>
+          <h2>Two keyboards</h2>
+        </div>
+        <div>
+          <img src="/images/mini-lik.svg" class="summary__keyboard" />
+          <img src="/images/mini-tk.svg" class="summary__keyboard" />
+        </div>
       </div>
     </div>
-    <div class="summary-section summary-section--right">
-      <div>
-        <h2>Recorded practicing the same content  for the same amount of time</h2>
+    <div class="row justify-content-end summary-section">
+      <div class="col col-md-8">
+        <div>
+          <h2>Recorded practicing the same content  for the same amount of time</h2>
+        </div>
+        <div class="summary-icons" style="margin-top: 0">
+          <img src="/images/microphone.svg" class="summary__icon" />
+          <img src="/images/sheet-music.svg" class="summary__icon" />
+          <img src="/images/stopwatch.svg" class="summary__icon"/>
+        </div>
       </div>
     </div>
-    <div class="summary-icons summary-icons--right" style="margin-top: 0">
-      <img src="/images/microphone.svg" class="summary__icon" />
-      <img src="/images/sheet-music.svg" class="summary__icon" />
-      <img src="/images/stopwatch.svg" class="summary__icon"/>
+    <div class="row summary-section">
+      <div class="col col-md-8">
+        <div>
+          <h2>Results are graphed, analyzed, and reflected upon.</h2>
+        </div>
+        <div class="summary-icons"> 
+          <img src="/images/bar-chart.svg" class="summary__icon"/>
+          <img src="/images/contract.svg" class="summary__icon"/>
+        </div>
+      </div>
     </div>
-    <div class="summary-section"><h2>Results are graphed, analyzed, and reflected upon.</h2></div>
-    <div class="summary-icons"> 
-      <img src="/images/bar-chart.svg" class="summary__icon"/>
-      <img src="/images/contract.svg" class="summary__icon"/>
-    </div>
-
   </div>
 
-  <hr class="hr-top"/><hr class="hr-bottom"/>
-  
-  <div class="section">
-    <div class="grid">
-      <div class="grid-lg-12"><h1>Articles</h1></div>
-      <div class="grid-lg-1"></div>
-      <div class="grid-lg-10">
+  <section class="container">
+    <hr class="hr-top"/><hr class="hr-bottom"/>
+  </section>
+
+  <div class="container section">
+    <div>
+      <h1>Articles</h1>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col">
         <ul>
           <li class="article">
             <div><h3><a href="/articles/the-idea">The Idea</a></h3></div>
@@ -100,26 +92,23 @@ title: The Linear Isomorphic Keybaord
           </li>
         </ul>
       </div>
-      <div class="grid-lg-1"></div>
     </div>
     <div class="section__footer">
       <a href="/articles">More Articles...</a>
     </div>
   </div>
 
-  <hr class="hr-top"/><hr class="hr-bottom"/>
+  <section class="container">
+    <hr class="hr-top"/><hr class="hr-bottom"/>
+  </section>
 
-  <div class="section">
-    <div class="grid">
-      <div class="grid-lg-12"><h1>Progress</h1></div>
-    </div>
+  <div class="container section">
+    <div><h1>Progress</h1></div>
 
-    <div class="grid keyboard-progress">
-      <div class="grid-lg-2"></div>
-      <div class="grid-lg-8">
+    <div class="row justify-content-center progress">
+      <div class="col col-sm-8">
         <div class="ct-chart chart--medium"></div>
       </div>
-      <div class="grid-lg-2"></div>
     </div>
 
     <div class="section__footer">
@@ -137,13 +126,6 @@ title: The Linear Isomorphic Keybaord
 
 <script>
   var data = <%= progress_data.to_json %>
-  // var data = {
-  //   labels: [1],
-  //   series: [
-  //     {name: "LIK", data: [59]},
-  //     {name: "TK", data: [0]},
-  //   ]
-  // }
   options = {
     axisY: {
       onlyInteger: true

@@ -1,7 +1,15 @@
+.intervals-shapes-section {
+  font-size: 16px;
+  min-width: 900px;
+}
 .intervals-shapes-graph {
-  width: 99vw;
+  width: 95vw;
   height: 400px;
   margin: auto;
+}
+.intervals-shapes-graph__label {
+  // This is dependent on the width of the .intervals-shapes-graph
+  margin-left: 2.5vw;
 }
 .nodes {
   display: flex;

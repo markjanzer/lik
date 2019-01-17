@@ -75,28 +75,29 @@
 .summary-icons {
   margin: 1rem 0;
   display: flex;
-  width: 70%;
-  @media screen and (max-width: 640px) {
-    width: 100%;
-    justify-content: space-evenly;
-  }
+  justify-content: space-around;
+  // width: 70%;
+  // @media screen and (max-width: 640px) {
+  //   width: 100%;
+  //   justify-content: space-evenly;
+  // }
 }
 .summary-icons--right {
   display: flex;
-  margin-left: auto;
-  @media screen and (max-width: 640px) {
-    margin-left: none;
-  }
+  // margin-left: auto;
+  // @media screen and (max-width: 640px) {
+  //   margin-left: none;
+  // }
 }
 
 
 .summary__keyboard {
-  width: 70%;
+  // width: 70%;
   margin: 2rem 0;
-  @media screen and (max-width: 640px) {
-    width: 100%;
-    margin: 1rem 0;
-  }
+  // @media screen and (max-width: 640px) {
+  //   width: 100%;
+  //   margin: 1rem 0;
+  // }
 }
 .summary__icon {
   height: 9rem; 
@@ -118,15 +119,9 @@
   font-size: 16px;
 }
 
-// progress is used in foundation
-.keyboard-progress {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  height: 100%;
-}
-
 .section__footer {
   text-align: right;
+  margin-top: 3rem;
 }
 
 .footer {
