@@ -4,58 +4,56 @@
 <script src="/javascripts/vendor/chartist-plugin-accessibility.min.js"></script>
 <script src="/javascripts/vendor/chartist-plugin-legend.js"></script>
 
-<div class="grid-container">
-  <div class="section--top">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-12"><h1><%= practice_session.name %></h1></div>
-    </div>
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-6">
-        <div>Practice Session #<%= practice_session.number %></div>
-        <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
+<div class="container section section--top">
+  <div><h1><%= practice_session.name %></h1></div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div>Practice Session #<%= practice_session.number %></div>
+      <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
+      <% if practice_session.notes %>
         <div>Notes: <%= practice_session.notes %></div>
-        <% if practice_session.recording %>
-          <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
-        <% else %>
-          <div>Recording not uploaded yet</div>
-        <% end %>
-        <% if practice_session.reflection_url %>
-          <div><a href="<%= practice_session.reflection_url %>" class="reflection-link">Reflection</a></div>
-        <% end %>
-      </div>
+      <% end %>
+      <% if practice_session.recording %>
+        <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
+      <% else %>
+        <div>Recording not uploaded yet</div>
+      <% end %>
+      <% if practice_session.reflection_url %>
+        <div><a href="<%= practice_session.reflection_url %>" class="reflection-link">Reflection</a></div>
+      <% end %>
     </div>
   </div>
 
-  <div class="section">
-    <div class="grid-x grid-padding-x">
-      <div class="cell large-6">
-        <h3>Practiced</h3>
-        <ul>
-          <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
-            <li><%= exercise.name %></li>
-          <% end %>
-        </ul>
-      </div>
+  <div class="row section">
+    <div class="col-12 col-lg-6">
+      <h3>Practiced</h3>
+      <ul>
+        <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
+          <li><%= exercise.name %></li>
+        <% end %>
+      </ul>
+    </div>
 
-      <div class="cell large-6">
-        <h3>Completed</h3>
-        <ul>
-          <% if completed_increments(practice_session).empty? %>
-            <li>None</li>
-          <% else %>
-            <% find_all(:exercise_increments, completed_increments(practice_session)).each do |completed_increment| %>
-              <li><%= completed_increment.name %></li>
-            <% end %>
+    <div class="col-12 col-lg-6">
+      <h3>Completed</h3>
+      <ul>
+        <% if completed_increments(practice_session).empty? %>
+          <li>None</li>
+        <% else %>
+          <% completed_increments(practice_session).each do |completed_increment| %>
+            <li><%= completed_increment.name %></li>
           <% end %>
-        </ul>
-      </div>
+        <% end %>
+      </ul>
     </div>
   </div>
   
   <div class="section">
-    <h3>Progress</h3>
-    <div class="grid-x grid-padding-x">
-      <div class="ct-chart ct-octave cell large-8"></div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8"><h3>Progress</h3></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="ct-chart ct-octave col-12 col-lg-8"></div>
     </div>
   </div>
 </div>

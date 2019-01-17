@@ -1,12 +1,17 @@
 // @import "settings.scss";
-@import "foundation.css";
+// @import "grid.scss";
+
+// @import "foundation.css";
 @import "index.css.scss";
 @import "chartist.css.scss";
 @import "the-hypotheses.css.scss";
+@import "grid.css";
 
 body {
   font-family: 'Libre Baskerville', serif;
-
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
   // margin-top: 4rem;
 }
 
@@ -23,6 +28,7 @@ body {
   padding-bottom: 0.5rem;
   overflow: hidden;
   font-size: 1rem;
+  align-items: center;
 }
 
 .navbar--translucent {
@@ -65,6 +71,7 @@ ul {
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -107,6 +114,10 @@ a:hover {
   @media screen and (max-width: 640px) {
     font-weight: 600;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 
