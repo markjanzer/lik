@@ -1,3 +1,6 @@
+// Set data from data file
+var edges = <%= data.intervals_and_shapes.to_json %>
+
 // https://stackoverflow.com/questions/4270485/drawing-lines-on-html-page
 function createLineElement(x, y, length, angle, lineWidth, lineColor) {
   var line = document.createElement("div");
