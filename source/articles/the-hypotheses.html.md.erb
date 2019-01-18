@@ -200,9 +200,11 @@ On the TK there are twelve different shapes for any given scale, but how many sh
     </div>
   </div>
   
-  <div class="row justify-content-center">
-    <div class="col col-lg-6">
-      <img src="/images/legend.png" alt="Legend for intervals-shapes graph" class="legend"/>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-lg-6">
+        <img src="/images/legend.png" alt="Legend for intervals-shapes graph" class="legend"/>
+      </div>
     </div>
   </div>
 
@@ -406,7 +408,5 @@ The shape is the same, but the fingering is different.
 </div>
 </div>
 </div>
-<script>
-  var edges = <%= data.intervals_and_shapes.to_json %>
-</script>
-<script src="/javascripts/the-hypotheses.js"></script>
+
+<script src="/javascripts/pages/the-hypotheses.js"></script>
