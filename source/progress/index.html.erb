@@ -17,20 +17,30 @@
       <!-- Make chart of everything -->
     <% end %>
 
-  <div class="row">
-    <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
-      <!-- I don't want to get all exercise sets, I only want to get exercise sets that have been practiced -->
-      <div><h3><%= exercise_set[:name] %></h3></div>
-      <div class="col col-lg-8">
-        <div class="ct-chart-<%= exercise_set[:name] %> chart--medium"></div>
-      </div>
-      <script>
-        var chartData = <%= exercise_set_progress_data.to_json %>
-        new Chartist.Line("ct-chart-<%= exercise_set[:name] %>", chartData, basicOptions);
-      </script>
-    <% end %>
-  </div>
+    <div class="row">
+      <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
+        <!-- I don't want to get all exercise sets, I only want to get exercise sets that have been practiced -->
+        <div><h3><%= exercise_set[:name] %></h3></div>
+        <div class="col col-lg-8">
+          <div class="chart--medium" data-exercise-set="<%= exercise_set[:name] %>"></div>
+        </div>
+        <script>
+          var chartData = <%= exercise_set_progress_data(exercise_set).to_json %>
+          new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
+        </script>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <script>var data = <%= progress_data.to_json %></script>
 <script src="/javascripts/pages/progress.js"></script>
+
+<!-- <script>
+  <% data[:domains].each do |domain| %>
+   <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
+      var chartData = <%= exercise_set_progress_data(exercise_set).to_json %>
+      new Chartist.Line(document.querySelector('[data-exercise-set="${<%= exercise_set[:name] %>}"'), chartData, basicOptions);
+    <% end %>
+  <% end %>
+</script> -->
