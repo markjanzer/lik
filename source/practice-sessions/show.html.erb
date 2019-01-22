@@ -54,7 +54,9 @@
   </div>
 </div>
 
+
+<script src="/javascripts/blocks/chartist-options.js"></script>
 <script>
   var data = <%= practice_session_progress_data(practice_session).to_json %>
+  new Chartist.Line('.ct-chart', data, basicOptions);
 </script>
-<script src="/javascripts/blocks/basic-chart.js"></script>

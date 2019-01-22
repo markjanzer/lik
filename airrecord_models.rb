@@ -1,5 +1,3 @@
-# Airrecord::Table.client.connection.request :retry, max: 8, interval: 10, interval_randomness: 2, backoff_factor: 2
-# Airrecord::Table.client.connection.request :circuit_breaker, timeout: 20, threshold: 5
 Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
 class Keyboard < Airrecord::Table

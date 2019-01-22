@@ -1,6 +1,6 @@
 // Data defined in file this is included in
 
-options = {
+var basicOptions = {
   axisY: {
     onlyInteger: true
   },
@@ -32,4 +32,4 @@ options = {
     }),
   ]
 }
-new Chartist.Line('.ct-chart', data, options);
+// new Chartist.Line('.ct-chart', data, options);

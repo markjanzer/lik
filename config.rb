@@ -55,6 +55,10 @@ end
 configure :build do
   import_data
 
+  if data[:intervals_shapes].nil?
+    generate_elements_json
+  end
+
   # activate :minify_css
   # activate :minify_javascript
 end

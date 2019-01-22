@@ -1,15 +1,36 @@
 <%= partial "partials/chartist-js" %>
+<script src="/javascripts/blocks/chartist-options.js"></script>
 
 <div class="container section--top">
   <div><h1>Progress</h1></div>
 
   <div class="row justify-content-center keyboard-progress">
-    <div class="col col-8-lg">
+    <div class="col col-lg-8">
       <div class="ct-chart chart--medium"></div>
     </div>
-    <h3 class="progress-alert">More coming soon!</h3>
+    <!-- <h3 class="progress-alert">More coming soon!</h3> -->
+  </div>
+
+  <% data[:domains].each do |domain| %>
+    <div><h2><%= domain[:name] %></h2></div>
+    <% if find_all(:exercise_sets, domain[:exercise_sets]).length > 1 %>
+      <!-- Make chart of everything -->
+    <% end %>
+
+  <div class="row">
+    <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
+      <!-- I don't want to get all exercise sets, I only want to get exercise sets that have been practiced -->
+      <div><h3><%= exercise_set[:name] %></h3></div>
+      <div class="col col-lg-8">
+        <div class="ct-chart-<%= exercise_set[:name] %> chart--medium"></div>
+      </div>
+      <script>
+        var chartData = <%= exercise_set_progress_data.to_json %>
+        new Chartist.Line("ct-chart-<%= exercise_set[:name] %>", chartData, basicOptions);
+      </script>
+    <% end %>
   </div>
 </div>
 
 <script>var data = <%= progress_data.to_json %></script>
-<script src="/javascripts/blocks/basic-chart.js"></script>
+<script src="/javascripts/pages/progress.js"></script>
