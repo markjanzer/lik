@@ -1,3 +1,5 @@
+# I should check how much of this I need.
+
 Airrecord.api_key = ENV["AIRRECORD_API_KEY"]
 
 class Keyboard < Airrecord::Table

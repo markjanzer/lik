@@ -8,39 +8,43 @@
     <div class="col col-lg-8">
       <div class="ct-chart chart--medium"></div>
     </div>
-    <!-- <h3 class="progress-alert">More coming soon!</h3> -->
   </div>
+
+  <!-- How is this going to work out? -->
+  <!-- Okay, iterate through domains. Show all of the exercise sets that have a practice session. Maybe the only ones that have a completed increment? I'm not sure how to get around the original practice sessions. -->
+  <!-- If there is more than one practice session in the given domain, then show one chart for the whole domain -->
 
   <% data[:domains].each do |domain| %>
     <div><h2><%= domain[:name] %></h2></div>
     <% if find_all(:exercise_sets, domain[:exercise_sets]).length > 1 %>
-      <!-- Make chart of everything -->
+      <div class="row">
+        <div class="col col-lg-8">
+          <div class="chart--medium" data-domain="<%= domain[:name] %>"></div>
+        </div>
+      </div>
+      <script>
+        var chartData = <%= domain_progress(domain).to_json %>
+        new Chartist.Line(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData, basicOptions);
+      </script>
     <% end %>
 
-    <div class="row">
-      <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
-        <!-- I don't want to get all exercise sets, I only want to get exercise sets that have been practiced -->
-        <div><h3><%= exercise_set[:name] %></h3></div>
+    <% exercise_sets = find_all(:exercise_sets, domain[:exercise_sets]) %>
+    <!-- Only show exercise sets with completed increments -->
+    <% exercise_sets.select! { |exercise_set| any_completed_increments?(exercise_set) } %>
+    <% exercise_sets.each do |exercise_set| %>
+      <div><h3><%= exercise_set[:name] %></h3></div>
+      <div class="row">
         <div class="col col-lg-8">
           <div class="chart--medium" data-exercise-set="<%= exercise_set[:name] %>"></div>
         </div>
-        <script>
-          var chartData = <%= exercise_set_progress_data(exercise_set).to_json %>
-          new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
-        </script>
-      <% end %>
-    </div>
+      </div>
+      <script>
+        var chartData = <%= exercise_set_progress(exercise_set).to_json %>
+        new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
+      </script>
+    <% end %>
   <% end %>
 </div>
 
-<script>var data = <%= progress_data.to_json %></script>
+<script>var data = <%= all_progress.to_json %></script>
 <script src="/javascripts/pages/progress.js"></script>
-
-<!-- <script>
-  <% data[:domains].each do |domain| %>
-   <% find_all(:exercise_sets, domain[:exercise_sets]).each do |exercise_set| %>
-      var chartData = <%= exercise_set_progress_data(exercise_set).to_json %>
-      new Chartist.Line(document.querySelector('[data-exercise-set="${<%= exercise_set[:name] %>}"'), chartData, basicOptions);
-    <% end %>
-  <% end %>
-</script> -->

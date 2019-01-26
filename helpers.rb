@@ -26,3 +26,9 @@ def completed_increments(practice_session)
   end
   return completed_increments
 end
+
+def any_completed_increments?(exercise_set)
+  exercises = find_all(:exercises, exercise_set.exercises)
+  exercise_increments = exercises.map { |exercise| find_all(:exercise_increments, exercise.exercise_increments) }.flatten
+  return exercise_increments.any? { |ei| ei.tk_completion || ei.lik_completion }
+end
