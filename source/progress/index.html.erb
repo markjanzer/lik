@@ -1,15 +1,50 @@
 <%= partial "partials/chartist-js" %>
+<script src="/javascripts/blocks/chartist-options.js"></script>
 
 <div class="container section--top">
   <div><h1>Progress</h1></div>
 
   <div class="row justify-content-center keyboard-progress">
-    <div class="col col-8-lg">
+    <div class="col col-lg-8">
       <div class="ct-chart chart--medium"></div>
     </div>
-    <h3 class="progress-alert">More coming soon!</h3>
   </div>
+
+  <!-- How is this going to work out? -->
+  <!-- Okay, iterate through domains. Show all of the exercise sets that have a practice session. Maybe the only ones that have a completed increment? I'm not sure how to get around the original practice sessions. -->
+  <!-- If there is more than one practice session in the given domain, then show one chart for the whole domain -->
+
+  <% data[:domains].each do |domain| %>
+    <div><h2><%= domain[:name] %></h2></div>
+    <% if find_all(:exercise_sets, domain[:exercise_sets]).length > 1 %>
+      <div class="row">
+        <div class="col col-lg-8">
+          <div class="chart--medium" data-domain="<%= domain[:name] %>"></div>
+        </div>
+      </div>
+      <script>
+        var chartData = <%= domain_progress(domain).to_json %>
+        new Chartist.Line(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData, basicOptions);
+      </script>
+    <% end %>
+
+    <% exercise_sets = find_all(:exercise_sets, domain[:exercise_sets]) %>
+    <!-- Only show exercise sets with completed increments -->
+    <% exercise_sets.select! { |exercise_set| any_completed_increments?(exercise_set) } %>
+    <% exercise_sets.each do |exercise_set| %>
+      <div><h3><%= exercise_set[:name] %></h3></div>
+      <div class="row">
+        <div class="col col-lg-8">
+          <div class="chart--medium" data-exercise-set="<%= exercise_set[:name] %>"></div>
+        </div>
+      </div>
+      <script>
+        var chartData = <%= exercise_set_progress(exercise_set).to_json %>
+        new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
+      </script>
+    <% end %>
+  <% end %>
 </div>
 
-<script>var data = <%= progress_data.to_json %></script>
-<script src="/javascripts/blocks/basic-chart.js"></script>
+<script>var data = <%= all_progress.to_json %></script>
+<script src="/javascripts/pages/progress.js"></script>
