@@ -1,0 +1,52 @@
+// Chartist legend css
+.ct-legend {
+  display: flex;
+  justify-content: center;
+
+  li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+  }
+
+  li.inactive:before {
+    background: transparent;
+  }
+
+  &.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @for $i from 0 to length($ct-series-colors) {
+    .ct-series-#{$i}:before {
+      background-color: nth($ct-series-colors, $i + 1);
+      border-color: nth($ct-series-colors, $i + 1);
+    }
+  }
+}
+
+// This overwrites top: 0 on .ct-golden-section > svg
+// Gives space for the legend
+// .ct-golden-section > svg {
+//   top: auto;
+// }
+
+.chart--medium {
+  height: 26rem;
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,22 @@
+.article-body a {
+  white-space: pre-wrap; /* css-3 */    
+  word-wrap: break-word;
+}
+
+.article-body p {
+  margin: 1rem 0;
+}
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4 {
+  margin: 3rem 0 2rem;
+  @media screen and (max-width: 640px) {
+    font-weight: 600;
+  }
+}
+
+.article-body a {
+  text-decoration: underline;
+}
+

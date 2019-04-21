@@ -1,0 +1,29 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 20px;
+  // margin-top: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mikro";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333
+}
+
+img {
+  max-width: 100%;
+}
