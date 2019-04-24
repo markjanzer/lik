@@ -1,5 +1,13 @@
-<footer>
+<footer class="container">
   <div>
-    <div class="navbar__logo footer-logo"><a href="/"><%= svg "LIK-logo" %></a></div>by <a href="markjanzer.io">Mark Janzer</a>
-    </div>
+    <div class="footer-logo">
+      <a href="/"><%= svg "LIK-logo" %></a>
+    </div>by <a href="markjanzer.io">Mark Janzer</a>
+  </div>
+  <div class="footer-date"></div>
 </footer>
+
+<script>
+  var currentDate = new Date;
+  $(".footer-date")[0].innerHTML = currentDate.getFullYear();
+</script>

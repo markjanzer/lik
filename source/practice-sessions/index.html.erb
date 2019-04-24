@@ -1,6 +1,30 @@
 <div class="container section section--top">
-  <div><h1>Practice Sessions</h1></div>
+  <h1 class="section__header">Practice Sessions</h1>
   <div class="row">
+    <div class="col-6">
+      <div class="container">
+        <div class="keyboard-hearder">TK</div>
+        <div class="row">
+          <div class="col-8">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"} %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="container">
+        <div class="keyboard-hearder">LIK</div>
+        <div class="row">
+          <div class="col-8">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"} %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <div class="col">
       <ul>
         <% data.practice_sessions.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>

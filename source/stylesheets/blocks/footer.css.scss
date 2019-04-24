@@ -22,12 +22,10 @@
 footer {
   height: 16rem;
   position: relative;
-}
-
-footer > div {
-  position: absolute;
-  left: 165px;
-  bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem 0;
 }
 
 .footer-logo {
