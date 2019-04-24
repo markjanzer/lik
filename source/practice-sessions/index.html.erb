@@ -3,21 +3,31 @@
   <div class="row">
     <div class="col-6">
       <div class="container">
-        <div class="keyboard-hearder">TK</div>
+        <div class="keyboard-header">TK</div>
         <div class="row">
-          <div class="col-8">
-            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"} %>
-          </div>
+          <ul class="col-8">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recUlyK9YJLOblfTI"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
+              <li class="practice-session">
+                <%= practice_session.number %>
+                <%= practice_session.date %>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
     <div class="col-6">
       <div class="container">
-        <div class="keyboard-hearder">LIK</div>
-        <div class="row">
-          <div class="col-8">
-            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"} %>
-          </div>
+        <div class="keyboard-header">LIK</div>
+        <div class="row justify-content-center">
+          <ul class="col-8">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
+              <li class="practice-session">
+                <%= practice_session.number %>
+                <%= practice_session.date %>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
