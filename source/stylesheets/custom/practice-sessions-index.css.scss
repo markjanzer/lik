@@ -1,12 +1,64 @@
 .practice-sessions_index {
+  font-family: Mikro;
+
   .keyboard-header {
     text-align: center;
     font-family: Mikro;
     font-weight: 700;
     font-size: 64px;
+    text-decoration: underline;
   }
 
-  .practice-sessions {
-    
+  .practice-session {
+    display: flex;
+    border-bottom: solid 3px #D3D3D3;
+    margin: 4rem 0;
+    text-decoration: none;
+  }
+
+  .practice-session:hover {
+    color: inherit;
+  }
+
+  .practice-session__number {
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .practice-session__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 0 0 1rem;
+  }
+
+  .practice-session__date {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .practice-session__details {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .section__content {
+    margin-top: 6rem;
+  }
+
+  .recordings__header {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .recordings__text {
+    font-family: Ivar Soft;
+    font-weight: 400;
+    margin: 1rem;
+  }
+
+  .recordings__text a {
+    font-weight: 500;
   }
 }
