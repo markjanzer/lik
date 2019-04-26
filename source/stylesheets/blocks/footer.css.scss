@@ -20,19 +20,19 @@
 // }
 
 footer {
-  height: 16rem;
+  margin-top: 14rem;
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   padding: 2rem 0;
-  font-family: Mikro;
+  font-family: Graphit;
   font-weight: 100;
   font-size: 1rem;
 }
 
-.footer-logo {
-  display: inline-block;
-  margin-right: 1rem;
-  width: 6rem;
-}
+// .footer-logo {
+//   display: inline-block;
+//   margin-right: 1rem;
+//   width: 6rem;
+// }
