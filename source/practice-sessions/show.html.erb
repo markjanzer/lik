@@ -1,55 +1,94 @@
-<%= partial "partials/chartist-js" %>
+<div class="practice-session__show">
+  <%= partial "partials/chartist-js" %>
 
-<div class="container section section--top">
-  <div><h1><%= practice_session.name %></h1></div>
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <div>Practice Session #<%= practice_session.number %></div>
-      <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
-      <% if practice_session.notes %>
-        <div>Notes: <%= practice_session.notes %></div>
-      <% end %>
-      <% if practice_session.recording %>
-        <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
-      <% else %>
-        <div>Recording not uploaded yet</div>
-      <% end %>
-      <% if practice_session.reflection_url %>
-        <div><a href="<%= practice_session.reflection_url %>" class="reflection-link">Reflection</a></div>
-      <% end %>
+  <section class="container section section--top">
+    <div class="practice-session__header">
+      <h1 class="practice-session__header"><%= find(:keyboards, practice_session.keyboard[0]).acronym %> #<%= practice_session.number %></h1>
+      <div class="practice-session__header-date"> — <%= Date.parse(practice_session.date).strftime("%Y/%m/%d") %></div>
     </div>
-  </div>
 
-  <div class="row section">
-    <div class="col-12 col-lg-6">
-      <h3>Practiced</h3>
-      <ul>
-        <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
-          <li><%= exercise.name %></li>
-        <% end %>
+    <div class="practice-session__notes">
+      <%= practice_session.notes %>
+    </div>
+
+    <div class="section row">
+      <ul class="col-8">
+        <li class="domain">
+          <div class="domain-header">
+            <div class="domain-header__title">
+            </div>
+            <div class="domain-header__time">
+            </div>
+          </div>
+          <ul class="exercise-sets">
+            <div class="exercise-set">
+              <div class="exercise-set__header">
+                <div class="exercise-set__title"></div>
+                <div class="exercise-set__time">
+                </div>
+              </div>
+              <div class="exercise-set__data">
+                <li class="exercise-set__increments">
+                  <
+                </li>
+              </div>
+        </li>
       </ul>
     </div>
+  </section>
 
-    <div class="col-12 col-lg-6">
-      <h3>Completed</h3>
-      <ul>
-        <% if completed_increments(practice_session).empty? %>
-          <li>None</li>
+
+  <div class="container section section--top">
+    <div><h1><%= practice_session.name %></h1></div>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div>Practice Session #<%= practice_session.number %></div>
+        <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
+        <% if practice_session.notes %>
+          <div>Notes: <%= practice_session.notes %></div>
+        <% end %>
+        <% if practice_session.recording %>
+          <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
         <% else %>
-          <% completed_increments(practice_session).each do |completed_increment| %>
-            <li><%= completed_increment.name %></li>
-          <% end %>
+          <div>Recording not uploaded yet</div>
         <% end %>
-      </ul>
+        <% if practice_session.reflection_url %>
+          <div><a href="<%= practice_session.reflection_url %>" class="reflection-link">Reflection</a></div>
+        <% end %>
+      </div>
     </div>
-  </div>
-  
-  <div class="section">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8"><h3>Progress</h3></div>
+
+    <div class="row section">
+      <div class="col-12 col-lg-6">
+        <h3>Practiced</h3>
+        <ul>
+          <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
+            <li><%= exercise.name %></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <h3>Completed</h3>
+        <ul>
+          <% if completed_increments(practice_session).empty? %>
+            <li>None</li>
+          <% else %>
+            <% completed_increments(practice_session).each do |completed_increment| %>
+              <li><%= completed_increment.name %></li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="ct-chart chart--medium col-12 col-lg-8"></div>
+    
+    <div class="section">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8"><h3>Progress</h3></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="ct-chart chart--medium col-12 col-lg-8"></div>
+      </div>
     </div>
   </div>
 </div>
