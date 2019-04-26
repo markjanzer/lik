@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
           <ul>
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recUlyK9YJLOblfTI"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
-              <% exercises_practice_sessions = find_all(:exercise_practice_sessions, practice_session.exercises_practice_sessions) %>
+              <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
               <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
               <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.tk_completed ? eps.tk_completed.count : 0) } %>
               <li>
@@ -36,7 +36,7 @@
         <div class="row justify-content-center">
           <ul>
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
-              <% exercises_practice_sessions = find_all(:exercise_practice_sessions, practice_session.exercises_practice_sessions) %>
+              <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
               <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
               <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.lik_completed ? eps.lik_completed.count : 0) } %>
               <li>

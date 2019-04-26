@@ -13,27 +13,35 @@
 
     <div class="section row">
       <ul class="col-8">
-        <li class="domain">
-          <div class="domain-header">
-            <div class="domain-header__title">
+        <% domains = find_all(:exercises, practice_session.exercises).map { |exercise| exercise.domain[0] }.uniq %>
+
+        <% domains.each do |domain| %>
+          <% domain_exercises = find_all(:exercises, practice_session.exercises).select { |exercise| exercise.domain[0] == domain.id } %>
+          <% domain_exercise_practice_sessions %>
+          <li class="domain">
+            <div class="domain-header">
+              <div class="domain-header__title">
+                <%= domain.name %>
+              </div>
+              <div class="domain-header__time">
+
+              </div>
             </div>
-            <div class="domain-header__time">
-            </div>
-          </div>
-          <ul class="exercise-sets">
-            <div class="exercise-set">
-              <div class="exercise-set__header">
-                <div class="exercise-set__title"></div>
-                <div class="exercise-set__time">
+            <ul class="exercise-sets">
+              <div class="exercise-set">
+                <div class="exercise-set__header">
+                  <div class="exercise-set__title"></div>
+                  <div class="exercise-set__time">
+                  </div>
+                </div>
+                <div class="exercise-set__data">
+                  <li class="exercise-set__increments">
+                  </li>
                 </div>
               </div>
-              <div class="exercise-set__data">
-                <li class="exercise-set__increments">
-                </li>
-              </div>
-            </div>
-          </ul>
-        </li>
+            </ul>
+          </li>
+        <% end %>
       </ul>
     </div>
   </section>

@@ -16,7 +16,7 @@ end
 def completed_increments(practice_session)
   completed_increments = []
   keyboard_acronym = find(:keyboards, practice_session.keyboard).acronym
-  find_all(:exercise_practice_sessions, practice_session.exercises_practice_sessions).each do |eps|
+  find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions).each do |eps|
     # eps.tk_completed and .lik_completed are either nil or an array
     if keyboard_acronym == "TK" && eps.tk_completed
       completed_increments.concat(find_all(:exercise_increments, eps.tk_completed))
