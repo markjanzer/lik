@@ -10,3 +10,4 @@ gem "airrecord"
 gem "byebug"
 gem 'middleman-dotenv'
 gem 'sass'
+gem 'rb-readline'
