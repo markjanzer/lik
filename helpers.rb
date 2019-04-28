@@ -36,3 +36,11 @@ end
 def format_as_time(minutes)
   "#{minutes / 60}:#{sprintf('%02d', minutes % 60)}:00" 
 end
+
+def format_completed_increment_count(count) 
+  if (count > 1)
+    return "#{count} increments completed"
+  elsif (count == 1)
+    return "#{count} increment completed"
+  end
+end

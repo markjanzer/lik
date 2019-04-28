@@ -55,7 +55,7 @@
                         <% end %>
                       </ul>
                       <div class="exercise-set__increments-summary">
-                        <%= completed_increments.length %> increments completed
+                        <%= format_completed_increment_count(completed_increments.length) %>
                       </div>
                     </div>
                   <% end %>
@@ -76,7 +76,7 @@
 
           <% completed_increment_count = exercises_practice_sessions.reduce(0) { |sum, eps| sum + ((eps.tk_completed || eps.lik_completed) ? (eps.tk_completed || eps.lik_completed).length : 0) } %>
           <div class="total-increments">
-            <%= completed_increment_count %> increments completed
+            <%= format_completed_increment_count(completed_increment_count) %>
           </div>
         </li>
       </ul>
