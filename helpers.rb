@@ -32,3 +32,7 @@ def any_completed_increments?(exercise_set)
   exercise_increments = exercises.map { |exercise| find_all(:exercise_increments, exercise.exercise_increments) }.flatten
   return exercise_increments.any? { |ei| ei.tk_completion || ei.lik_completion }
 end
+
+def format_as_time(minutes)
+  "#{minutes / 60}:#{sprintf('%02d', minutes % 60)}:00" 
+end

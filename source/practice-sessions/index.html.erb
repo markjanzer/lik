@@ -20,7 +20,7 @@
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
                     <div class="practice-session__details">
-                      <%= "#{time_practiced / 60}:#{sprintf('%02d', time_practiced % 60)}:00" %> — <%= completed_increments %> completed
+                      <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
                     </div>
                   </div>
                 </a>
@@ -49,7 +49,7 @@
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
                     <div class="practice-session__details">
-                      <%= "#{time_practiced / 60}:#{sprintf('%02d', time_practiced % 60)}:00" %> — <%= completed_increments %> completed
+                      <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
                     </div>
                   </div>
                 </a>

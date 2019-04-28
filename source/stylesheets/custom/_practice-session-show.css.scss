@@ -4,19 +4,97 @@
   .practice-session__header {
     font-size: 75px;
     display: inline-block;
+    font-weight: 700;
+    margin: 0;
   }
-
   .practice-session__header-date {
     display: inline-block;
     font-size: 75px;
     color: #838383;
   }
-
   .practice-session__notes {
-    font-family: Ivar Soft;
     font-weight: 400;
     font-size: 21px;
     margin: 0 2rem;
+  }
+
+  .domains {
+    margin-top: 2rem;
+  }
+  .domain {
+    margin: 2rem 0 3rem;
+  }
+  .domain-header, 
+  .total-header {
+    font-size: 54px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+  .domain-header__time,
+  .total-header__time {
+    color: #838383;
+  }
+  .domain-header__divider {
+    flex-grow: 1;
+    border-bottom: 6px solid #838383;
+    margin: 0 1.5rem 2.1rem;
+  }
+
+  .exercise-sets {
+    margin: 1rem 0;
+  }
+  .exercise-set {
+    font-weight: 100;
+    margin: 1rem 0;
+  }
+  .exercise-set__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    font-weight: 100;
+  }
+  .exercise-set__time {
+    color: #838383;
+  }
+  .exercise-set__divider {
+    flex-grow: 1;
+    border-bottom: 3px solid #838383;
+    margin:  0 1.5rem 1.3rem;
+  }
+
+  .exercise-set__data {
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+  .exercise-set__increment {
+    margin: 0.3rem;
+    font-size: 16px;
+  }
+  .exercise-set__increments-summary {
+    max-width: 10rem;
+    text-align: right;
+    color: #838383;
+    font-size: 16px;
+  }
+
+
+  .total {
+    margin: 4rem 0 3rem;
+  }
+  .total-increments {
+    font-weight: 100;
+    font-size: 32px;
+    margin: 1rem 0 1rem 40px;
+  }
+
+  .practice-session-chart__header {
+    font-size: 75px;
+    font-weight: 700;
+  }
+  .practice-session-chart {
+    height: 28rem;
   }
 
 }
