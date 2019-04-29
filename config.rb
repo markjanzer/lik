@@ -35,6 +35,9 @@ data.practice_sessions.each do |practice_session|
   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
 end
 
+# Articles use article layout, except for index
+page "/articles/*", :layout => "article_layout"
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
