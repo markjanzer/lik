@@ -33,9 +33,9 @@
   h1 {
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 4rem;
     // Escape the grid on the right side
     margin-right: calc(-50vw + 50%);
-    margin: 4rem 0 4rem;
   }
   h2 {
     font-size: 42px;
@@ -61,6 +61,11 @@
 
   p {
     margin: 2rem 0;
+    line-height: 1.7;
+  }
+
+  ul {
+    margin: 4rem 0;
   }
 
 

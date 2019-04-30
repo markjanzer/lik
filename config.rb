@@ -37,6 +37,7 @@ end
 
 # Articles use article layout, except for index
 page "/articles/*", :layout => "article_layout"
+page "/reflections/*", :layout => "article_layout"
 
 # Helpers
 # Methods defined in the helpers block are available in templates
