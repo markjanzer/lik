@@ -4,7 +4,7 @@
 
 **ROUGHLY THE SAME, EXCEPT FOR THE ADVANTAGES**
 
-I think that the linear isomorphic keyboard (LIK) will outperform the traditional keyboard (TK). I predict that I will improve faster on the LIK than on the traditional keyboard and that the LIK will not have significant technical limitations in comparison to the traditional keyboard. More specifically, I hypothesize that the LIK will outperform the TK on fundamentals, be slightly better at sight reading, and greatly outperform the TK when playing by ear.
+I think that the Linear Isomorphic Keyboard (LIK) will outperform the traditional keyboard (TK). I predict that I will improve faster on the LIK than on the traditional keyboard and that the LIK will not have significant technical limitations in comparison to the traditional keyboard. More specifically, I hypothesize that the LIK will outperform the TK on fundamentals, be slightly better at sight reading, and greatly outperform the TK when playing by ear.
 
 The reasonings behind these hypotheses are based on yet another hypothesis: I believe that isomorphic keyboards have an advantage over non-isomorphic keyboards in regards to playability.
 
