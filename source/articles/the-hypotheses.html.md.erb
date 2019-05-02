@@ -1,4 +1,7 @@
+
 <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
+
+<% partial "/partials/article-layout" do %>
 
 # The Hypotheses
 
@@ -35,6 +38,9 @@ This has a clear impact on the LIK's performance of fundamentals. Anything that 
 At first glance, it appears that the LIK has 1/12th the amount of shapes to learn compared to TK, as most complex musical patterns (such as scales) have twelve different shapes on the TK, but this is not quite the case. G major and C major are not so different from each other, as they share six out of seven notes. To find the true difference in complexity we can turn towards to the building blocks of musical patterns: intervals.
 
 Below is a graph of all of the twelve intervals within an octave, and all of the shapes that perform these intervals on each keyboard.
+
+<% end %>
+
 
 <div class="intervals-shapes-section">
   <div class="intervals-shapes-graph__label"><h2>TK</h2></div>
@@ -319,6 +325,8 @@ Below is a graph of all of the twelve intervals within an octave, and all of the
   </div>
 </div>
 
+<% partial "/partials/article-layout" do %>
+
 The graphs above illustrate the complexities of the TK that stem from the many-to-many relationship of shapes and sounds. On the TK, each interval can be performed by an average of 3.58 different shapes (43 relationships between sounds and shapes / 12 sounds). Each interval on the TK has a median of four different ways to perform it, only one of which is correct on any given starting note.
 
 The LIK on the other hand only has one shape per sound. Thus it only has 28% (12/43)the number of relationships between sounds and shapes as the TK. My hypothesis is that when practicing exercises that are chromatic patterns or are meant to be played in every key, the LIK will improve at 3.58 times the speed of the TK.
@@ -396,13 +404,13 @@ In the previous iteration, I predicted that the LIK would outperform the TK on f
 3.  Shape, when applied to keyboards, describes the organization of the physical layout of the keys. Fingering is similar but different, as it describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
 
 <div>
-  <img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
+<img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
 </div>
 
 But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
 
 <div>
-  <img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
+<img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
 </div>
 
 The shape is the same, but the fingering is different.
@@ -413,6 +421,6 @@ The shape is the same, but the fingering is different.
 
 6.  There is one more thing to consider. Given the starting note, some of the shapes that I say are options to perform don't exist. Consider the shape of starting on a black key, and reaching far enough to skip over one black key to play the next. If you start on F\#, you will land on A\#, and if you start on A\# you will land on C\# (even though the B\# black note that is skipped over doesn't exist). If you try to play this starting at C\#, you will find that the note should be between E and F, but it doesn't exist. This is due to the irregular pattern of black keys. Because of this, for each starting note, two of the fourteen shapes do not exist. I'm not sure whether or not I should include this as reducing complexity.
 
-
+<% end %>
 
 <script src="/javascripts/pages/the-hypotheses.js"></script>

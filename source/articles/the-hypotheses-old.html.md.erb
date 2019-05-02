@@ -1,5 +1,7 @@
 <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
 
+<% partial "/partials/article-layout" do %>
+
 # The Hypotheses (OLD)
 
 **ROUGHLY THE SAME, EXCEPT FOR THE ADVANTAGES**
@@ -29,6 +31,8 @@ Well, okay maybe not one twelfth the shapes, that's a little dishonest. Sure, mo
 To compare the quantity of patterns more honestly, we can look not towards the number of keys, but to the building blocks of all melodic/harmonic musical patterns: intervals.
 
 On the TK there are twelve different shapes for any given scale, but how many shapes are there for a given interval? The median is four. In addition, each shape correlates to a median of two intervals. To see this in practice, we can look at the major 2nd on the TK. There are four different shapes that can make this interval (white key to white key, black key to black key, white key to black key and black key to white key). Also, the white key to white key shape (of adjacent white keys) is not always a major 2nd. 2/7ths of the time this shape will play a minor 2nd. You can observe all of these relationships within an octave below.
+
+<% end %>
 
 <div class="intervals-shapes-section">
   <div class="intervals-shapes-graph__label"><h2>TK</h2></div>
@@ -313,6 +317,8 @@ On the TK there are twelve different shapes for any given scale, but how many sh
   </div>
 </div>
 
+<% partial "/partials/article-layout" do %>
+
 These graphs illustrate two advantages of the LIK:
 
 1.  There is only one interval for any given shape
@@ -386,15 +392,17 @@ I believe that isomorphic keyboard have advantages with transposing, recognizing
 3.  Geometry or shape, when applied to keyboards describes the shape made by the physical location of the keys. Fingering describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
 
 <div>
-  <img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
+<img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
 </div>
 
 But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
 
 <div>
-  <img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
+<img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
 </div>
 
 The shape is the same, but the fingering is different.
+
+<% end %>
 
 <script src="/javascripts/pages/the-hypotheses.js"></script>
