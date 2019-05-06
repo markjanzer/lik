@@ -11,7 +11,7 @@ The reasoning behind these hypotheses is based on another hypothesis: I believe 
 
 ## The advantage of isomorphism
 
-When applied to the keyboard, "Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location."<sup>1, 2</sup> To put this another way, each sound can be performed by one or many shapes,<sup>3</sup> but these shapes are always correct. This also means that each shape only plays one sound.<sup>4</sup> The LIK actually has a one to one relationship of shapes and sounds, but I don't think that this provides much of an advantage over other isomorphic keyboards.<sup>5</sup>
+When applied to the keyboard, "Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location."[^1][^2] To put this another way, each sound can be performed by one or many shapes,[^3] but these shapes are always correct. This also means that each shape only plays one sound.[^4] The LIK actually has a one to one relationship of shapes and sounds, but I don't think that this provides much of an advantage over other isomorphic keyboards.[^5]
 
 The isomorphic advantage is rather amorphous. In order to understand how this advantage manifests, it helps to conceptualize the keyboard as a function.
 
@@ -346,11 +346,11 @@ As there are 2.33 times more shapes on the TK than the LIK, I predict that the T
 
 <% partial "/partials/article-layout" do %>
 
-The chart above illustrates the speed of improvement between the keyboards. In this calculation, it assumes the LIK has 3000 shapes and the TK has 7000 shapes, and each practice session practices 25 randomly selected shapes. Once a shape is practiced it is considered a known shape. This graph shows how many practice sessions it takes to learn 85% of the shapes on each keyboard, and it shows the familiarity the keyboard has with each exercise.
+The chart above illustrates the speed of improvement between the keyboards. In this radically simplified simulation, the LIK has 300 shapes and the TK has 700 shapes, and each practice session practices 15 randomly selected shapes. Once a shape is practiced it is considered a known shape. This graph shows how many practice sessions it takes to learn 90% of the shapes on the LIK, and the percent known of each exercise along the way.
 
-This does not mean that it will be easier to play a given passage on the LIK, but rather that it is more likely that you find a passage familiar, as it is more likely that you have practiced the shapes that compose the passage.
+You might notice that the advantage of having less content could take a while to actualize. In the early practice sessions, the percentage of known content is similar between keyboards. Only after a considerable amount of practice does the LIK start to consistently have a higher % known in each practice session. If this isn't shown in the chart above then refresh the page, new data is generated on each page load.
 
-You might notice from the chart above that this advantage will take a while to actualize. For instance, if you practiced both keyboards the same amount of time and learned 1% of the shapes on the TK and 2.33% on the LIK, you would only be familiar with one out of every 43 shapes (100/2.33) while playing the LIK, which wouldn't really provide a noticeable advantage.
+It will not be easier to play a given passage on the LIK than on the TK, but instead it will be more likely that you find a passage familiar, as it is more likely that you have practiced the shapes that compose the passage.
 
 I predict that while chromatic exercises (or exercises played in every key) will improve at 3.58 times the speed of the TK, all other fundamentals will improve at 2.33 times the rate, which will only be apparent after considerable practice.
 
@@ -398,29 +398,34 @@ I originally published this article on **Add date**, but since then I have heavi
 
 In the previous iteration, I predicted that the LIK would outperform the TK on fundamentals, slightly outperform at sight reading, and greatly outperform at playing by ear. For transparency, I'm leaving the original article on the site, so you can read it [here](/articles/the-hypotheses-old).
 
-1.  ["Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location."](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.599.5813)
+<% end %>
 
-2.  There seem to be competing definitions of isomorphism, and according to some the LIK isn't truly isomorphic. [This article](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15) asserts that isomorphic keyboards must be tuning invariant, which the LIK is not (the LIK is only isomorphic for equal tone temperaments).
+<% partial "/partials/article-layout" do %>
 
-3.  Shape, when applied to keyboards, describes the organization of the physical layout of the keys. Fingering is similar but different, as it describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
+[^1]: ["Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location."](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.599.5813)
 
-<div>
-<img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
-</div>
+[^2]: There seem to be competing definitions of isomorphism, and according to some the LIK isn't truly isomorphic. [This article](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15) asserts that isomorphic keyboards must be tuning invariant, which the LIK is not (the LIK is only isomorphic for equal tone temperaments).
 
-But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
+[^3]: Shape, when applied to keyboards, describes the organization of the physical layout of the keys. Fingering is similar but different, as it describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
 
-<div>
-<img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
-</div>
 
-The shape is the same, but the fingering is different.
+    <div>
+    <img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
+    </div>
 
-4.  If a shape plays more than one sound then piano either has different ways of altering notes (like a pitch bending wheel), or there is randomness, meaning you can perform the same shape twice and it would sound different each time.
+    But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
 
-5.  Having multiple shapes to play any given sound (given that they are all correct), seems like it would add flexibility rather than complexity.
+    <div>
+    <img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
+    </div>
 
-6.  There is one more thing to consider. Given the starting note, some of the shapes that I say are options to perform don't exist. Consider the shape of starting on a black key, and reaching far enough to skip over one black key to play the next. If you start on F\#, you will land on A\#, and if you start on A\# you will land on C\# (even though the B\# black note that is skipped over doesn't exist). If you try to play this starting at C\#, you will find that the note should be between E and F, but it doesn't exist. This is due to the irregular pattern of black keys. Because of this, for each starting note, two of the fourteen shapes do not exist. I'm not sure whether or not I should include this as reducing complexity.
+    The shape is the same, but the fingering is different.
+
+[^4]: If a shape plays more than one sound then piano either has different ways of altering notes (like a pitch bending wheel), or there is randomness, meaning you can perform the same shape twice and it would sound different each time.
+
+[^5]: Having multiple shapes to play any given sound (given that they are all correct), seems like it would add flexibility rather than complexity.
+
+[^6]: There is one more thing to consider. Given the starting note, some of the shapes that I say are options to perform don't exist. Consider the shape of starting on a black key, and reaching far enough to skip over one black key to play the next. If you start on F\#, you will land on A\#, and if you start on A\# you will land on C\# (even though the B\# black note that is skipped over doesn't exist). If you try to play this starting at C\#, you will find that the note should be between E and F, but it doesn't exist. This is due to the irregular pattern of black keys. Because of this, for each starting note, two of the fourteen shapes do not exist. I'm not sure whether or not I should include this as reducing complexity.
 
 <% end %>
 
