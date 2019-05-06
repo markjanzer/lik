@@ -1,4 +1,4 @@
-
+<%= partial "partials/chartist-js" %>
 <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
 
 <% partial "/partials/article-layout" do %>
@@ -339,7 +339,12 @@ I am going to posit yet another hypothesis, albeit one that (I think) is more wi
 
 As there are 2.33 times more shapes on the TK than the LIK, I predict that the TK will take 2.33 times as long to learn as the LIK.
 
-#### LIK/TK improvement graph
+<% end %>
+
+<div class="improvement-chart chart--medium">
+</div>
+
+<% partial "/partials/article-layout" do %>
 
 The chart above illustrates the speed of improvement between the keyboards. In this calculation, it assumes the LIK has 3000 shapes and the TK has 7000 shapes, and each practice session practices 25 randomly selected shapes. Once a shape is practiced it is considered a known shape. This graph shows how many practice sessions it takes to learn 85% of the shapes on each keyboard, and it shows the familiarity the keyboard has with each exercise.
 
@@ -420,3 +425,4 @@ The shape is the same, but the fingering is different.
 <% end %>
 
 <script src="/javascripts/pages/the-hypotheses.js"></script>
+<script src="/javascripts/blocks/improvement-chart.js"></script>
