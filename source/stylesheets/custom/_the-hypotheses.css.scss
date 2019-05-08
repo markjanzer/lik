@@ -1,3 +1,4 @@
+// Intervals shapes graph
 .intervals-shapes-section {
   font-size: 16px;
   padding: 0 1rem;
@@ -67,11 +68,14 @@
   }
 }
 
+
+// Improvement chart
 .improvement-chart {
-  margin: 0 1rem;
+  padding: 0 1rem;
+  margin-bottom: 8rem;
 }
 
-// Custom colors
+// Custom colors for improvement chart
 .ct-series-a .ct-point,
 .ct-series-a .ct-line {
   stroke: $tk-color;
