@@ -1,3 +1,9 @@
+<%= partial "partials/chartist-js" %>
+
+<% practice_sessions = data.practice_sessions.select { |ps| ps.number <= 15 } %>
+
+<% partial "/partials/article-layout" do %>
+
 # Reflection #2: 15 hours
 
 After roughly fifteen hours of practice for each keyboard, the design of the experiment has been challenged along with my expectations. To cover all of the bases, I'll reflect on my progress on each exercise set, which I'll follow with a set of musings on amendments to the exercise.
@@ -14,6 +20,15 @@ I also am making an assumption on the LIK that in order to say that I can play t
 
 Overall, I think that my improvement on the major scale is going slower than expected for the LIK, but it still isn't shocking. I am most surprised by the difficulty of playing with my eyes closed on the LIK.
 
+
+<div class="reflection-chart scales-chart"></div>
+
+<% scales = data.exercise_sets.find { |es| es.name == "Scales & Arpeggios" } %>
+<script>
+  var scales_data = <%= exercise_set_progress(scales, practice_sessions).to_json %>
+  new Chartist.Line('.scales-chart', scales_data, basicOptions);
+</script>
+
 ### Hanon
 
 Hanon on the TK is going as expected. I have been consistently improving in small increments for each exercise. Something unexpected is that I am able to play the first exercise faster than I can play the C Major scale (but not much). I am considering moving onto the next exercise before I get too much faster at the current exercises, because I don't think I can expect my Hanon to improve much beyond my current speed with the C Major scale.
@@ -22,9 +37,26 @@ Hanon is very difficult for the LIK. Hanon on the TK has one ascending pattern t
 
 The very reason this exercise is difficult for the LIK is the reason why it is exciting. I feel as if I am training my ears to better recognize these small intervals, and better training my fingers to play these intervals on command. It makes me wonder how difficult the next exercises will be once I can play this up to tempo, as Hanon exercises share a lot of similarities.
 
+<div class="reflection-chart hanon-chart"></div>
+
+<% hanon = data.exercise_sets.find { |es| es.name == "Hanon" } %>
+<script>
+  var hanon_data = <%= exercise_set_progress(hanon, practice_sessions).to_json %>
+  new Chartist.Line('.hanon-chart', hanon_data, basicOptions);
+</script>
+
 ### Sight reading
 
 Sight reading is going about as I expected to go: considerably better for the traditional keyboard than for the LIK. The LIK is fine if the ambitus isn't much larger than a 5th, because then it allow me to set my hands before I sight read, mostly noting the intervals (whether it is stepwise or a leap) rather than paying attention to the notes or the exact intervals (whether an interval is a minor or major second).
+
+
+<div class="reflection-chart sight-reading-chart"></div>
+
+<% sight_reading = data.exercise_sets.find { |es| es.name == "EarMaster Sight Reading" } %>
+<script>
+  var sight_reading_data = <%= exercise_set_progress(sight_reading, practice_sessions).to_json %>
+  new Chartist.Line('.sight-reading-chart', sight_reading_data, basicOptions);
+</script>
 
 ### Playing by ear
 
@@ -34,9 +66,17 @@ I predicted that the LIK would improve faster than the TK, though I am not surpr
 
 The thing that has surprised me the most with these exercises is the extent that I understand the questions as functions of key they are in. When I would play by ear on saxophone, I had much less of an idea as to where I was in the scale, and I would play with more instinct than understanding. My assumption is that the more that this tonal awareness is a factor, the less of an advantage the LIK will have when it comes to playing by ear.
 
+<div class="reflection-chart playing-by-ear-chart"></div>
+
+<% playing_by_ear = data.exercise_sets.find { |es| es.name == "EarMaster Playing By Ear" } %>
+<script>
+  var playing_by_ear_data = <%= exercise_set_progress(playing_by_ear, practice_sessions).to_json %>
+  new Chartist.Line('.playing-by-ear-chart', playing_by_ear_data, basicOptions);
+</script>
+
 ## On practicing
 
-### Improvement vs metrics
+### Improvement vs. metrics
 
 In a recent practice session, I noticed how much of my time on the TK was spent assessing how fast I could play the scales rather than practicing the scales a tempo that was optimal for my improvement. Although playing imperfectly at these high speeds is necessary for gauging my progress, I think that the assessment itself is not nearly as helpful as slow deliberate practice, and it might actually be slightly harmful (as I am practicing playing the scales imperfectly).
 
@@ -50,7 +90,9 @@ The decision of what increments to practice and when to deem them "completed" is
 
 I believe that the best way to practice performance is to do so at a tempo where you can practice the performance at the desired quality a vast majority of the time. I believe that playing something wrong is practicing it wrong, so the tempo must be slow enough to avoid most mistakes (while being fast enough to get some repetition of the correct performance a number of times). I also don't think that I should expect this level of perfection when considering whether or not I have completed an interval. Although I do want to get to the point where I can play quickly with perfect dynamic control, articulation and timing, I am going to consider if I can play the notes correctly while staying in time good enough. These ideas dictate how I increment my practice with fundamentals.
 
-**Add chart**
+<div class="image-container">
+  <img src="/images/csik-flow-chart.png" />
+</div>
 
 If you were to look at a chart of challenge and skill from Csikszentmihalyi's Flow, I believe that believe that fundamentals are best practice closer to the state of boredom rather than flow because that is where we make the least mistakes (and the challenge is not get bored). However for strengthening skills that challenge calculation rather than performance, I would agree with Csikszentmihalyi that the ideal state is that of flow, a balance between challenge and skill, anxiety and boredom.
 
@@ -65,3 +107,5 @@ Even with playing by ear, occasionally the errors in my LIK performance are caus
 To make the matter slightly more confusing, I have been changing the note values in the different exercises. Earlier in the practice sessions I had half notes and no sixteenth notes in the exercises, but later I made the decision to remove the half notes and include the sixteenth notes. Overall, I think that it is good that I removed the half notes, they decrease the difficulty of a given exercise significantly. With both sixteenth notes and half notes included, the difficulty of exercises could vary wildly.
 
 Editing this reflection a few months later, I can tell you that I did remove both sixteenth notes and half notes from the exercises, so now the excerpts only use quarter and eighth notes. This makes for a much more consistent. You can see that this made the exercises considerably easier, and you can see that I make this change around the fifteenth practice session. Both the LIK and the TK start improving with both playing by ear and sight reading at this point.
+
+<% end %>

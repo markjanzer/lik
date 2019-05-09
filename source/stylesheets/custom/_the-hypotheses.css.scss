@@ -1,138 +1,142 @@
-// Intervals shapes graph
-.intervals-shapes-section {
-  font-size: 16px;
-  padding: 0 1rem;
-}
-.intervals-shapes-graph__label {
-  text-align: center;
-  margin: 3rem 0;
-}
-.nodes {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 14rem;
-}
-.nodes.shapes {
-  margin-bottom: 4rem;
-}
-.label {
-  display:block;
-}
-.node {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.interval {
-  margin: 0 0.5rem;
-}
-.interval .node__visual {
-  height: 2rem;
-  width: 2rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  border: 1px solid grey;
-  z-index: 2;
-}
-.shapes svg {
-  position: relative;
-  z-index: 2;
-}
-.node svg {
-  height: 2rem;
-  width: 2rem;
-}
+.articles_the-hypotheses {
 
-.legend-container {
-  display: flex;
-  justify-content: center;
-}
-.legend {
-  width: auto;
-  height: 16rem;
-}
-
-.tippy-tooltip.dark-theme {
-  white-space: pre-line;
-  background-color: #333;
-}
-
-// For funsies
-// .intervals-shapes-graph--tk .shapes {
-//   flex-direction: row-reverse;
-// }
-
-.legend {
-  @media screen and (max-width: 640px) {
-    width: 94vw;
+  // Intervals shapes graph
+  .intervals-shapes-section {
+    font-size: 16px;
+    padding: 0 1rem;
   }
-}
+  .intervals-shapes-graph__label {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .nodes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 14rem;
+  }
+  .nodes.shapes {
+    margin-bottom: 4rem;
+  }
+  .label {
+    display:block;
+  }
+  .node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .interval {
+    margin: 0 0.5rem;
+  }
+  .interval .node__visual {
+    height: 2rem;
+    width: 2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 1px solid grey;
+    z-index: 2;
+  }
+  .shapes svg {
+    position: relative;
+    z-index: 2;
+  }
+  .node svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .legend-container {
+    display: flex;
+    justify-content: center;
+  }
+  .legend {
+    width: auto;
+    height: 16rem;
+  }
+
+  .tippy-tooltip.dark-theme {
+    white-space: pre-line;
+    background-color: #333;
+  }
+
+  // For funsies
+  // .intervals-shapes-graph--tk .shapes {
+  //   flex-direction: row-reverse;
+  // }
+
+  .legend {
+    @media screen and (max-width: 640px) {
+      width: 94vw;
+    }
+  }
 
 
-// Improvement chart
-.improvement-chart {
-  padding: 0 1rem;
-  margin-bottom: 8rem;
-}
+  // Improvement chart
+  .improvement-chart {
+    padding: 0 1rem;
+    margin-bottom: 8rem;
+  }
 
-// Custom colors for improvement chart
-.ct-series-a .ct-point,
-.ct-series-a .ct-line {
-  stroke: $tk-color;
+  // Custom colors for improvement chart
+  .ct-series-a .ct-point,
+  .ct-series-a .ct-line {
+    stroke: $tk-color;
+  }
+  .ct-series-a .ct-area {
+    fill: $tk-color;
+  }
+  .ct-legend .ct-series-0:before {
+    background-color: $tk-color;
+    border-color: $tk-color;
+  }
+  .ct-series-b .ct-point,
+  .ct-series-b .ct-line {
+    stroke: $tk-color-2;
+  }
+  .ct-series-b .ct-area {
+    fill: $tk-color-2;
+  }
+  .ct-legend .ct-series-1:before {
+    background-color: $tk-color-2;
+    border-color: $tk-color-2;
+  }
+  .ct-series-c .ct-point,
+  .ct-series-c .ct-line {
+    stroke: $lik-color;
+  }
+  .ct-series-c .ct-area {
+    fill: $lik-color;
+  }
+  .ct-legend .ct-series-2:before {
+    background-color: $lik-color;
+    border-color: $lik-color;
+  }
+  .ct-series-d .ct-point,
+  .ct-series-d .ct-line {
+    stroke: $lik-color-2;
+  }
+  .ct-series-d .ct-area {
+    fill: $lik-color-2;
+  }
+  .ct-legend .ct-series-3:before {
+    background-color: $lik-color-2;
+    border-color: $lik-color-2;
+  }
+  // .ct-series-a {
+  //   stroke: $tk-color;
+  //   fill: $tk-color;
+  // }
+  // .ct-series-b {
+  //   stroke: $tk-color-2;
+  //   fill: $tk-color-2;
+  // }
+  // .ct-series-c {
+  //   stroke: $lik-color;
+  //   fill: $lik-color;
+  // }
+  // .ct-series-d {
+  //   stroke: $lik-color-2;
+  //   fill: $lik-color-2;
+  // }
+
 }
-.ct-series-a .ct-area {
-  fill: $tk-color;
-}
-.ct-legend .ct-series-0:before {
-  background-color: $tk-color;
-  border-color: $tk-color;
-}
-.ct-series-b .ct-point,
-.ct-series-b .ct-line {
-  stroke: $tk-color-2;
-}
-.ct-series-b .ct-area {
-  fill: $tk-color-2;
-}
-.ct-legend .ct-series-1:before {
-  background-color: $tk-color-2;
-  border-color: $tk-color-2;
-}
-.ct-series-c .ct-point,
-.ct-series-c .ct-line {
-  stroke: $lik-color;
-}
-.ct-series-c .ct-area {
-  fill: $lik-color;
-}
-.ct-legend .ct-series-2:before {
-  background-color: $lik-color;
-  border-color: $lik-color;
-}
-.ct-series-d .ct-point,
-.ct-series-d .ct-line {
-  stroke: $lik-color-2;
-}
-.ct-series-d .ct-area {
-  fill: $lik-color-2;
-}
-.ct-legend .ct-series-3:before {
-  background-color: $lik-color-2;
-  border-color: $lik-color-2;
-}
-// .ct-series-a {
-//   stroke: $tk-color;
-//   fill: $tk-color;
-// }
-// .ct-series-b {
-//   stroke: $tk-color-2;
-//   fill: $tk-color-2;
-// }
-// .ct-series-c {
-//   stroke: $lik-color;
-//   fill: $lik-color;
-// }
-// .ct-series-d {
-//   stroke: $lik-color-2;
-//   fill: $lik-color-2;
-// }

@@ -67,5 +67,15 @@
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
   }
+
+  .reflection-chart {
+    height: 20rem;
+    margin: 4rem 0 8rem;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 

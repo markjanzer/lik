@@ -34,12 +34,18 @@ def progress_until_practice_session(practice_session)
   progress_data(practice_sessions)
 end
 
-def domain_progress(domain)
+def domain_progress(domain, practice_sessions=data.practice_sessions)
+  # if practice_sessions.nil?
+  #   practice_sessions = data.practice_sessions
+  # end
   select_proc = proc { |ci| find(:domains, ci.domain) == domain }
-  progress_data(data.practice_sessions, select_proc)
+  progress_data(practice_sessions, select_proc)
 end
 
-def exercise_set_progress(exercise_set)
+def exercise_set_progress(exercise_set, practice_sessions=data.practice_sessions)
+  # if practice_sessions.nil?
+  #   practice_sessions = data.practice_sessions
+  # end
   select_proc = proc { |ci| find(:exercise_sets, ci.exercise_set) == exercise_set }
-  progress_data(data.practice_sessions, select_proc)
+  progress_data(practice_sessions, select_proc)
 end

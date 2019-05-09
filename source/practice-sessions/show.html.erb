@@ -1,5 +1,5 @@
+<%= partial "partials/chartist-js" %>
 <div class="practice-session__show">
-  <%= partial "partials/chartist-js" %>
 
   <section class="container section">
     <div class="practice-session__header">
@@ -92,7 +92,6 @@
   </section>
 </div>
 
-<script src="/javascripts/blocks/chartist-options.js"></script>
 <script>
   var data = <%= progress_until_practice_session(practice_session).to_json %>
   new Chartist.Line('.ct-chart', data, basicOptions);
