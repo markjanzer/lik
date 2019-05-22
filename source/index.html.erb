@@ -13,11 +13,13 @@ title: The Linear Isomorphic Keybaord
     <br>
     Is there a better way to design the piano?
   </h1>
-  <%= partial "/partials/keyboard" %>
   <div class="keyboard-space"></div>
-  <h1 class="hero__text hero__text--second fadeInUp">
+  <h1 id="second-hero-text" class="hero__text hero__text--second">
     This is the<br><span class="hero__text--black">Linear Isomorphic Keyboard</span>
   </h1>
+  <div class="keyboard-container">
+    <%= partial "/partials/keyboard" %>
+  </div>
 </div>
 
 <!-- Summary -->
