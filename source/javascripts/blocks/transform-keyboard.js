@@ -18,12 +18,12 @@ function transformKeyboard() {
   })
 
   $(".white-chonk").forEach(chonk => {
-    chonk.style.height = numberTransition(179, 0, percentScrolled) + "px";
+    chonk.style.height = numberTransition(38.90, 0, percentScrolled) + "%";
     chonk.style.backgroundColor = transformColor(white, gray, percentScrolled);
   });
 
   $(".black-key").forEach(key => {
-    key.style.height = numberTransition(274, 455, percentScrolled) + "px";
+    key.style.height = numberTransition(60, 100, percentScrolled) + "%";
   })
 }
 

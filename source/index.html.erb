@@ -3,15 +3,20 @@ title: The Linear Isomorphic Keybaord
 ---
 
 <%= partial "partials/chartist-js" %>
+<script src="/javascripts/vendor/waypoints.min.js"></script>
+<script src="/javascripts/vendor/zenscroll.min.js"></script>
+
 
 <!-- Hero -->
 <div class="hero">
-  <h1 class="hero__text">
+  <h1 class="hero__text hero__text--first fadeInUp">
+    Is there a better way to design the piano?
+  </h1>
+  <%= partial "/partials/keyboard" %>
+  <div class="keyboard-space"></div>
+  <h1 class="hero__text fadeInUp">
     This is the<br><span class="hero__text--black">Linear Isomorphic Keyboard</span>
   </h1>
-  <div class="hero__image">
-    <img src="/images/mini-lik.svg" class="" />
-  </div>
 </div>
 
 <!-- Summary -->
@@ -140,9 +145,9 @@ title: The Linear Isomorphic Keybaord
   <div class="row">
     <div class="col-12">
       <div class="contact-text">
-        Have any questions, comments, propositions, qualms, exclaimations?
+        Have any questions, comments, propositions, qualms, or exclamations?
         <br>
-        I'm happy to talk, You can reach me at <a href="mailto:linearisomorphickeyboard@gmail.com">linearisomorphickeyboard@gmail.com</a>
+        I'm happy to talk, you can reach me at <a href="mailto:linearisomorphickeyboard@gmail.com">linearisomorphickeyboard@gmail.com</a>
       </div>
     </div>
   </div>
