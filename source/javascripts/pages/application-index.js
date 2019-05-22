@@ -1,4 +1,5 @@
 // Hero
+// REDO THIS WITH WAYPOINTS
 var heroHeight = $(".hero")[0].offsetHeight;
 function setNavOpacity() {
   if (window.pageYOffset > heroHeight) {
@@ -11,7 +12,7 @@ setNavOpacity();
 window.addEventListener('scroll', setNavOpacity);
 
 function transformKeyboard() {
-  var scrollLength = 500;
+  var scrollLength = $(".hero__text--second")[0].offsetTop;
   var white = { red: 255, green: 255, blue: 255, alpha: 1 }
   var gray = { red: 151, green: 151, blue: 151, alpha: 1 }
   // if (window.pageYOffset > 0) {
@@ -65,11 +66,12 @@ window.onbeforeunload = function () {
 }
 
 // Might use this to conditionally transition
-// if (window.pageYOffset == 0) {
-//   setTimeout(function () { 
-//     zenscroll.toY(577, 1400) 
-//   }, 1500)
-// }
+if (window.pageYOffset == 0) {
+  setTimeout(function () { 
+    var scrollHeight = $(".hero__text--second")[0].offsetTop;
+    zenscroll.toY(scrollHeight, 1400) 
+  }, 1500)
+}
 
 
 

@@ -1,6 +1,6 @@
 .hero {
   background-color: #848484;
-  padding-top: 8rem;
+  // padding-top: 8rem;
   height: 1700px;
 }
 .hero__text {
@@ -10,15 +10,21 @@
   // font-size: 72px;
   font-size: 50px;
   font-weight: 400;
-  margin: 2rem 0;
+  margin-top: 0;
   line-height: 1.3;
+  padding-top: 12rem;
 }
 .hero__text--black {
   font-weight: 700;
 }
 .hero__text--first {
-  margin-top: 5rem;
+  // margin-top: 5rem;
 }
+
+.hero__text--second {
+  // margin-top: 10rem;
+}
+
 // .hero__image {
 //   margin: 0 auto;
 //   overflow: hidden;
@@ -158,24 +164,24 @@
 .black-key {
   width: 12.52%;
   height: 60%;
-  margin: 0 1.5px;
+  margin: 0 0.25%;
   background-color: #242424;
-  border-radius: 2px;
+  border-radius: 2%
 }
 
 .white-key {
   width: 12.52%;
   height: 100%;
-  margin: 0 3px;
+  margin: 0 0.5%;
   background-color: #FFFFFF;
-  border-radius: 2px;
+  border-radius: 2%
 }
 
 .white-chonk {
   height: 39%;
-  margin: 0 3px;
+  margin: 0 0.5%;
   background-color: #FFFFFF;
-  border-radius: 2px;
+  border-radius: 2%
 }
 
 .white-chonk--skinny {
@@ -188,7 +194,7 @@
 
 .keyboard-space {
   // height: 100vh;
-  height: 40rem;
+  height: 12rem;
 }
 
 body.index {
