@@ -70,6 +70,7 @@ function onScroll() {
   animateHeroText(keyboardScrollEnd);
 }
 
+
 // -------- Helpers --------
 
 function numberTransition(n1, n2, percent) {
