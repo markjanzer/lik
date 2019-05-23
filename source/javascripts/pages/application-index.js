@@ -107,17 +107,18 @@ onScroll();
 window.addEventListener('scroll', onScroll);
 
 // Force page scroll position to the top on page load
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
 
+// Might not need zenscroll
 // Might use this to conditionally transition
-if (window.pageYOffset == 0) {
-  setTimeout(function () { 
-    var scrollHeight = $(".hero__text--second")[0].offsetTop;
-    zenscroll.toY(scrollHeight, 1400) 
-  }, 1500)
-}
+// if (window.pageYOffset == 0) {
+//   setTimeout(function () { 
+//     var scrollHeight = $(".hero__text--second")[0].offsetTop;
+//     zenscroll.toY(scrollHeight, 1400) 
+//   }, 1500)
+// }
 
 // Chart
 new Chartist.Line('.ct-chart', data, basicOptions);
