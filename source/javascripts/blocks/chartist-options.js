@@ -10,7 +10,7 @@ var basicOptions = {
         axisTitle: "Practice Sessions",
         offset: {
           x: 0,
-          y: 30
+          y: 40
         },
       },
       axisY: {
