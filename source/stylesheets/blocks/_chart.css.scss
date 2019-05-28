@@ -51,3 +51,26 @@
   height: 26rem;
   margin-bottom: 4rem;
 }
+
+.ct-chart {
+  height: 100%;
+  position: relative;
+  margin-bottom: 4rem; // Account for label below and legend above
+
+  svg {
+    overflow: visible;
+  }
+}
+
+.ct-chart--full {
+  height: 26rem;
+}
+
+.ct-chart--half {
+  height: 13rem;
+}
+
+.ct-chart--article {
+  height: 18rem;
+  margin: 3rem 0 7rem;
+}

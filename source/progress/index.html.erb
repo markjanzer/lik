@@ -17,7 +17,7 @@
   <h2 class="section__header chart-section__header">All Exercises</h2>
   <div class="row section__content">
     <div class="col">
-      <div class="ct-chart chart--medium"></div>
+      <div class="ct-chart ct-chart--full"></div>
     </div>
   </div>
 </section>
@@ -28,7 +28,7 @@
     <h2 class="section__header chart-section__header"><%= domain[:name] %></h2>
     <div class="row">
       <div class="col">
-        <div class="chart--medium" data-domain="<%= domain[:name] %>"></div>
+        <div class="ct-chart ct-chart--full" data-domain="<%= domain[:name] %>"></div>
       </div>
     </div>
     <script>
@@ -44,7 +44,7 @@
         <% exercise_sets.each do |exercise_set| %>
           <div class="col-6">
             <h3 class="exercise-header"><%= exercise_set[:name] %></h3>
-            <div class="chart--medium" data-exercise-set="<%= exercise_set[:name] %>"></div>
+            <div class="ct-chart ct-chart--half" data-exercise-set="<%= exercise_set[:name] %>"></div>
           </div>
           <script>
             var chartData = <%= alternate_labels(exercise_set_progress(exercise_set)).to_json %>
