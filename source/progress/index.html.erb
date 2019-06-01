@@ -23,7 +23,7 @@
 </section>
 
 
-<% data[:domains].each do |domain| %>
+<% data[:domains].sort_by { |domain| domain.position }.each do |domain| %>
   <section class="container section">
     <h2 class="section__header chart-section__header"><%= domain[:name] %></h2>
     <div class="row">
