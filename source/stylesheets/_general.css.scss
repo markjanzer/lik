@@ -27,3 +27,8 @@ a:hover {
 img {
   max-width: 100%;
 }
+
+// Makes it easy to change the color of the logo
+.logo__gray-bit {
+  fill: $color-gray;
+}
