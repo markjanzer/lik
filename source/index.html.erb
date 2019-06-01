@@ -46,7 +46,7 @@ title: The Linear Isomorphic Keybaord
 
   <div class="row">
     <div class="col-12 progress-footer">
-      <div class="">Last practice session: <a href="/practice-sessions/<%= data.practice_sessions.last.id %>"><%= data.practice_sessions.last.date %></a></div>
+      <div class="">Last practice session: <a href="/practice-sessions/<%= data.practice_sessions.sort_by { |ps| ps.date }.last.id %>"><%= Date.parse(data.practice_sessions.sort_by { |ps| ps.date }.last.date).strftime("%b %e, %Y") %></a></div>
       <div>
         <a href="/progress" class="">more progress</a>
       </div>
