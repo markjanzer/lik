@@ -8,13 +8,13 @@ title: The Linear Isomorphic Keybaord
 
 <!-- Hero -->
 <div class="hero">
-  <h1 class="hero__text hero__text--first fadeInUp">
+  <h1 class="hero__text graphit-lg-regular js-first-hero-text fadeInUp">
     <br>
     Is there a better way to design the piano?
   </h1>
   <div class="keyboard-space"></div>
-  <h1 id="second-hero-text" class="hero__text hero__text--second">
-    This is the<br><span class="hero__text--black">Linear Isomorphic Keyboard</span>
+  <h1 id="second-hero-text" class="hero__text graphit-lg-regular js-second-hero-text">
+    This is the<br><span class="graphit-lg-bold">Linear Isomorphic Keyboard</span>
   </h1>
   <div class="keyboard-container">
     <%= partial "/partials/keyboard" %>
@@ -22,15 +22,15 @@ title: The Linear Isomorphic Keybaord
 </div>
 
 <!-- Summary -->
-<div class="container section">
+<div class="container section summary-section">
   <div class="row">
-    <h2 class="col-6 section__header">This is an experiment</h2>
+    <h2 class="col-sm-12 col-lg-6 section__header">This is an experiment</h2>
   </div>
   <div class="row">
-    <div class="col-12 summary__text">
+    <div class="col-sm-12 col-lg-10 summary__text">
       I am exploring how the Linear Isomorphic Keyboard (<span class="summary__text--keyboard">LIK</span>) compares to the Traditional Keyboard (<span class="summary__text--keyboard">TK</span>).
     </div>
-    <div class="col-12 summary__text">I am practicing both keyboards for the same amount of time, playing the <a href="" class="summary__text--link">same exercises</a>, and <a href="" class="summary__text--link">recording everything</a>.</div>
+    <div class="col-sm-12 col-lg-10 summary__text">I am practicing both keyboards for the same amount of time, playing the <a href="" class="summary__text--link">same exercises</a>, and <a href="" class="summary__text--link">recording everything</a>.</div>
   </div>
 </div>
 
@@ -45,7 +45,7 @@ title: The Linear Isomorphic Keybaord
   </div>
 
   <div class="row">
-    <div class="col-12 progress-footer">
+    <div class="col-12 progress-footer ivar-soft-sm-regular">
       <div class="">Last practice session: <a href="/practice-sessions/<%= data.practice_sessions.sort_by { |ps| ps.date }.last.id %>"><%= Date.parse(data.practice_sessions.sort_by { |ps| ps.date }.last.date).strftime("%b %e, %Y") %></a></div>
       <div>
         <a href="/progress" class="">more progress</a>
@@ -61,13 +61,13 @@ title: The Linear Isomorphic Keybaord
 
   <div class="row" style="margin-top: 2rem;">
     <div class="col-6">
-      <a href="/articles#reflections"><h3 class="articles-title">Reflections</h3></a>
+      <a href="/articles#reflections"><h3 class="articles__subheader graphit-lg-bold">Reflections</h3></a>
       <div class="articles">
         <div class="article">
           <a href="/reflections/reflection-3">
             <h4 class="article__title">Reflection #3: 33 Hours</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;I reflect on why the Linear Isomorphic Keyboard’s meteoric improvement, as well as strategies for sight reading and playing by ear that are tailored to each keyboard.
               </div>
             </div>
@@ -77,7 +77,7 @@ title: The Linear Isomorphic Keybaord
           <a href="/reflections/reflection-2">
             <h4 class="article__title">Reflection #2: 15 Hours</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;I reflect on my slow progress on the Linear Isomorphic Keyboard, how I can improve exercises that use software, as well as my philosophy of how I should practice to improve depending on the content.
               </div>
             </div>
@@ -87,25 +87,25 @@ title: The Linear Isomorphic Keybaord
           <a href="/reflections/reflection-1/">
             <h4 class="article__title">Reflection #1: The Assessment</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;In my efforts to get the experiment underway the initial assessment was done hastily, causing several small mistakes, as well as a blunder that was as interesting as it was humbling.
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div style="text-align: center;">
+      <div class="articles__footer ivar-soft-sm-regular">
         <a href="/articles" class="">more reflections</a>
       </div>
     </div>
     <div class="col-6">
-      <a href="/articles"><h3 class="articles-title">Articles</h3></a>
+      <a href="/articles"><h3 class="articles__subheader graphit-lg-bold">Articles</h3></a>
       <div class="articles"> 
         <div class="article">
           <a href="/articles/the-idea">
             <h4 class="article__title">The Idea</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement.
               </div>
             </div>
@@ -115,7 +115,7 @@ title: The Linear Isomorphic Keybaord
           <a href="/articles/the-hypotheses">
             <h4 class="article__title">The Hypotheses</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;I have a handful of predictions of how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage.
               </div>
             </div>
@@ -125,14 +125,14 @@ title: The Linear Isomorphic Keybaord
           <a href="/articles/the-experiment">
             <h4 class="article__title">The Experiment</h4>
             <div class="row justify-content-center">
-              <div class="col-10 article__description">
+              <div class="col-10 ivar-soft-sm-regular">
                 &nbsp;&nbsp;&nbsp;&nbsp;In this article I define "playability", explain how I will practice and measure improvement, and reflect on flaws in the experiment.
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div style="text-align: center;">
+      <div class="articles__footer ivar-soft-sm-regular">
         <a href="/articles" class="">more articles</a>
       </div>
     </div>

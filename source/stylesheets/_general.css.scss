@@ -3,7 +3,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
-  font-size: 20px;
+  font-size: 21px;
   // margin-top: 4rem;
 }
 
@@ -28,7 +28,212 @@ img {
   max-width: 100%;
 }
 
+
+.section {
+  margin-top: 8rem;
+}
+
+.section--top {
+  margin-top: 12rem;
+}
+.section__header {
+  line-height: 1;
+  margin: 2rem 0;
+  padding: 0;
+}
+
 // Makes it easy to change the color of the logo
 .logo__gray-bit {
   fill: $color-gray;
+}
+
+
+// Graphit Thin----------- 100?
+// Graphit Light---------- 300
+// Graphit Regular-------- 400
+// Graphit Medium--------- 500
+// Graphit Bold----------- 600
+// Graphit Black---------- 800
+
+// Ivar Regular----------- 400
+// Ivar Medium------------ 500
+// Ivar SemiBold---------- 600
+// Ivar Bold-------------- 700
+
+
+// Hero
+// .hero__text         50px   Graphit     Regular
+// .hero__text--black  50px   Graphit     Black
+
+// Section headers
+// .section__header    90px   Graphit     Regular
+
+// Summary
+// .summary__text      65px   Graphit     Thin(Light)
+// .summary__text      65px   Graphit     Medium
+
+// Body
+// body                20px   Ivar Soft   Regular
+
+// Articles/Reflections labels
+// .articles-title     54px   Graphit     Bold
+
+// Article summaries
+// .article__title     34px   Graphit     Regular
+
+// Contact
+// .contact-text       21px   Ivar Soft   Regular
+
+// Practice Sessions
+// .keyboard-header    64px   Graphit     Bold
+// .practice-session__number 76px Graphit Regular
+// .practice-session__date 28px Graphit   Regular
+// .practice-session__details 16px Graphit Regular
+
+// Practice Session
+// .practice-session__header 75px Graphit Bold
+
+
+.ivar-text {
+  font-family: Ivar Text;
+}
+.ivar-display {
+  font-family: Ivar Display;
+}
+.ivar-soft {
+  font-family: Ivar Soft;
+}
+.graphit {
+  font-family: Graphit;
+}
+
+// OOF this doesn't work for inherited font-families
+// Maybe I refactor this away when I figure out what to use when
+.font--thin {
+  font-weight: 100;
+}
+.font--light {
+  font-weight: 300;
+}
+.font--regular {
+  font-weight: 400;
+}
+.font--medium {
+  font-weight: 500;
+}
+.font--semibold {
+  font-weight: 600;
+}
+.font--bold {
+  font-weight: 700;
+}
+.graphit.font--bold {
+  font-weight: 600;
+}
+.font--black {
+  font-weight: 800;
+}
+
+// Lets see if I can fit sizes into this.
+// I can also do custom sizes for different fonts
+.font--xl {
+  font-size: 3.75rem;
+  @media screen and (min-width: 640px) {
+    font-size: 5.75rem;
+  }
+}
+.font--lg {
+
+}
+.font--md {
+
+}
+.font--sm {
+
+}
+.font--tn {
+
+}
+
+.graphit-xl-bold,
+.section__header {
+  font-family: Graphit;
+  font-size: 75px;
+  font-weight: 600;
+}
+.graphit-lg-bold {
+  font-family: Graphit;
+  font-size: 54px;
+  font-weight: 600;
+}
+.graphit-lg-regular {
+  font-family: Graphit;
+  font-size: 54px;
+  font-weight: 400;
+}
+.graphit-md-regular,
+.article__title {
+  font-family: Graphit;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.ivar-soft-sm-regular {
+  font-family: Ivar Soft;
+  font-size: 18px;
+  font-weight: 400;
+}
+.ivar-soft-xs-regular {
+  font-family: Ivar Soft;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
+
+.graphit {
+  font-family: Graphit;
+  font-weight: 400;
+}
+
+.graphit.font--thin {
+  font-family: Graphit;
+  font-weight: 100;
+}
+
+
+.graphit .font-xl,
+.graphit--ultra-thin .font-xl, 
+.grpahit--medium .font-xl {
+
+  @media screen and (min-width: 640px) {
+    font-size: 4rem;
+  }
+}
+.font-xl {
+
+}
+
+.graphit-xl {
+
+}
+
+.graphit-lg {
+
+}
+
+// This is used for article summaries on the index page
+// and the articles index page.
+.article {
+  margin: 3rem 0;
+  height: 10rem;
+}
+.article a {
+  text-decoration: none;
+}
+.article__title {
+  margin: 1rem 0;
+  text-align: center;
+  // text-decoration: underline;
 }

@@ -2,33 +2,29 @@
   font-family: Ivar Text;
   font-size: 21px;
   font-weight: 300;
-
+  
+  // Make these 
+  // Same as .graphit-xl-bold
   h1 {
     font-family: Graphit;
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 600;
+    font-size: 75px;
     // Escape the grid on the right side
     margin-right: calc(-50vw + 50%);
     margin-bottom: 4rem;
   }
-  h2, h3, h4, h5, h6 {
+  h2 {
     font-family: Ivar Display;
     font-weight: 600;
-  }
-  h2 {
     font-size: 48px;
     margin: 4rem 0 2rem;
   }
   h3 {
+    font-family: Ivar Display;
+    font-weight: 600;
     font-size: 32px;
     margin: 2.5rem 0 1rem;
   }
-  // h4 {
-  //   font-size: 28px;
-  // }
-  // h5 {
-  //   font-size: 24px;
-  // }
 
   a {
     white-space: pre-wrap; /* css-3 */    
@@ -67,11 +63,6 @@
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
   }
-
-  // .reflection-chart {
-  //   height: 20rem;
-  //   margin: 4rem 0 8rem;
-  // }
 
   .image-container {
     display: flex;

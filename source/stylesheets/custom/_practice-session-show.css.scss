@@ -2,16 +2,17 @@
   font-family: Graphit;
 
   .practice-session__header {
-    font-size: 75px;
-    display: inline-block;
-    font-weight: 700;
     margin: 0;
   }
-  .practice-session__header-date {
+  .practice-session__name {
     display: inline-block;
-    font-size: 75px;
+    margin: 0;
+  }
+  .practice-session__date {
+    display: inline-block;
     color: $color-gray;
   }
+  // MAKE MOBILE
   .practice-session__notes {
     font-weight: 400;
     font-size: 21px;
@@ -26,8 +27,8 @@
   }
   .domain-header, 
   .total-header {
-    font-size: 54px;
-    font-weight: 500;
+    // font-size: 54px;
+    // font-weight: 500;
     display: flex;
     justify-content: space-between;
   }
@@ -51,8 +52,8 @@
   .exercise-set__header {
     display: flex;
     justify-content: space-between;
-    font-size: 32px;
-    font-weight: 100;
+    // font-size: 32px;
+    // font-weight: 100;
   }
   .exercise-set__time {
     color: $color-gray;
@@ -68,15 +69,16 @@
     display: flex;
     justify-content: space-between;
   }
+  // MAKE MOBILE
   .exercise-set__increment {
     margin: 0.3rem;
-    font-size: 16px;
+    font-size: 18px;
   }
   .exercise-set__increments-summary {
     max-width: 10rem;
     text-align: right;
     color: $color-gray;
-    font-size: 16px;
+    font-size: 18px;
   }
 
 
@@ -84,17 +86,9 @@
     margin: 4rem 0 3rem;
   }
   .total-increments {
-    font-weight: 100;
-    font-size: 32px;
+    // font-weight: 100;
+    // font-size: 32px;
     margin: 1rem 0 1rem 40px;
-  }
-
-  .practice-session-chart__header {
-    font-size: 75px;
-    font-weight: 700;
-  }
-  .practice-session-chart {
-    height: 28rem;
   }
 
 }

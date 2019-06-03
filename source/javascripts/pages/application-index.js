@@ -11,7 +11,7 @@ function setNavOpacity(heroHeight) {
 
 // Transform keyboard from TK to LIK
 function transformKeyboard(scrollLength) {
-  var scrollLength = $(".hero__text--second")[0].offsetTop;
+  var scrollLength = $(".js-second-hero-text")[0].offsetTop;
   var white = { red: 255, green: 255, blue: 255, alpha: 1 }
   var gray = { red: 151, green: 151, blue: 151, alpha: 1 }
   // if (window.pageYOffset > 0) {
@@ -47,14 +47,14 @@ function positionKeyboard(keyboardScrollEnd) {
     keyboard.style.position = "absolute";
     keyboard.style.top = "0px";
   } else {
-    var top = $(".hero__text--first")[0].offsetHeight;
+    var top = $(".js-first-hero-text")[0].offsetHeight;
     keyboard.style.position = "fixed";
     keyboard.style.top = top + "px";
   }
 }
 
 function animateHeroText(keyboardScrollEnd) {
-  var secondText = $(".hero__text--second")[0];
+  var secondText = $(".js-second-hero-text")[0];
   if (window.pageYOffset >= keyboardScrollEnd) {
     secondText.classList.add("fadeInUp");
   }
@@ -62,7 +62,7 @@ function animateHeroText(keyboardScrollEnd) {
 
 function onScroll() {
   var heroHeight = $(".hero")[0].offsetHeight;
-  var keyboardScrollEnd = $(".hero__text--second")[0].offsetTop;
+  var keyboardScrollEnd = $(".js-second-hero-text")[0].offsetTop;
 
   setNavOpacity(heroHeight);
   transformKeyboard(keyboardScrollEnd);
@@ -115,7 +115,7 @@ window.addEventListener('scroll', onScroll);
 // Might use this to conditionally transition
 // if (window.pageYOffset == 0) {
 //   setTimeout(function () { 
-//     var scrollHeight = $(".hero__text--second")[0].offsetTop;
+//     var scrollHeight = $(".js-second-hero-text")[0].offsetTop;
 //     zenscroll.toY(scrollHeight, 1400) 
 //   }, 1500)
 // }
