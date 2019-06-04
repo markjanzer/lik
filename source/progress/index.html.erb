@@ -14,7 +14,7 @@
 </section>
 
 <section class="container section">
-  <h2 class="section__header chart-section__header">All Exercises</h2>
+  <h2 class="chart-section__header graphit-xl-regular">All Exercises</h2>
   <div class="row section__content">
     <div class="col">
       <div class="ct-chart ct-chart--full"></div>
@@ -25,7 +25,7 @@
 
 <% data[:domains].sort_by { |domain| domain.position }.each do |domain| %>
   <section class="container section">
-    <h2 class="section__header chart-section__header"><%= domain[:name] %></h2>
+    <h2 class="chart-section__header graphit-xl-regular"><%= domain[:name] %></h2>
     <div class="row">
       <div class="col">
         <div class="ct-chart ct-chart--full" data-domain="<%= domain[:name] %>"></div>
@@ -42,8 +42,8 @@
       <% exercise_sets.select! { |exercise_set| any_completed_increments?(exercise_set) } %>
       <div class="row">
         <% exercise_sets.each do |exercise_set| %>
-          <div class="col-6">
-            <h3 class="exercise-header"><%= exercise_set[:name] %></h3>
+          <div class="col-sm-12 col-md-6">
+            <h3 class="exercise-header graphit-lg-regular"><%= exercise_set[:name] %></h3>
             <div class="ct-chart ct-chart--half" data-exercise-set="<%= exercise_set[:name] %>"></div>
           </div>
           <script>

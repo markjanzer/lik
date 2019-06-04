@@ -51,6 +51,9 @@
   height: 100%;
   position: relative;
   margin-bottom: 4rem; // Account for label below and legend above
+  @media screen and (min-width: 576px) {
+    height: 2rem;
+  }
 
   svg {
     overflow: visible;
@@ -58,7 +61,11 @@
 }
 
 .ct-chart--full {
-  height: 26rem;
+  font-size: 1rem;
+  height: 13rem;
+  @media screen and (min-width: 576px) {
+    height: 26rem;
+  }
 }
 
 .ct-chart--half {
@@ -66,6 +73,10 @@
 }
 
 .ct-chart--article {
-  height: 18rem;
+  height: 13rem;
   margin: 3rem 0 7rem;
+  @media screen and (min-width: 576px) {
+    height: 18rem;
+    margin: 3rem 0 7rem;
+  }
 }

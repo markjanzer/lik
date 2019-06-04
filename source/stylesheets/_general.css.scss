@@ -1,10 +1,6 @@
 body {
-  font-family: 'Ivar Soft', serif;
-  font-weight: normal;
   line-height: 1.5;
   margin: 0;
-  font-size: 21px;
-  // margin-top: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,51 +90,11 @@ img {
 // .practice-session__header 75px Graphit Bold
 
 
-.ivar-text {
-  font-family: Ivar Text;
-}
-.ivar-display {
-  font-family: Ivar Display;
-}
-.ivar-soft {
-  font-family: Ivar Soft;
-}
-.graphit {
-  font-family: Graphit;
-}
-
-// OOF this doesn't work for inherited font-families
-// Maybe I refactor this away when I figure out what to use when
-.font--thin {
-  font-weight: 100;
-}
-.font--light {
-  font-weight: 300;
-}
-.font--regular {
-  font-weight: 400;
-}
-.font--medium {
-  font-weight: 500;
-}
-.font--semibold {
-  font-weight: 600;
-}
-.font--bold {
-  font-weight: 700;
-}
-.graphit.font--bold {
-  font-weight: 600;
-}
-.font--black {
-  font-weight: 800;
-}
-
 // Lets see if I can fit sizes into this.
 // I can also do custom sizes for different fonts
 .font--xl {
   font-size: 3.75rem;
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 576px) {
     font-size: 5.75rem;
   }
 }
@@ -146,76 +102,113 @@ img {
 .graphit-xxl-bold,
 .section__header {
   font-family: Graphit;
-  font-size: 72px;
   font-weight: 600;
+  font-size: 3rem;
+  @media screen and (min-width: 576px) {
+    font-size: 4.5rem;
+  }
 }
 .graphit-xxl-regular {
   font-family: Graphit;
-  font-size: 72px;
   font-weight: 400;
+  font-size: 3rem;
+  @media screen and (min-width: 576px) {
+    font-size: 4.5rem;
+  }
 }
 .graphit-xl-bold {
   font-family: Graphit;
-  font-size: 48px;
   font-weight: 600;
+  font-size: 2rem;
+  @media screen and (min-width: 576px) {
+    font-size: 3rem;
+  }
 }
 .graphit-xl-regular {
   font-family: Graphit;
-  font-size: 48px;
   font-weight: 400;
+  font-size: 2rem;
+  @media screen and (min-width: 576px) {
+    font-size: 3rem;
+  }
 }
 .graphit-lg-regular,
 .article__title {
   font-family: Graphit;
-  font-size: 32px;
   font-weight: 400;
+  font-size: 1.3125rem;
+  @media screen and (min-width: 576px) {
+    font-size: 2rem;
+  }
 }
 .graphit-md-regular {
   font-family: Graphit;
-  font-size: 21px;
   font-weight: 400;
+  font-size: 1rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.3125rem;
+  }
 }
 .graphit-sm-regular {
   font-family: Graphit;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 0.9rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.125rem;
+  }
 }
 .graphit-xs-regular {
   font-family: Graphit;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
 }
-
+.ivar-soft-md-regular,
+body {
+  font-family: 'Ivar Soft', serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.3125rem;
+  }
+}
 .ivar-soft-sm-regular {
   font-family: Ivar Soft;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 0.9rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.125rem;
+  }
 }
 .ivar-soft-xs-regular {
   font-family: Ivar Soft;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
 }
-
-
-
-
-.graphit {
-  font-family: Graphit;
+.ivar-display-xs-regular,
+.ct-axis-title,
+.ct-legend {
+  font-family: Ivar Display;
   font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
 }
 
-.graphit.font--thin {
-  font-family: Graphit;
-  font-weight: 100;
-}
+
 
 
 // This is used for article summaries on the index page
 // and the articles index page.
 .article {
   margin: 3rem 0;
-  height: 10rem;
+  // height: 10rem;
 }
 .article a {
   text-decoration: none;
@@ -223,5 +216,4 @@ img {
 .article__title {
   margin: 1rem 0;
   text-align: center;
-  // text-decoration: underline;
 }

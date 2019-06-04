@@ -5,7 +5,8 @@ footer {
   justify-content: space-between;
   align-items: baseline;
   padding: 2rem 0;
-  font-family: Graphit;
-  font-weight: 100;
-  font-size: 1rem;
+
+  .emphasis {
+    font-weight: 600;
+  }
 }
