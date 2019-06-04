@@ -7,7 +7,6 @@
 
   .keyboard-header {
     text-align: center;
-    text-decoration: underline;
   }
 
   .practice-session {
@@ -15,16 +14,11 @@
     border-bottom: solid 3px #D3D3D3;
     margin: 4rem 0;
     text-decoration: none;
+    line-height: 1;
   }
 
   .practice-session:hover {
     color: inherit;
-  }
-
-  .practice-session__number {
-    font-size: 75px;
-    font-weight: 400;
-    line-height: 1;
   }
 
   .practice-session__data {
@@ -34,32 +28,17 @@
     margin: 0 0 0 1rem;
   }
 
-  .practice-session__date {
-    font-size: 28px;
-    font-weight: 400;
-  }
+  .practice-session__date {}
 
-  .practice-session__details {
-    font-size: 16px;
-    font-weight: 400;
-  }
+  .practice-session__details {}
 
   .section__content {
     margin-top: 6rem;
-  }
-
-  .recordings__header {
-    font-size: 50px;
-    font-weight: 700;
   }
 
   .recordings__text {
     font-family: Ivar Soft;
     font-weight: 400;
     margin: 1rem;
-  }
-
-  .recordings__text a {
-    font-weight: 500;
   }
 }

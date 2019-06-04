@@ -3,7 +3,7 @@
   <div class="row section__content">
     <div class="col-6">
       <div class="container">
-        <div class="keyboard-header graphit-lg-bold">TK</div>
+        <div class="keyboard-header graphit-xxl-bold">TK</div>
         <div class="row justify-content-center">
           <ul>
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recUlyK9YJLOblfTI"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
@@ -12,14 +12,14 @@
               <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.tk_completed ? eps.tk_completed.count : 0) } %>
               <li>
                 <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
-                  <div class="practice-session__number">
+                  <div class="practice-session__number graphit-xxl-regular">
                     #<%= practice_session.number %>
                   </div>
                   <div class="practice-session__data">
-                    <div class="practice-session__date">
+                    <div class="practice-session__date graphit-lg-regular">
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
-                    <div class="practice-session__details">
+                    <div class="practice-session__details graphit-xs-regular">
                       <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
                     </div>
                   </div>
@@ -32,7 +32,7 @@
     </div>
     <div class="col-6">
       <div class="container">
-        <div class="keyboard-header graphit-lg-bold">LIK</div>
+        <div class="keyboard-header graphit-xxl-bold">LIK</div>
         <div class="row justify-content-center">
           <ul>
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
@@ -41,14 +41,14 @@
               <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.lik_completed ? eps.lik_completed.count : 0) } %>
               <li>
                 <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
-                  <div class="practice-session__number">
+                  <div class="practice-session__number graphit-xxl-regular">
                     #<%= practice_session.number %>
                   </div>
                   <div class="practice-session__data">
-                    <div class="practice-session__date">
+                    <div class="practice-session__date graphit-lg-regular">
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
-                    <div class="practice-session__details">
+                    <div class="practice-session__details graphit-xs-regular">
                       <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
                     </div>
                   </div>
@@ -65,7 +65,7 @@
 <div class="container section">
   <div class="row">
     <div class="col-8">
-      <h2 class="recordings__header">Recordings</h2>
+      <h2 class="graphit-xl-bold">Recordings</h2>
       <div class="recordings__text">I record all of my practice sessions and upload the audio files to Mega.nz</div>
       <div class="recordings__text">
         <a href="https://mega.nz/#F!DPpURACa!FXS_QgmHHKKOW-PCa_wI3A">You can find the recordings here.</a>

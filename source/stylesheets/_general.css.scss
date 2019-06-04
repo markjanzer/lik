@@ -142,39 +142,47 @@ img {
     font-size: 5.75rem;
   }
 }
-.font--lg {
 
-}
-.font--md {
-
-}
-.font--sm {
-
-}
-.font--tn {
-
-}
-
-.graphit-xl-bold,
+.graphit-xxl-bold,
 .section__header {
   font-family: Graphit;
-  font-size: 75px;
+  font-size: 72px;
   font-weight: 600;
 }
-.graphit-lg-bold {
+.graphit-xxl-regular {
   font-family: Graphit;
-  font-size: 54px;
-  font-weight: 600;
-}
-.graphit-lg-regular {
-  font-family: Graphit;
-  font-size: 54px;
+  font-size: 72px;
   font-weight: 400;
 }
-.graphit-md-regular,
+.graphit-xl-bold {
+  font-family: Graphit;
+  font-size: 48px;
+  font-weight: 600;
+}
+.graphit-xl-regular {
+  font-family: Graphit;
+  font-size: 48px;
+  font-weight: 400;
+}
+.graphit-lg-regular,
 .article__title {
   font-family: Graphit;
   font-size: 32px;
+  font-weight: 400;
+}
+.graphit-md-regular {
+  font-family: Graphit;
+  font-size: 21px;
+  font-weight: 400;
+}
+.graphit-sm-regular {
+  font-family: Graphit;
+  font-size: 18px;
+  font-weight: 400;
+}
+.graphit-xs-regular {
+  font-family: Graphit;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -202,26 +210,6 @@ img {
   font-weight: 100;
 }
 
-
-.graphit .font-xl,
-.graphit--ultra-thin .font-xl, 
-.grpahit--medium .font-xl {
-
-  @media screen and (min-width: 640px) {
-    font-size: 4rem;
-  }
-}
-.font-xl {
-
-}
-
-.graphit-xl {
-
-}
-
-.graphit-lg {
-
-}
 
 // This is used for article summaries on the index page
 // and the articles index page.

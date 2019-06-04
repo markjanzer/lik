@@ -3,11 +3,11 @@
 
   <section class="container section--top">
     <div class="section__header practice-session__header">
-      <h1 class="graphit-xl-bold practice-session__name"><%= find(:keyboards, practice_session.keyboard[0]).acronym %> #<%= practice_session.number %></h1>
-      <div class="graphit-xl-bold practice-session__date"> — <%= Date.parse(practice_session.date).strftime("%Y/%m/%d") %></div>
+      <h1 class="graphit-xxl-bold practice-session__name"><%= find(:keyboards, practice_session.keyboard[0]).acronym %> #<%= practice_session.number %></h1>
+      <div class="graphit-xxl-bold practice-session__date"> — <%= Date.parse(practice_session.date).strftime("%Y/%m/%d") %></div>
     </div>
 
-    <div class="practice-session__notes">
+    <div class="practice-session__notes graphit-md-regular">
       <%= practice_session.notes %>
     </div>
 
@@ -23,7 +23,7 @@
           <% domain_time = domain_exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
           <% domain_exercises = find_all(:exercises, practice_session.exercises).select { |exercise| exercise.domain[0] == domain.id } %>
           <li class="domain">
-            <div class="domain-header graphit-lg-regular">
+            <div class="domain-header graphit-xl-regular">
               <div class="domain-header__title">
                 <%= domain.name %>
               </div>
@@ -32,7 +32,7 @@
                 <%= format_as_time(domain_time) %>
               </div>
             </div>
-            <ul class="exercise-sets">
+            <ul>
               <% domain_exercises_practice_sessions.each do |eps| %>
                 <div class="exercise-set">
                   <div class="exercise-set__header garphit-md-regular">
@@ -46,7 +46,7 @@
                   </div>
                   <% completed_increments = find_all(:exercise_increments, eps.tk_completed || eps.lik_completed) %>
                   <% if completed_increments.length > 0 %>
-                    <div class="exercise-set__data">
+                    <div class="exercise-set__data graphit-xs-regular">
                       <ul class="exercise-set__increments">
                         <% completed_increments.each do |ci| %>
                           <li class="exercise-set__increment">
@@ -66,7 +66,7 @@
         <% end %>
 
         <li class="total">
-          <div class="total-header">
+          <div class="total-header graphit-xl-regular">
             <div class="total-header__title">Total</div>
             <% total_time = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
             <div class="total-header__time">
@@ -85,7 +85,7 @@
     </div>
   </section>
   <section class="container section">
-    <h2 class="section__header">Progress so far</h2>
+    <h2 class="section__header graphit-xl-bold">Progress so far</h2>
     <div class="row">
       <div class="col ct-chart ct-chart--full"></div>
     </div>
