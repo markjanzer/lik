@@ -11,7 +11,6 @@ function setNavOpacity(heroHeight) {
 
 // Transform keyboard from TK to LIK
 function transformKeyboard(scrollLength) {
-  var scrollLength = $(".js-second-hero-text")[0].offsetTop;
   var white = { red: 255, green: 255, blue: 255, alpha: 1 }
   var gray = { red: 151, green: 151, blue: 151, alpha: 1 }
   // if (window.pageYOffset > 0) {
@@ -41,8 +40,10 @@ function transformKeyboard(scrollLength) {
 
 function positionKeyboard(keyboardScrollEnd) {
   // var scrollTop = window.pageYOffset;
+  console.log(keyboardScrollEnd);
+  console.log(window.pageYOffset);
   var keyboard = $(".keyboard")[0];
-  // Maybe I should use calsses here instead
+  // Maybe I should use classes here instead
   if (window.pageYOffset >= keyboardScrollEnd) {
     keyboard.style.position = "absolute";
     keyboard.style.top = "0px";
@@ -62,11 +63,12 @@ function animateHeroText(keyboardScrollEnd) {
 
 function onScroll() {
   var heroHeight = $(".hero")[0].offsetHeight;
-  var keyboardScrollEnd = $(".js-second-hero-text")[0].offsetTop;
+  var secondHeroTextArea = $(".js-second-hero-text-area")[0]
+  var keyboardScrollEnd = secondHeroTextArea.offsetTop;
 
   setNavOpacity(heroHeight);
-  transformKeyboard(keyboardScrollEnd);
   positionKeyboard(keyboardScrollEnd);
+  transformKeyboard(keyboardScrollEnd);
   animateHeroText(keyboardScrollEnd);
 }
 

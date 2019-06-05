@@ -56,49 +56,6 @@ img {
 // Ivar SemiBold---------- 600
 // Ivar Bold-------------- 700
 
-
-// Hero
-// .hero__text         50px   Graphit     Regular
-// .hero__text--black  50px   Graphit     Black
-
-// Section headers
-// .section__header    90px   Graphit     Regular
-
-// Summary
-// .summary__text      65px   Graphit     Thin(Light)
-// .summary__text      65px   Graphit     Medium
-
-// Body
-// body                20px   Ivar Soft   Regular
-
-// Articles/Reflections labels
-// .articles-title     54px   Graphit     Bold
-
-// Article summaries
-// .article__title     34px   Graphit     Regular
-
-// Contact
-// .contact-text       21px   Ivar Soft   Regular
-
-// Practice Sessions
-// .keyboard-header    64px   Graphit     Bold
-// .practice-session__number 76px Graphit Regular
-// .practice-session__date 28px Graphit   Regular
-// .practice-session__details 16px Graphit Regular
-
-// Practice Session
-// .practice-session__header 75px Graphit Bold
-
-
-// Lets see if I can fit sizes into this.
-// I can also do custom sizes for different fonts
-.font--xl {
-  font-size: 3.75rem;
-  @media screen and (min-width: 576px) {
-    font-size: 5.75rem;
-  }
-}
-
 .graphit-xxl-bold,
 .section__header {
   font-family: Graphit;
