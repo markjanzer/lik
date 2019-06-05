@@ -26,7 +26,10 @@ img {
 
 
 .section {
-  margin-top: 8rem;
+  margin-top: 5rem;
+  @media screen and (min-width: 576px) {
+    margin-top: 8rem;
+  }
 }
 
 .section--top {
@@ -164,8 +167,10 @@ body {
 // This is used for article summaries on the index page
 // and the articles index page.
 .article {
-  margin: 3rem 0;
-  // height: 10rem;
+  margin: 2rem 0;
+  @media screen and (min-width: 576px) {
+    margin: 3rem 0;
+  }
 }
 .article a {
   text-decoration: none;

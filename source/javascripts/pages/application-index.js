@@ -39,9 +39,6 @@ function transformKeyboard(scrollLength) {
 }
 
 function positionKeyboard(keyboardScrollEnd) {
-  // var scrollTop = window.pageYOffset;
-  console.log(keyboardScrollEnd);
-  console.log(window.pageYOffset);
   var keyboard = $(".keyboard")[0];
   // Maybe I should use classes here instead
   if (window.pageYOffset >= keyboardScrollEnd) {
