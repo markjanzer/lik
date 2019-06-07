@@ -160,22 +160,3 @@ body {
     font-size: 1rem;
   }
 }
-
-
-
-
-// This is used for article summaries on the index page
-// and the articles index page.
-.article {
-  margin: 2rem 0;
-  @media screen and (min-width: 576px) {
-    margin: 3rem 0;
-  }
-}
-.article a {
-  text-decoration: none;
-}
-.article__title {
-  margin: 1rem 0;
-  text-align: center;
-}

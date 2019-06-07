@@ -45,11 +45,25 @@ body.index {
       margin: 0;
     }
   }
-
   .articles__subheader--second {
     @media screen and (max-width: 575px) {
       margin: 6rem 0 0;
     }
+  }
+  .article {
+    margin: 2rem 0;
+    @media screen and (min-width: 576px) {
+      margin: 3rem 0;
+    }
+    text-decoration: none;
+  }
+  // .article p {
+  //   text-decoration: none;
+  // }
+  .article__title {
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
   }
 
   .articles__footer {
