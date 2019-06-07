@@ -19,7 +19,7 @@ The thirty second practice session marked an important point in the progress of 
 <% scales = data.exercise_sets.find { |es| es.name == "Scales & Arpeggios" } %>
 <script>
   var scales_data = <%= exercise_set_progress(scales, practice_sessions).to_json %>
-  new Chartist.Line('.scales-chart', scales_data, basicOptions);
+  createChart('.scales-chart', scales_data);
 </script>
 
 The LIK might slow down at it approaches the fastest tempo that I can play on the TK, but even the LIK will continue to outpace the TK with the advantage of transposition.
@@ -37,7 +37,7 @@ On the TK I can play the C major scale with sixteenth notes at 80bpm, and I can 
 <% hanon = data.exercise_sets.find { |es| es.name == "Hanon" } %>
 <script>
   var hanon_data = <%= exercise_set_progress(hanon, practice_sessions).to_json %>
-  new Chartist.Line('.hanon-chart', hanon_data, basicOptions);
+  createChart('.hanon-chart', hanon_data);
 </script>
 
 We can see a difference in complexity when we consider the number of patterns that each keyboard has to learn for a Hanon exercise. When playing the TK you have to learn two unique shapes, the ascending pattern and the descending pattern. On the LIK you have to learn fourteen unique shapes as the ascending and descending shapes are different for each starting note. There are similarities between these fourteen patterns, but they are still unique.
@@ -53,7 +53,7 @@ Since removing sixteenth notes from the exercises, both the TK and the LIK have 
 <% sight_reading = data.exercise_sets.find { |es| es.name == "EarMaster Sight Reading" } %>
 <script>
   var sight_reading_data = <%= exercise_set_progress(sight_reading, practice_sessions).to_json %>
-  new Chartist.Line('.sight-reading-chart', sight_reading_data, basicOptions);
+  createChart('.sight-reading-chart', sight_reading_data);
 </script>
 
 I do have concerns about the increments, as I am going to be increasing the largest interval from the fourth all the way up to the full pitch range of the keyboard (although EarMaster seems to limit leaps to about an octave and half). I wonder if that will be too difficult, especially if the leaps are strung together. This will be difficult for both keyboards, but the LIK might struggle even more as the lack of distinct shapes makes it so there are no reference points that can be felt, only seen. This same incrementing also applies to playing by ear, but I am not as concerned as I think it'll be easier to make larger leaps playing by ear instead of sight reading.

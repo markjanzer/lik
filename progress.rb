@@ -54,12 +54,3 @@ def exercise_set_progress(exercise_set, practice_sessions=data.practice_sessions
   select_proc = proc { |ci| find(:exercise_sets, ci.exercise_set) == exercise_set }
   progress_data(practice_sessions, select_proc)
 end
-
-# Apply this to progress_data to alternate labels
-def alternate_labels(data, modulo=2)
-  new_labels = data[:labels].map { |label| label.to_i % modulo == 0 ? label : ""}
-  return {
-    series: data[:series],
-    labels: new_labels,
-  }
-end

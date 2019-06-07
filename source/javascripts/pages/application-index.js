@@ -120,4 +120,4 @@ window.addEventListener('scroll', onScroll);
 // }
 
 // Chart
-new Chartist.Line('.ct-chart', data, basicOptions);
+createChart('.ct-chart', data);

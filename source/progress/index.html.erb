@@ -33,7 +33,7 @@
     </div>
     <script>
       var chartData = <%= domain_progress(domain).to_json %>
-      new Chartist.Line(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData, basicOptions);
+      createChart(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData)
     </script>
 
     <% if find_all(:exercise_sets, domain[:exercise_sets]).length > 1 %>
@@ -47,8 +47,8 @@
             <div class="ct-chart ct-chart--half" data-exercise-set="<%= exercise_set[:name] %>"></div>
           </div>
           <script>
-            var chartData = <%= alternate_labels(exercise_set_progress(exercise_set)).to_json %>
-            new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
+            var chartData = <%= exercise_set_progress(exercise_set).to_json %>
+            createChart(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData)
           </script>
         <% end %>
       </div>
@@ -57,5 +57,7 @@
 <% end %>
 
 
-<script>var data = <%= all_progress.to_json %></script>
-<script src="/javascripts/pages/progress.js"></script>
+<script>
+  var data = <%= all_progress.to_json %>
+  createChart('.ct-chart', data);
+</script>

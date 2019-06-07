@@ -94,5 +94,5 @@
 
 <script>
   var data = <%= progress_until_practice_session(practice_session).to_json %>
-  new Chartist.Line('.ct-chart', data, basicOptions);
+  createChart('.ct-chart', data)
 </script>

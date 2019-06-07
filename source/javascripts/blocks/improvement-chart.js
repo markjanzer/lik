@@ -114,7 +114,7 @@ var improvementChartOptions = {
   ]
 }
 
-new Chartist.Line('.improvement-chart', {
+createChart('.improvement-chart', {
   labels: tk.practiceSessions.map(ps => ps.number),
   series: [{
     name: 'TK percent known',
@@ -130,6 +130,23 @@ new Chartist.Line('.improvement-chart', {
     data: lik.practiceSessions.map(ps => ps.percentKnown),
   }]
 }, improvementChartOptions);
+
+// new Chartist.Line('.improvement-chart', {
+//   labels: tk.practiceSessions.map(ps => ps.number),
+//   series: [{
+//     name: 'TK percent known',
+//     data:  tk.practiceSessions.map(ps => ps.percentKnownOnKeyboard),
+//   }, {
+//     name: 'TK percent known of practice session',
+//     data: tk.practiceSessions.map(ps => ps.percentKnown),
+//   }, {
+//     name: 'LIK percent known',
+//     data: lik.practiceSessions.map(ps => ps.percentKnownOnKeyboard),
+//   }, {
+//     name: 'LIK percent known of practice session',
+//     data: lik.practiceSessions.map(ps => ps.percentKnown),
+//   }]
+// }, improvementChartOptions);
 
 
 
