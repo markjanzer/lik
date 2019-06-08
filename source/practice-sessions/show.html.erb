@@ -12,7 +12,7 @@
     </div>
 
     <div class="row">
-      <ul class="col-8 domains">
+      <ul class="col-sm-12 col-md-8 domains">
         <% domain_ids = find_all(:exercises, practice_session.exercises).map { |exercise| exercise.domain[0] }.uniq %>
         <% domains = find_all(:domains, domain_ids) %>
         <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
