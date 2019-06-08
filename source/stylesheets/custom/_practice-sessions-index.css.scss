@@ -9,12 +9,18 @@
     text-align: center;
   }
 
+  .practice-sessions {
+    margin-top: 0;
+  }
+
   .practice-session {
     display: flex;
     border-bottom: solid 3px #D3D3D3;
     margin: 4rem 0;
     text-decoration: none;
     line-height: 1;
+    font-family: Graphit;
+    font-weight: 400;
   }
 
   .practice-session:hover {
@@ -28,9 +34,29 @@
     margin: 0 0 0 1rem;
   }
 
-  .practice-session__date {}
+  // graphit-xxl-regular: ;
+  .practice-session__number {
+    font-size: calc(3.5vw * 2.22);
+    @media screen and (min-width: 576px) {
+      font-size: 4.5rem;
+    }
+  }
 
-  .practice-session__details {}
+  // graphit-lg-regular
+  .practice-session__date {
+    font-size: calc(1.9vw * 2.22);
+    @media screen and (min-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
+  // graphit-xs-regular
+  .practice-session__details {
+    font-size: calc(0.9vw * 2.22);
+    @media screen and (min-width: 576px) {
+      font-size: 1rem;
+    }
+  }
 
   .section__content {
     margin-top: 6rem;

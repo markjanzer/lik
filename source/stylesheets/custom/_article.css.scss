@@ -69,6 +69,9 @@
 
   ul {
     margin: 4rem 0;
+    @media screen and (max-width: 575px) {
+      padding-left: 1rem;
+    }
   }
 
   strong {
