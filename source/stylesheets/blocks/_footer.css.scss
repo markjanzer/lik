@@ -15,9 +15,8 @@ footer {
 }
 
 footer.container {
-  padding: 1rem 0;
+  // padding: 0 15px;
   @media screen and (min-width: 576px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 }
