@@ -1,9 +1,13 @@
 footer {
-  margin-top: 14rem;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  margin-top: 6rem;
+  @media screen and (min-width: 576px) {
+    margin-top: 14rem;
+  }
 
   .emphasis {
     font-weight: 600;
