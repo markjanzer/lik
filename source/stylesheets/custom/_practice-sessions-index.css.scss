@@ -1,5 +1,5 @@
 .practice-sessions_index {
-  font-family: Graphit;
+  font-family: $graphit;
 
   ul {
     padding-inline-start: 0;
@@ -19,7 +19,7 @@
     margin: 4rem 0;
     text-decoration: none;
     line-height: 1;
-    font-family: Graphit;
+    font-family: $graphit;
     font-weight: 400;
   }
 
@@ -63,7 +63,7 @@
   }
 
   .recordings__text {
-    font-family: Ivar Soft;
+    font-family: $ivar-soft;
     font-weight: 400;
     margin: 1rem;
   }

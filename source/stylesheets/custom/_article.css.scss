@@ -1,5 +1,5 @@
 .article-show {
-  font-family: Ivar Text;
+  font-family: $ivar-text;
   font-weight: 400;
   font-size: 1.125rem;
   @media screen and (min-width: 576px) {
@@ -13,7 +13,7 @@
     margin-right: calc(-50vw + 50%);
     margin-bottom: 4rem;
 
-    font-family: Graphit;
+    font-family: $graphit;
     font-weight: 600;
     font-size: 3rem;
     @media screen and (min-width: 576px) {
@@ -23,7 +23,7 @@
   h2 {
     margin: 4rem 0 2rem;
 
-    font-family: Ivar Display;
+    font-family: $ivar-display;
     font-weight: 600;
     font-size: 2rem;
     @media screen and (min-width: 576px) {
@@ -33,7 +33,7 @@
   h3 {
     margin: 2.5rem 0 1rem;
 
-    font-family: Ivar Display;
+    font-family: $ivar-display;
     font-weight: 600;
     font-size: 1.3125rem;
     @media screen and (min-width: 576px) {

@@ -1,5 +1,5 @@
 .practice-session__show {
-  font-family: Graphit;
+  font-family: $graphit;
 
   .practice-session__header {
     margin: 0;
@@ -40,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
 
-    font-family: Graphit;
+    font-family: $graphit;
     font-weight: 400;
     font-size: 1.8rem;
     @media screen and (min-width: 576px) {

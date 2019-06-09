@@ -6,11 +6,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Metatags -->
     <% if content_for?(:metatags) %>
       <%= yield_content :metatags %>
     <% else %>
       <title><%= current_page.data.title || "The Linear Isomorphic Keyboard" %></title>
     <% end %>
+  
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
   
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80177688-3"></script>
