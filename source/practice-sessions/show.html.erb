@@ -48,7 +48,7 @@
                     </div>
                     <div class="exercise-set__divider"></div>
                     <div class="exercise-set__time">
-                      <%= format_as_time(eps.time_practiced) %>
+                      <%= eps.time_practiced ? format_as_time(eps.time_practiced) : "" %>
                     </div>
                   </div>
                   <% completed_increments = find_all(:exercise_increments, eps.tk_completed || eps.lik_completed) %>
