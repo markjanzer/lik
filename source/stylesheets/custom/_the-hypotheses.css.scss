@@ -2,7 +2,18 @@
 
   // Intervals shapes graph
   .intervals-shapes-section {
-    padding: 0 1rem;
+    padding: 0;
+    @media screen and (min-width: 576px) {
+      padding: 0 1rem;
+    }
+
+    // ivar-soft-xs-regular
+    font-family: Ivar Soft;
+    font-weight: 400;
+    font-size: 0.7rem;
+    @media screen and (min-width: 576px) {
+      font-size: 1rem;
+    }
   }
   .intervals-shapes-graph__label {
     text-align: center;
@@ -25,11 +36,21 @@
     align-items: center;
   }
   .interval {
-    margin: 0 0.5rem;
+    margin: 0 0.1rem;
+    @media screen and (min-width: 576px) {
+      margin: 0 0.5rem;
+    }
   }
-  .interval .node__visual {
-    height: 2rem;
-    width: 2rem;
+  .node__circle,
+  .node__circle svg {
+    height: calc(100vw / 16);
+    width: calc(100vw / 16);
+    @media screen and (min-width: 576px) {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  .interval .node__circle {
     background-color: #bbb;
     border-radius: 50%;
     border: 1px solid grey;
@@ -39,10 +60,14 @@
     position: relative;
     z-index: 2;
   }
-  .node svg {
-    height: 2rem;
-    width: 2rem;
-  }
+  // .node svg {
+  //   height: 1.5rem;
+  //   width: 1.5rem;
+  //   @media screen and (min-width: 576px) {
+  //     height: 2rem;
+  //     width: 2rem;
+  //   }
+  // }
 
   .legend-container {
     display: flex;
@@ -75,6 +100,13 @@
     padding: 0 1rem;
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .ct-legend li {
+    @media screen and (max-width: 575px) {
+      padding-left: 15px;
+      padding-right: 0.5rem;
+    }
   }
 
   // Custom colors for improvement chart
@@ -122,21 +154,10 @@
     background-color: $lik-color-2;
     border-color: $lik-color-2;
   }
-  // .ct-series-a {
-  //   stroke: $tk-color;
-  //   fill: $tk-color;
-  // }
-  // .ct-series-b {
-  //   stroke: $tk-color-2;
-  //   fill: $tk-color-2;
-  // }
-  // .ct-series-c {
-  //   stroke: $lik-color;
-  //   fill: $lik-color;
-  // }
-  // .ct-series-d {
-  //   stroke: $lik-color-2;
-  //   fill: $lik-color-2;
-  // }
+
+  #notes-from-3242019 {
+    margin-top: 6rem;
+  }
+
 
 }
