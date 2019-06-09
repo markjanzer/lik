@@ -4,9 +4,16 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 2rem 0;
 
   .emphasis {
     font-weight: 600;
+  }
+}
+
+footer.container {
+  padding: 1rem 0;
+  @media screen and (min-width: 576px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
