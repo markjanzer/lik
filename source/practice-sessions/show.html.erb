@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: find(:keyboards, practice_session.keyboard[0]).acronym + " Practice Session #" + practice_session.number.to_s,
+  } %>
+<% end %>
+
+
 <%= partial "partials/chartist-js" %>
 <div class="practice-session__show">
 

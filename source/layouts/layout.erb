@@ -5,8 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <%= yield :metatags %>
+    
+    <% if content_for?(:metatags) %>
+      <%= yield_content :metatags %>
+    <% else %>
+      <title><%= current_page.data.title || "The Linear Isomorphic Keyboard" %></title>
+    <% end %>
   
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80177688-3"></script>
@@ -18,12 +22,10 @@
       gtag('config', 'UA-80177688-3');
     </script>
 
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "The Linear Isomorphic Keyboard" %></title>
-
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
+
   <body class="<%= page_classes %>">
     <%= partial "partials/header" %>
     <%= yield %>

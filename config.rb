@@ -53,10 +53,16 @@ helpers do
   end
 end
 
+configure :development do
+  config[:base_url] = "http://localhost:4567"
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  config[:base_url] = "https://likeyboard.io"
+
   import_data
 
   if data[:intervals_shapes].nil?

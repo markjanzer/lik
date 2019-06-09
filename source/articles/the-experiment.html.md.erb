@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "The Experiment",
+    description: "How do you compare compare the “playability” of two keyboards, and what even is “playability”? In this article I define this metric of comparison, explain how I will practice and measure improvement, and reflect on flaws in the experiment.",
+  } %>
+<% end %>
+
 <% partial "/partials/article-layout" do %>
 
 # The Experiment

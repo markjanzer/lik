@@ -2,6 +2,10 @@
 layout: layout
 ---
 
+<% content_for :metatags do %>
+  <%= partial "partials/metatags" %>
+<% end %>
+
 <div class="container section section--top">
   <h1 class="section__header">Articles</h1>
   <div class="row"> 
@@ -10,7 +14,7 @@ layout: layout
         <li class="article">
           <a href="/articles/the-idea">
             <h2 class="article__title">The Idea</h2>
-            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;Why the new keyboard and why the site? The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement. This short article describes history of the old, potential for the new, and a transparent experiment that could tell us if we should change the way we design the keyboard.</div>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement. This short article describes history of the old, potential for the new, and a transparent experiment that could tell us if we should change the way we design the keyboard.</div>
           </a>
         </li>
         <li class="article">

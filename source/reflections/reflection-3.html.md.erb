@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "Reflection #3: 33 hours",
+    description: "The Linear Isomorphic Keyboard has overtook the Traditional Keyboard in its ability to play major scales, but it made no measurable improvement on Hanon whatsoever. I reflect on why this might be, as well as strategies for sight reading and playing by ear that are tailored to each keyboard.",
+  } %>
+<% end %>
+
 <%= partial "partials/chartist-js" %>
 
 <% practice_sessions = data.practice_sessions.select { |ps| ps.number <= 33 } %>

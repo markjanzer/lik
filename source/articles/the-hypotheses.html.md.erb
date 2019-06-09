@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "The Hypotheses",
+    description: "Why would the Linear Isomorphic Keyboard perform better than the traditional keyboard? I have a handful of theories about how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage. With words, graphs, and charts, I attempt to explain my predictions for the experiment.",
+  } %>
+<% end %>
+
 <%= partial "partials/chartist-js" %>
 <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
 

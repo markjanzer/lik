@@ -4,20 +4,20 @@
 <!-- image -->
 
 <!-- Primary Meta Tags -->
-<title><%= title || 'The Linear Isomorphic Keyboard' %></title>
-<meta name="title" content="<%= title || 'The Linear Isomorphic Keyboard' %>">
-<meta name="description" content="<%= description || 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
+<title><%= defined?(title) ? title : 'The Linear Isomorphic Keyboard' %></title>
+<meta name="title" content="<%= defined?(title) ? title : 'The Linear Isomorphic Keyboard' %>">
+<meta name="description" content="<%= defined?(description) ? description : 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="<%= url || 'https://likeyboard.io/' %>">
-<meta property="og:title" content="<%= title || 'The Linear Isomorphic Keyboard' %>">
-<meta property="og:description" content="<%= description || 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
-<meta property="og:image" content="<%= image || '/images/lik-meta.png' %>">
+<meta property="og:url" content="<%= defined?(url) ? url : config.base_url + current_page.url %>">
+<meta property="og:title" content="<%= defined?(title) ? title : 'The Linear Isomorphic Keyboard' %>">
+<meta property="og:description" content="<%= defined?(description) ? description : 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
+<meta property="og:image" content="<%= defined?(image) ? image : '/images/lik-meta.png' %>">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="<%= url || 'https://likeyboard.io/' %>">
-<meta property="twitter:title" content="<%= title || 'The Linear Isomorphic Keyboard' %>">
-<meta property="twitter:description" content="<%= description || 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
-<meta property="twitter:image" content="/images/lik-meta.png">
+<meta property="twitter:url" content="<%= defined?(url) ? url : config.base_url + current_page.url %>">
+<meta property="twitter:title" content="<%= defined?(title) ? title : 'The Linear Isomorphic Keyboard' %>">
+<meta property="twitter:description" content="<%= defined?(description) ? description : 'There might be a better way to design the piano keyboard. This an experiment to determine if the Linear Isomorphic Keyboard is the answer.' %>">
+<meta property="twitter:image" content="<%= defined?(image) ? image : '/images/lik-meta.png' %>">

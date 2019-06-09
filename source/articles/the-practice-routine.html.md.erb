@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "The Practice Routine",
+    description: "What will I practice and why? Content is important, certain exercises will benefit one keyboard over another, and I don’t want to practice in a way that is foreign to how others practice. I discuss the content I chose to practice, why I chose it, and the general philosophy behind creating and altering curriculum.",
+  } %>
+<% end %>
+
 <% partial "/partials/article-layout" do %>
 
 # The Practice Routine

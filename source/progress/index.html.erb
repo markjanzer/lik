@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "LIK — Progress",
+    description: "This is a a live comparison of my improvement on the Linear Isomorphic Keyboard and the Traditional Keyboard.",
+  } %>
+<% end %>
+
 <%= partial "partials/chartist-js" %>
 
 <section class="container section section--top">

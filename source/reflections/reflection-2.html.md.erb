@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "Reflection #2: 15 hours",
+    description: "With fifteen hours of practice on each keyboard, the Traditional Keyboard steadily improves at fundamentals, while the Linear Isomorphic Keyboard hase barely made progress. I reflect on how I can improve exercises that use software, as well as my philosophy of how I should practice to improve depending on the content.",
+  } %>
+<% end %>
+
 <%= partial "partials/chartist-js" %>
 
 <% practice_sessions = data.practice_sessions.select { |ps| ps.number <= 15 } %>

@@ -4,11 +4,12 @@ title: The Linear Isomorphic Keybaord
 
 <%# Meta Tags %>
 <% content_for :metatags do %>
-  <%= partial "metatags", locals: {
+  <%# partial "partials/metatags", locals: {
     url: "https://www.imagewall.com",
     title: "ImageWall — Design and Order Custom Perforated Metal",
-    description: "ImageWall crafts custom perforated metal panel systems designed by you. Upload an image, get live pricing, and order your ImageWall system online."
+    description: "ImageWall crafts custom perforated metal panel systems designed by you. Upload an image, get live pricing, and order your ImageWall system online.",
   } %>
+  <%= partial "partials/metatags" %>
 <% end %>
 
 <%= partial "partials/chartist-js" %>

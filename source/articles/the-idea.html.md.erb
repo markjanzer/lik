@@ -1,3 +1,10 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "The Idea",
+    description: "The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement. This short article describes history of the old, potential for the new, and a transparent experiment that could tell us if we should change the way we design the keyboard.",
+  } %>
+<% end %>
+
 <% partial "/partials/article-layout" do %>
 
 # The Idea
