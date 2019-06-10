@@ -69,6 +69,16 @@ configure :build do
     generate_elements_json
   end
 
-  # activate :minify_css
+  # Enable cache buster
+  activate :asset_hash, exts: %w(.js .css)
+  # activate :asset_hash
+
+  # Minify CSS on build
+  activate :minify_css
+
+  # Minify Javascript on build
   # activate :minify_javascript
+
+  # GZIP files for even better compression
+  activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
 end

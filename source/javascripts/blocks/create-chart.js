@@ -44,8 +44,6 @@ function createChart(node, data, options) {
   // Skip however many labels needed to ensure that there are at least 18 pixels per label
   var modulo = 1;
   while (container.offsetWidth / (data.labels.length / modulo) < 18) {
-    console.log(modulo);
-    console.log(container.offsetWidth / (data.labels.length / modulo))
     modulo += 1;
   }
   data.labels = data.labels.map(num => num % modulo === 0 ? num : "");
