@@ -58,15 +58,25 @@ function animateHeroText(keyboardScrollEnd) {
   }
 }
 
+function hideSecondHeroText(scrollTo) {
+  if (window.pageYOffset >= scrollTo) {
+    $(".js-second-hero-text")[0].classList.remove("is-hidden");
+  } else {
+    $(".js-second-hero-text")[0].classList.add("is-hidden");
+  }
+}
+
 function onScroll() {
   var heroHeight = $(".hero")[0].offsetHeight;
   var secondHeroTextArea = $(".js-second-hero-text-area")[0];
   var keyboardScrollEnd = secondHeroTextArea.offsetTop;
+  var secondHeroTextHeight = $(".js-second-hero-text")[0].offsetHeight;
 
   setNavOpacity(heroHeight);
   positionKeyboard(keyboardScrollEnd);
   transformKeyboard(keyboardScrollEnd);
   animateHeroText(keyboardScrollEnd);
+  hideSecondHeroText(keyboardScrollEnd - secondHeroTextHeight);
 }
 
 
