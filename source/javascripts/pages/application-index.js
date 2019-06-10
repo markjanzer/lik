@@ -60,7 +60,7 @@ function animateHeroText(keyboardScrollEnd) {
 
 function onScroll() {
   var heroHeight = $(".hero")[0].offsetHeight;
-  var secondHeroTextArea = $(".js-second-hero-text-area")[0]
+  var secondHeroTextArea = $(".js-second-hero-text-area")[0];
   var keyboardScrollEnd = secondHeroTextArea.offsetTop;
 
   setNavOpacity(heroHeight);
@@ -105,19 +105,13 @@ function transformColor(startingColor, endingColor, percent) {
 onScroll();
 window.addEventListener('scroll', onScroll);
 
-// Force page scroll position to the top on page load
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
-
-// Might not need zenscroll
-// Might use this to conditionally transition
-// if (window.pageYOffset == 0) {
-//   setTimeout(function () { 
-//     var scrollHeight = $(".js-second-hero-text")[0].offsetTop;
-//     zenscroll.toY(scrollHeight, 1400) 
-//   }, 1500)
-// }
+// Scroll automatically on page load
+if (window.pageYOffset == 0) {
+  setTimeout(function () { 
+    var scrollTo = $(".js-second-hero-text-area")[0].offsetTop;
+    zenscroll.toY(scrollTo, 1400) 
+  }, 1500)
+}
 
 // Chart
 createChart('.ct-chart', data);
