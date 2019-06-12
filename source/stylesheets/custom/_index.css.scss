@@ -20,6 +20,11 @@ body.index {
     opacity: 0;
   }
 
+  .hero__text p,
+  .hero__text h1 {
+    margin: 0;
+  }
+
   .hero__text.is-hidden {
     color: $color-gray;
   }
