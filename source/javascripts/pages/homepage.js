@@ -121,6 +121,11 @@ if (window.pageYOffset == 0) {
     var scrollTo = $(".js-second-hero-text-area")[0].offsetTop;
     zenscroll.toY(scrollTo, 1400) 
   }, 1500)
+
+  setTimeout(function() {
+    var scrollTo = $(".js-hero")[0].offsetHeight;
+    zenscroll.toY(scrollTo, 1400) 
+  }, 4400)
 }
 
 // Chart
