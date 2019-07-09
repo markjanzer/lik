@@ -117,15 +117,20 @@ window.addEventListener('scroll', onScroll);
 
 // Scroll automatically on page load
 if (window.pageYOffset == 0) {
-  setTimeout(function () { 
-    var scrollTo = $(".js-second-hero-text-area")[0].offsetTop;
-    zenscroll.toY(scrollTo, 1400) 
-  }, 1500)
+  setTimeout(function () {
+    if (window.pageYOffset === 0) {
+      var scrollTo = $(".js-second-hero-text-area")[0].offsetTop;
+      zenscroll.toY(scrollTo, 1400);
+    }
+  }, 2000)
 
   setTimeout(function() {
-    var scrollTo = $(".js-hero")[0].offsetHeight;
-    zenscroll.toY(scrollTo, 1400) 
-  }, 4400)
+    // If the scroll has not moved since the last auto scroll
+    if (window.pageYOffset === $(".js-second-hero-text-area")[0].offsetTop) {
+      var scrollTo = $(".js-hero")[0].offsetHeight;
+      zenscroll.toY(scrollTo, 1400);
+    }
+  }, 5500)
 }
 
 // Chart
