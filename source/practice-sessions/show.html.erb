@@ -51,7 +51,7 @@
                       <%= eps.time_practiced ? format_as_time(eps.time_practiced) : "" %>
                     </div>
                   </div>
-                  <% completed_increments = find_all(:exercise_increments, eps.tk_completed || eps.lik_completed) %>
+                  <% completed_increments = exercise_practice_session_completed_increments(eps) %>
                   <% if completed_increments.length > 0 %>
                     <div class="exercise-set__data graphit-xs-regular">
                       <ul class="exercise-set__increments">
@@ -81,7 +81,7 @@
             </div>
           </div>
 
-          <% completed_increment_count = exercises_practice_sessions.reduce(0) { |sum, eps| sum + ((eps.tk_completed || eps.lik_completed) ? (eps.tk_completed || eps.lik_completed).length : 0) } %>
+          <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
           <div class="total-increments graphit-md-regular">
             <%= format_completed_increment_count(completed_increment_count) %>
           </div>

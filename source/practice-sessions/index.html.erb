@@ -15,7 +15,7 @@
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recUlyK9YJLOblfTI"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
               <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
               <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
-              <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.tk_completed ? eps.tk_completed.count : 0) } %>
+              <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
               <li>
                 <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
                   <div class="practice-session__number">
@@ -26,7 +26,7 @@
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
                     <div class="practice-session__details">
-                      <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
+                      <%= format_as_time(time_practiced) %> — <%= completed_increment_count %> completed
                     </div>
                   </div>
                 </a>
@@ -44,7 +44,7 @@
             <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
               <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
               <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
-              <% completed_increments = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.lik_completed ? eps.lik_completed.count : 0) } %>
+              <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
               <li>
                 <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
                   <div class="practice-session__number">
@@ -55,7 +55,7 @@
                       <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
                     </div>
                     <div class="practice-session__details">
-                      <%= format_as_time(time_practiced) %> — <%= completed_increments %> completed
+                      <%= format_as_time(time_practiced) %> — <%= completed_increment_count %> completed
                     </div>
                   </div>
                 </a>

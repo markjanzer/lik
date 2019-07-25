@@ -7,7 +7,7 @@ def progress_data(practice_sessions, select_proc=nil)
   }
 
   practice_sessions.sort { |ps1, ps2| ps1.number <=> ps2.number }.each do |ps|
-    completed_increments = completed_increments(ps)
+    completed_increments = practice_session_completed_increments(ps)
     if select_proc
       completed_increments.select! { |ci| select_proc.call(ci) }
     end
