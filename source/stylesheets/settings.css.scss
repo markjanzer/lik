@@ -1,0 +1,48 @@
+$color-gray: #5f5f5f;
+// $color-gray: #838383;
+
+
+@font-face {
+  font-family: 'Graphit';
+  font-weight: 600;
+  src: url('/fonts/398BAC_0_0.eot');
+  src: url('/fonts/398BAC_0_0.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/398BAC_0_0.woff2') format('woff2'),
+       url('/fonts/398BAC_0_0.woff') format('woff'),
+       url('/fonts/398BAC_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Graphit';
+  font-weight: 40;
+  src: url('/fonts/398BAC_1_0.eot');
+  src: url('/fonts/398BAC_1_0.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/398BAC_1_0.woff2') format('woff2'),
+       url('/fonts/398BAC_1_0.woff') format('woff'),
+       url('/fonts/398BAC_1_0.ttf') format('truetype');
+     }
+@font-face {
+  font-family: "Ivar Display";
+  src: url("/fonts/IvarDisplay-Regular.woff2") format("woff2"),
+       url("/fonts/IvarDisplay-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Ivar Soft";
+  src: url("/fonts/IvarSoft-Regular.woff2") format("woff2"), 
+       url("/fonts/IvarSoft-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Ivar Text";
+  src: url("/fonts/IvarText-Regular.woff2") format("woff2"),
+       url("/fonts/IvarText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Ivar Text";
+  font-weight: bold;
+  src: url("/fonts/IvarText-Bold.woff2") format("woff2"), 
+       url("/fonts/IvarText-Bold.woff") format("woff"); 
+}
+
+$graphit: "Graphit", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ivar-soft: "Ivar Soft", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$ivar-display: "Ivar Display", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$ivar-text: "Ivar Text", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;

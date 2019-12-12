@@ -1,62 +1,105 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: find(:keyboards, practice_session.keyboard[0]).acronym + " Practice Session #" + practice_session.number.to_s,
+  } %>
+<% end %>
+
+
 <%= partial "partials/chartist-js" %>
+<div class="practice-session__show">
 
-<div class="container section section--top">
-  <div><h1><%= practice_session.name %></h1></div>
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <div>Practice Session #<%= practice_session.number %></div>
-      <div>Date: <%= Date.parse(practice_session.date).strftime("%B %e, %Y") %></div>
-      <% if practice_session.notes %>
-        <div>Notes: <%= practice_session.notes %></div>
-      <% end %>
-      <% if practice_session.recording %>
-        <div><a href="<%= practice_session.recording %>" class="recording-link">Recording</a></div>
-      <% else %>
-        <div>Recording not uploaded yet</div>
-      <% end %>
-      <% if practice_session.reflection_url %>
-        <div><a href="<%= practice_session.reflection_url %>" class="reflection-link">Reflection</a></div>
-      <% end %>
+  <section class="container section--top">
+    <div class="section__header practice-session__header">
+      <h1 class="graphit-xxl-bold practice-session__name"><%= find(:keyboards, practice_session.keyboard[0]).acronym %> #<%= practice_session.number %></h1>
+      <div class="graphit-xxl-bold practice-session__date"> — <%= Date.parse(practice_session.date).strftime("%Y/%m/%d") %></div>
     </div>
-  </div>
 
-  <div class="row section">
-    <div class="col-12 col-lg-6">
-      <h3>Practiced</h3>
-      <ul>
-        <% find_all(:exercises, practice_session.exercises).each do |exercise| %>
-          <li><%= exercise.name %></li>
+    <div class="practice-session__notes graphit-md-regular">
+      <%= practice_session.notes %>
+    </div>
+
+    <div class="row">
+      <ul class="col-sm-12 col-md-8 domains">
+        <% domain_ids = find_all(:exercises, practice_session.exercises).map { |exercise| exercise.domain[0] }.uniq %>
+        <% domains = find_all(:domains, domain_ids) %>
+        <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
+        <% keyboard = find(:keyboards, practice_session.keyboard) %>
+
+        <% domains.each do |domain| %>
+          <% domain_exercises_practice_sessions = exercises_practice_sessions.select { |eps| find(:exercises, eps.exercise).domain[0] == domain.id } %>
+          <% domain_time = domain_exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
+          <% domain_exercises = find_all(:exercises, practice_session.exercises).select { |exercise| exercise.domain[0] == domain.id } %>
+          <li class="domain">
+            <div class="domain-header graphit-xl-regular">
+              <div class="domain-header__title">
+                <%= domain.name %>
+              </div>
+              <div class="domain-header__divider"></div>
+              <div class="domain-header__time">
+                <%= format_as_time(domain_time) %>
+              </div>
+            </div>
+            <ul>
+              <% domain_exercises_practice_sessions.each do |eps| %>
+                <div class="exercise-set">
+                  <div class="exercise-set__header garphit-md-regular">
+                    <div class="exercise-set__title">
+                      <%= find(:exercises, eps.exercise).name %>
+                    </div>
+                    <div class="exercise-set__divider"></div>
+                    <div class="exercise-set__time">
+                      <%= eps.time_practiced ? format_as_time(eps.time_practiced) : "" %>
+                    </div>
+                  </div>
+                  <% completed_increments = exercise_practice_session_completed_increments(eps) %>
+                  <% if completed_increments.length > 0 %>
+                    <div class="exercise-set__data graphit-xs-regular">
+                      <ul class="exercise-set__increments">
+                        <% completed_increments.each do |ci| %>
+                          <li class="exercise-set__increment">
+                            <%= ci.name %>
+                          </li>
+                        <% end %>
+                      </ul>
+                      <div class="exercise-set__increments-summary">
+                        <%= format_completed_increment_count(completed_increments.length) %>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+              <% end %>
+            </ul>
+          </li>
         <% end %>
-      </ul>
-    </div>
 
-    <div class="col-12 col-lg-6">
-      <h3>Completed</h3>
-      <ul>
-        <% if completed_increments(practice_session).empty? %>
-          <li>None</li>
-        <% else %>
-          <% completed_increments(practice_session).each do |completed_increment| %>
-            <li><%= completed_increment.name %></li>
-          <% end %>
-        <% end %>
+        <li class="total">
+          <div class="total-header graphit-xl-regular">
+            <div class="total-header__title">Total</div>
+            <% total_time = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
+            <div class="total-header__time">
+              <%= format_as_time(total_time) %>
+            </div>
+          </div>
+
+          <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
+          <div class="total-increments graphit-md-regular">
+            <%= format_completed_increment_count(completed_increment_count) %>
+          </div>
+        </li>
       </ul>
+
+
     </div>
-  </div>
-  
-  <div class="section">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8"><h3>Progress</h3></div>
+  </section>
+  <section class="container section">
+    <h2 class="section__header graphit-xl-bold">Progress so far</h2>
+    <div class="row">
+      <div class="col ct-chart ct-chart--full"></div>
     </div>
-    <div class="row justify-content-center">
-      <div class="ct-chart chart--medium col-12 col-lg-8"></div>
-    </div>
-  </div>
+  </section>
 </div>
 
-
-<script src="/javascripts/blocks/chartist-options.js"></script>
 <script>
   var data = <%= progress_until_practice_session(practice_session).to_json %>
-  new Chartist.Line('.ct-chart', data, basicOptions);
+  createChart('.ct-chart', data)
 </script>

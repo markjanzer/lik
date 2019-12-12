@@ -1,0 +1,82 @@
+// Chartist legend css
+.ct-legend {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  li:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+  }
+
+  li.inactive:before {
+    background: transparent;
+  }
+
+  &.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @for $i from 0 to length($ct-series-colors) {
+    .ct-series-#{$i}:before {
+      background-color: nth($ct-series-colors, $i + 1);
+      border-color: nth($ct-series-colors, $i + 1);
+    }
+  }
+}
+
+// This overwrites top: 0 on .ct-golden-section > svg
+// Gives space for the legend
+// .ct-golden-section > svg {
+//   top: auto;
+// }
+
+.ct-chart {
+  height: 100%;
+  position: relative;
+  margin-bottom: 4rem; // Account for label below and legend above
+  @media screen and (min-width: 576px) {
+    height: 2rem;
+  }
+
+  svg {
+    overflow: visible;
+  }
+}
+
+.ct-chart--full {
+  font-size: 1rem;
+  height: 13rem;
+  @media screen and (min-width: 576px) {
+    height: 26rem;
+  }
+}
+
+.ct-chart--half {
+  height: 13rem;
+}
+
+.ct-chart--article {
+  height: 13rem;
+  margin: 3rem 0 7rem;
+  @media screen and (min-width: 576px) {
+    height: 18rem;
+    margin: 3rem 0 7rem;
+  }
+}

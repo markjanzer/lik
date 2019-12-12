@@ -1,0 +1,76 @@
+// .animate {
+  .keyboard {
+    display: flex;
+    justify-content: center;
+    // padding: 0 5rem;
+    margin: 8rem 5vw;
+    background-color: #343434;
+    height: 400px;
+    width: 90vw;
+    border-radius: 10px;
+    position: fixed;
+    align-items: flex-start; 
+  }
+
+  .keyboard__keys {
+    width: 100%;
+    height: 85%;
+    // margin: 6rem 6rem -0.2rem 6rem;
+    margin: 5% 8% -2% 8%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .octave {
+    // width: 717px;
+    width: 100%;
+    // height: 455px;
+    // height: 0;
+    // padding-bottom: 36.5%;
+    display: flex;
+    // background-color: #343434;
+    position: relative;
+    // justify-content: space-between;
+    // align-self: center;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .black-key {
+    width: 12.52%;
+    height: 60%;
+    margin: 0 1.5px;
+    background-color: #242424;
+    border-radius: 2px;
+  }
+
+  .white-key {
+    width: 12.52%;
+    height: 100%;
+    margin: 0 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+  }
+
+  .white-chonk {
+    height: 39%;
+    margin: 0 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+  }
+
+  .white-chonk--skinny {
+    width: 21.3%;
+  }
+
+  .white-chonk--thicc {
+    width: 22.4%;
+  }
+// }

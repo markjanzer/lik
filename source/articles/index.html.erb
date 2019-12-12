@@ -1,36 +1,43 @@
+---
+layout: layout
+---
+
+<% content_for :metatags do %>
+  <%= partial "partials/metatags" %>
+<% end %>
+
 <div class="container section section--top">
-  <div><h1>Articles</h1></div>
+  <h1 class="section__header">Articles</h1>
   <div class="row"> 
     <div class="col col-lg-8">
       <ul>
         <li class="article">
           <a href="/articles/the-idea">
-            <div><h3>The Idea</h3></div>
-            <div class="article-content two-line-clamp">There may be a better way to design the piano. It is known that to master an instrument you must learn to play it in every key. The first key a new pianist will learn to play is the key of C major. It is wonderfully simple: just play the white notes. But...</div>
+            <h2 class="article__title">The Idea</h2>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement. This short article describes history of the old, potential for the new, and a transparent experiment that could tell us if we should change the way we design the keyboard.</div>
           </a>
         </li>
         <li class="article">
           <a href="/articles/the-hypotheses">
-            <div><h3>The Hypotheses</h3></div>
-            <div class="article-content two-line-clamp">I think that the linear isomorphic keyboard (LIK) will outperform the traditional keyboard (TK). I predict that I will improve faster on the LIK than on the traditional keyboard and that the LIK will not have significant technical limitations in comparison to the traditional keyboard. More specifically...</div>
+            <h2 class="article__title">The Hypotheses</h2>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;Why would the Linear Isomorphic Keyboard perform better than the traditional keyboard? I have a handful of theories about how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage. With words, graphs, and charts, I attempt to explain my predictions for the experiment.</div>
           </a>
         </li>
         <li class="article">
           <a href="/articles/the-experiment">
-            <div><h3>The Experiment</h3></div>
-            <div class="article-content two-line-clamp">I am conducting an experiment to determine whether or not the Linear Isomorphic Keyboard is easier to play than the traditional piano keyboard. In order to compare the Linear Isomorphic Keyboard (LIK) and the traditional keyboard (TK), I am going to practice... </div>
+            <h2 class="article__title">The Experiment</h2>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;How do you compare compare the “playability” of two keyboards, and what even is “playability”? In this article I define this metric of comparison, explain how I will practice and measure improvement, and reflect on flaws in the experiment.</div>
           </a>
         </li>
         <li class="article">
           <a href="/articles/the-practice-routine">
-            <div><h3>The Practice Routine</h3></div>
-            <div class="article-content two-line-clamp">I had a few things in mind when developing the curriculum for the keyboards to practice. Most importantly, I want to address the three main domains of musical prowess, the technical aspect of being able to play (addressed by fundamentals), and the two primary ways we determine what to play, sight reading and playing by ear.</div>
-          </a>
+            <h2 class="article__title">The Practice Routine</h2>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;What will I practice and why? Content is important, certain exercises will benefit one keyboard over another, and I don’t want to practice in a way that is foreign to how others practice. I discuss the content I chose to practice, why I chose it, and the general philosophy behind creating and altering curriculum.</div>
         </li>
         <li class="article">
           <a href="/articles/other-isomorphic-keyboards">
-            <div><h3>Other Isomorphic Keyboards</h3></div>
-            <div class="article-content two-line-clamp">One of the cardinal sins of productivity is to do what has already been done. But in my quest to test an isomorphic keyboard against the traditional keyboard, I appear to have sinned. Isomorphic keyboards have existed since the the early nineteenth century when an isomorphic layout was applied to the button accordions or concertina.</div>
+            <h2 class="article__title">Other Isomorphic Keyboards</h2>
+            <div class="">&nbsp;&nbsp;&nbsp;&nbsp;Why not another isomorphic keyboard? The first isomorphic keyboard was designed in 1882, and there have been plenty of other designed since. I expand on why the Linear Isomorphic Keyboard’s similarities with the Traditional Keyboard could give it an advantage over other isomorphic keyboards.</div>
           </a>
         </li>
       </ul>
@@ -38,14 +45,26 @@
   </div>
 
   <div class="section">
-    <div><h1>Reflections</h1></div>
+    <h1 class="section__header" id="reflections">Reflections</h1>
     <div class="row">
       <div class="col col-lg-8">
         <ul>
           <li class="article">
-            <a href="/reflections/the-initial-assessment/">
-              <div><h3>Assessment Reflection</h3></div>
-              <div class="article-content two-line-clamp">The assessments didn't go quite as planned. The experiment has started off with some mistakes that are far more interesting than they are damaging.</div>
+            <a href="/reflections/reflection-1/">
+              <h2 class="article__title">Reflection #1: The Assessment</h2>
+              <div class="">&nbsp;&nbsp;&nbsp;&nbsp;The initial assessment was an enlightening comedy of errors. In my efforts to get the experiment underway the initial assessment was done hastily, causing several small mistakes, as well as a blunder that was as interesting as it was humbling.</div>
+            </a>
+          </li>
+          <li class="article">
+            <a href="/reflections/reflection-2/">
+              <h2 class="article__title">Reflection #2: 15 hours</h2>
+              <div class="">&nbsp;&nbsp;&nbsp;&nbsp;With fifteen hours of practice on each keyboard, the Traditional Keyboard steadily improves at fundamentals, while the Linear Isomorphic Keyboard hase barely made progress. I reflect on how I can improve exercises that use software, as well as my philosophy of how I should practice to improve depending on the content.</div>
+            </a>
+          </li>
+          <li class="article">
+            <a href="/reflections/reflection-3/">
+              <h2 class="article__title">Reflection #3: 33 hours</h2>
+              <div class="">&nbsp;&nbsp;&nbsp;&nbsp;The Linear Isomorphic Keyboard has overtook the Traditional Keyboard in its ability to play major scales, but it made no measurable improvement on Hanon whatsoever. I reflect on why this might be, as well as strategies for sight reading and playing by ear that are tailored to each keyboard.</div>
             </a>
           </li>
         </ul>

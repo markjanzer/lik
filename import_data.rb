@@ -25,6 +25,6 @@ def import_data
   write_file(ExerciseSet)
   write_file(ExerciseIncrement)
   write_file(PracticeSession)
-  write_file(ExercisePracticeSession)
+  write_file(ExercisesPracticeSession)
 end
 

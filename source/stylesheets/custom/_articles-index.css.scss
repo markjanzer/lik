@@ -1,0 +1,21 @@
+.articles_index {
+  .article {
+    margin: 3rem 0;
+  }
+  .article a {
+    text-decoration: none;
+  }
+  .article__title {
+    margin: 1rem 0;
+  }
+  ul {
+    padding-left: 0.5rem;
+    @media screen and (min-width: 576px) {
+      // I think this is default for ul
+      padding-left: 2em;
+    }
+  }
+  .section__header {
+    margin: 0;
+  }
+}

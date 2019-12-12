@@ -33,7 +33,7 @@ class Exercise < Airrecord::Table
   belongs_to :set, class: "ExerciseSet", column: "Exercise Set"
   has_many :exercise_increments, class: "ExerciseIncrement", column: "Exercise Increments"
   # Not sure if I need this one
-  has_many :exercises_practice_sessions, class: "ExercisePracticeSession", column: "Exercise Practice Sessions"
+  has_many :exercises_practice_sessions, class: "ExercisesPracticeSession", column: "Exercises Practice Sessions"
   has_many :practice_sessions, class: "PracticeSession", column: "Practice Sessions"
 end
 
@@ -73,11 +73,11 @@ class PracticeSession < Airrecord::Table
   end
 
   belongs_to :keyboard, class: "Keyboard", column: "Keyboard"
-  has_many :exercises_practice_sessions, class: "ExercisePracticeSession", column: "Exercises Practice Sessions"
+  has_many :exercises_practice_sessions, class: "ExercisesPracticeSession", column: "Exercises Practice Sessions"
   has_many :exercises, class: "Exercise", column: "Exercises"
 end
 
-class ExercisePracticeSession < Airrecord::Table
+class ExercisesPracticeSession < Airrecord::Table
   self.base_key = "appeUTAWBfz4YzHtJ"
   self.table_name = "Exercises Practice Sessions"
 

@@ -1,0 +1,104 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "Reflection #3: 33 hours",
+    description: "The Linear Isomorphic Keyboard has overtook the Traditional Keyboard in its ability to play major scales, but it made no measurable improvement on Hanon whatsoever. I reflect on why this might be, as well as strategies for sight reading and playing by ear that are tailored to each keyboard.",
+  } %>
+<% end %>
+
+<%= partial "partials/chartist-js" %>
+
+<% practice_sessions = data.practice_sessions.select { |ps| ps.number <= 33 } %>
+
+<% partial "/partials/article-layout" do %>
+
+# Reflection #3: 33 hours
+
+I have practiced roughly 33 hours on each keyboard, and the results are fascinating. I have also done a decent amount of reflection, some of which has changed the way I practice the keyboards.
+
+## Scales
+
+On the 32nd practice session, my ability to play major scales on the LIK has surpassed my ability to play the major scale on the TK. The improvement of the LIK on major scales started slow as I had difficulty with the fingerings. But once I was able to play the major scale without looking at 60bpm, the LIK started completing many increments. I completed five increments in the first 19 practice sessions (4 hours and 45 minutes of practice). In the next 15 practice sessions I completed 116 increments (3 hours and 30 minutes of practice). In the last 14 practice sessions, I’ve been improving at a rate of 8.29 (116 / 14) increments per practice session, while the TK is sitting at 1.9 (63 / 33).
+
+<div class="ct-chart ct-chart--article scales-chart"></div>
+
+<% scales = data.exercise_sets.find { |es| es.name == "Scales & Arpeggios" } %>
+<script>
+  var scales_data = <%= exercise_set_progress(scales, practice_sessions).to_json %>
+  createChart('.scales-chart', scales_data);
+</script>
+
+The LIK might slow down at it approaches the fastest tempo that I can play on the TK, but even then the LIK will continue to outpace the TK due to the advantage of transposition.
+
+This is quite exciting, and it’s interesting to compare theoretical numbers with. [<ins>My hypothesis</ins>](https://likeyboard.io/articles/the-hypotheses/) is that the LIK will improve at 3.58 times the pace, and currently the LIK is improving at 4.34  (8.29 / 1.91) times the speed of the TK.
+
+## Hanon
+
+The TK is improving at a pretty constant rate while the LIK hasn’t had any notable improvement at all. The more I ruminate on this, the less it surprises me. There are two things holding the LIK back: the speed of playing scales and the variation of patterns.
+
+On the TK I can play the C major scale with sixteenth notes at 80bpm, and I can play the Hanon exercises at about the same speed. The LIK can only play the C major scale at 100bpm in eighth notes. I would expect that the LIK would have to be able to play at sixteenth notes at 60bpm to play the first (and slowest) Hanon increment. Right now I can play the C Major scale at 100bpm (eighth notes), but I can only play the first exercise with eighth notes at 69 bpm. This discrepancy of tempos is larger than the TKs. I think that the reason for this is that Hanon is more complex on the LIK.
+
+<div class="ct-chart ct-chart--article hanon-chart"></div>
+
+<% hanon = data.exercise_sets.find { |es| es.name == "Hanon" } %>
+<script>
+  var hanon_data = <%= exercise_set_progress(hanon, practice_sessions).to_json %>
+  createChart('.hanon-chart', hanon_data);
+</script>
+
+When playing the TK you have to learn two unique shapes, the ascending pattern and the descending pattern. On the LIK you have to learn fourteen unique shapes. The ascending and descending shapes are different each of the seven starting notes. There are similarities between these fourteen patterns, but they are still unique.
+
+I think that I am still improving at 2.33 times the rate of the TK, but it isn't realized because the Hanon is more complex on the LIK. [<ins>I hypothesized</ins>](https://likeyboard.io/articles/the-hypotheses/) that this advantage will not be manifest until I have practiced a considerable amount, and so far it is coming true.
+
+## Sight reading
+
+Since removing sixteenth notes from the exercises, both the TK and the LIK have begun improving at a steady pace. The TK is currently in the lead with twelve completed increments while the LIK only has seven. Eighteen practice sessions ago the gap was two increments apart, and the gap has widened to five increments.
+
+<div class="ct-chart ct-chart--article sight-reading-chart"></div>
+
+<% sight_reading = data.exercise_sets.find { |es| es.name == "EarMaster Sight Reading" } %>
+<script>
+  var sight_reading_data = <%= exercise_set_progress(sight_reading, practice_sessions).to_json %>
+  createChart('.sight-reading-chart', sight_reading_data);
+</script>
+
+I do have concerns about the increments I chose. I am going to increase the largest interval from a fourth to an octave. After an octave I'll do the full pitch range (although EarMaster seems to limit leaps to about an octave and half). I wonder if that will be too difficult, especially if the leaps are strung together. This will be difficult for both keyboards, but the LIK might struggle even more. The lack of distinct shapes on the LIK makes it so you cannot feel where you are on the keyboard. Playing by ear shares similar increments, but I am not as concerned because larger leaps should be easier when playing by ear instead of sight reading.
+
+### Reflecting and improving
+
+I did some reflection on my process of sight reading, and how I could improve on each keyboard. I disucssed what I found in [<ins>The Hypotheses</ins>](https://likeyboard.io/articles/the-hypotheses/). The gist of it is that I don’t determine true intervals (minor 3rd vs major 3rd) when sight reading. Instead I determine the rough interval (2nd or 3rd) and find the white key the appropriate distance away. Only then do I augment or diminish the note depending on the key signature and accidentals.
+
+I figure that for the traditional keyboard, I can improve my sight reading by practicing identifying the exact note names. The note names often signal the alteration of the rough interval. To practice this, I have begun singing the note names while sight reading.
+
+Improving sight reading on the LIK was a bit more difficult. My traditional method of sight reading is not suited for the LIK, where white keys feel identical to black keys. Identification of the exact interval is essential. 
+
+I was brainstorming better ways to keep interval awareness, and I realized that playing the LIK is similar to sight singing. When singing you either have to know the exact interval between two notes, or you have to have tonal awareness so you can sing the note with no knowledge of this interval. For instance if I am singing 4th note of a major key and the next note to sight read is the seventh. I can recognize that the interval between the two notes is a tritone and find the seventh that way, or I can identify the next note as the 7th and sing that.
+
+The latter strategy can be easier, so when sight reading vocalists often use solfege to aid their awareness of where they are in the key.
+
+Going forward, I will try to sing the excerpts in solfege when sight reading on the LIK. I hope that this will help me 
+
+## Playing by ear
+
+Like sight reading, the removal of sixteenth notes from the exercises prompted a stream of measurable improvements on both keyboards. The TK is better than the LIK, but it has not been improving faster. The TK has been hovering around an advantage of three intervals having completed 14 increments to the LIK's 11.
+
+My hypothesis of the LIK improving at 1.8125 times the speed of the TK has proven not be true so far. I think that the reason why is because I am not only identifying notes by the interval, but also with tonal awareness. I am surprised by the extent to which I find notes by tonal position, as it is pretty easy to identify certain notes like the tonic or the 7th. Instead of determining how large the leap is, I identify the note by its position relative to the tonic. This seems to help me more on the TK, as it is easier to find notes on that keyboard.
+
+But, I have noticed that as I improve I use the tonal awareness less and less. The more I practice, the more I am able to play a leap by instinct. I think that this is the manifestation of the 1.8125 times advantage. I predict that I will improve at playing by ear this way, especially on the LIK, and the LIK could start to surpass the traditional keyboard. 
+
+## Deciding when to increase difficulty
+
+For a while, deciding when to increase the difficulty for these exercises has been subjective and subject to luck. I would try to guess when a more difficult increment would be beneficial based on my performance. The issue is that my performance varies depending on the difficulty of the generated excerpts.
+
+I have shored up some of these weaknesses by coming up with a a new method to determine when I have completed an increment.  Before, after 15 exercises EarMaster would give a summary of my performance, and I would decide whether to move on or repeat the exercise. Now, I am going to follow EarMaster 7’s recommendation of moving on when I get an exercise 90% correct. I am also going to increase the number of excerpts per assessment to 50 (the maximum) so I have a large enough sample size.
+
+In addition, I figured out how to retry a problem without receiving a grades on the later attempts. This helps because I generally want to repeat everything until I can play it well, but these retries skewed my results.
+
+This new measure of performance from EarMaster will aid me in determining when to move on to the next increment.
+
+## Conclusion
+
+This point of reflection has been one of the most interesting so far. The LIK has surpassed the TK in scales at a rate that is faster than I predicted. My slow improvement at other exercises on the LIK has lead me to insights about the complexity of Hanon and my methods of sight reading. These insights changed my predictions of future improvement and my methods of practicing the exercises.
+
+I have taken a break from practicing to work on this site and rewrite the articles, but I am excited to get back to practicing and find what new insights the next practice sessions have to offer.
+
+<% end %>

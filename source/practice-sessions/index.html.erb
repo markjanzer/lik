@@ -1,14 +1,81 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "LIK — Practice Sessions",
+  } %>
+<% end %>
+
 <div class="container section section--top">
-  <div><h1>Practice Sessions</h1></div>
+  <h1 class="section__header">Practice Sessions</h1>
+  <div class="row section__content">
+    <div class="col-6">
+      <div class="container">
+        <div class="keyboard-header graphit-xxl-bold">TK</div>
+        <div class="row justify-content-center">
+          <ul class="practice-sessions">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recUlyK9YJLOblfTI"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
+              <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
+              <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
+              <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
+              <li>
+                <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
+                  <div class="practice-session__number">
+                    #<%= practice_session.number %>
+                  </div>
+                  <div class="practice-session__data">
+                    <div class="practice-session__date">
+                      <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
+                    </div>
+                    <div class="practice-session__details">
+                      <%= format_as_time(time_practiced) %> — <%= completed_increment_count %> completed
+                    </div>
+                  </div>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="container">
+        <div class="keyboard-header graphit-xxl-bold">LIK</div>
+        <div class="row justify-content-center">
+          <ul class="practice-sessions">
+            <% data.practice_sessions.select { |ps| ps.keyboard[0] == "recAOa5OnDyNjvPUp"}.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
+              <% exercises_practice_sessions = find_all(:exercises_practice_sessions, practice_session.exercises_practice_sessions) %>
+              <% time_practiced = exercises_practice_sessions.reduce(0) { |sum, eps| sum + (eps.time_practiced || 0) } %>
+              <% completed_increment_count = practice_session_completed_increments(practice_session).length %>
+              <li>
+                <a href="/practice-sessions/<%= practice_session.id %>" class="practice-session">
+                  <div class="practice-session__number">
+                    #<%= practice_session.number %>
+                  </div>
+                  <div class="practice-session__data">
+                    <div class="practice-session__date">
+                      <%= Date.parse(practice_session.date).strftime("%m/%d/%y") %>
+                    </div>
+                    <div class="practice-session__details">
+                      <%= format_as_time(time_practiced) %> — <%= completed_increment_count %> completed
+                    </div>
+                  </div>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section">
   <div class="row">
-    <div class="col">
-      <ul>
-        <% data.practice_sessions.sort { |ps1, ps2| ps2.date <=> ps1.date }.each do |practice_session| %>
-          <li class="article">
-            <div><h3><a href="/practice-sessions/<%= practice_session.id %>"><%= practice_session.name %></a></h3></div>
-          </li>
-        <% end %>
-      </ul>
+    <div class="col-sm-12 col-md-8">
+      <h2 class="graphit-xl-bold">Recordings</h2>
+      <div class="recordings__text">I record all of my practice sessions and upload the audio files to Mega.nz</div>
+      <div class="recordings__text">
+        <a href="https://mega.nz/#F!DPpURACa!FXS_QgmHHKKOW-PCa_wI3A">You can find the recordings here.</a>
+      </div>
     </div>
   </div>
 </div>

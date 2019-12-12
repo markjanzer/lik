@@ -1,50 +1,70 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "LIK — Progress",
+    description: "This is a a live comparison of my improvement on the Linear Isomorphic Keyboard and the Traditional Keyboard.",
+  } %>
+<% end %>
+
 <%= partial "partials/chartist-js" %>
-<script src="/javascripts/blocks/chartist-options.js"></script>
 
-<div class="container section--top">
-  <div><h1>Progress</h1></div>
-
-  <div class="row justify-content-center keyboard-progress">
-    <div class="col col-lg-8">
-      <div class="ct-chart chart--medium"></div>
+<section class="container section section--top">
+  <h1 class="section__header">Progress</h1>
+  <div class="section__content">
+    <div class="row">
+      <div class="col progress__description">In order to my ability to play each keyboard, I have defined many increments of difficulty for each exercise I will practice. Most often these increments are increasing tempos. The charts below show the cumulative number of increments I was able to play for each practice session.</div>
+    </div>
+    
+    <div class="row">
+      <div class="col progress__description"><a href="https://airtable.com/invite/l?inviteId=invGYoLbmfKAPij46&inviteToken=bcabed9672c344ac87f6ec2a68096e86671805fe2db2fe4c89bfa3413422f8c5">You can see all of the increments for all of the exercises here.</a></div>
     </div>
   </div>
+</section>
 
-  <!-- How is this going to work out? -->
-  <!-- Okay, iterate through domains. Show all of the exercise sets that have a practice session. Maybe the only ones that have a completed increment? I'm not sure how to get around the original practice sessions. -->
-  <!-- If there is more than one practice session in the given domain, then show one chart for the whole domain -->
+<section class="container section">
+  <h2 class="chart-section__header graphit-xl-regular">All Exercises</h2>
+  <div class="row section__content">
+    <div class="col">
+      <div class="ct-chart ct-chart--full"></div>
+    </div>
+  </div>
+</section>
 
-  <% data[:domains].each do |domain| %>
-    <div><h2><%= domain[:name] %></h2></div>
+
+<% data[:domains].sort_by { |domain| domain.position }.each do |domain| %>
+  <section class="container section">
+    <h2 class="chart-section__header graphit-xl-regular"><%= domain[:name] %></h2>
+    <div class="row">
+      <div class="col">
+        <div class="ct-chart ct-chart--full" data-domain="<%= domain[:name] %>"></div>
+      </div>
+    </div>
+    <script>
+      var chartData = <%= domain_progress(domain).to_json %>
+      createChart(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData)
+    </script>
+
     <% if find_all(:exercise_sets, domain[:exercise_sets]).length > 1 %>
+      <% exercise_sets = find_all(:exercise_sets, domain[:exercise_sets]) %>
+      <!-- Only show exercise sets with completed increments -->
+      <% exercise_sets.select! { |exercise_set| any_completed_increments?(exercise_set) } %>
       <div class="row">
-        <div class="col col-lg-8">
-          <div class="chart--medium" data-domain="<%= domain[:name] %>"></div>
-        </div>
+        <% exercise_sets.each do |exercise_set| %>
+          <div class="col-sm-12 col-md-6">
+            <h3 class="exercise-header graphit-lg-regular"><%= exercise_set[:name] %></h3>
+            <div class="ct-chart ct-chart--half" data-exercise-set="<%= exercise_set[:name] %>"></div>
+          </div>
+          <script>
+            var chartData = <%= exercise_set_progress(exercise_set).to_json %>
+            createChart(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData)
+          </script>
+        <% end %>
       </div>
-      <script>
-        var chartData = <%= domain_progress(domain).to_json %>
-        new Chartist.Line(document.querySelector('[data-domain="<%= domain[:name] %>"]'), chartData, basicOptions);
-      </script>
     <% end %>
+  </section>
+<% end %>
 
-    <% exercise_sets = find_all(:exercise_sets, domain[:exercise_sets]) %>
-    <!-- Only show exercise sets with completed increments -->
-    <% exercise_sets.select! { |exercise_set| any_completed_increments?(exercise_set) } %>
-    <% exercise_sets.each do |exercise_set| %>
-      <div><h3><%= exercise_set[:name] %></h3></div>
-      <div class="row">
-        <div class="col col-lg-8">
-          <div class="chart--medium" data-exercise-set="<%= exercise_set[:name] %>"></div>
-        </div>
-      </div>
-      <script>
-        var chartData = <%= exercise_set_progress(exercise_set).to_json %>
-        new Chartist.Line(document.querySelector('[data-exercise-set="<%= exercise_set[:name] %>"]'), chartData, basicOptions);
-      </script>
-    <% end %>
-  <% end %>
-</div>
 
-<script>var data = <%= all_progress.to_json %></script>
-<script src="/javascripts/pages/progress.js"></script>
+<script>
+  var data = <%= all_progress.to_json %>
+  createChart('.ct-chart', data);
+</script>

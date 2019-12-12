@@ -1,124 +1,145 @@
 ---
-title: The Linear Isomorphic Keybaord
+title: The Linear Isomorphic Keyboard
 ---
 
-<%= partial "partials/chartist-js" %>
+<%# Meta Tags %>
+<% content_for :metatags do %>
+  <%= partial "partials/metatags" %>
+<% end %>
 
-<div class="hero">
-  <div class="hero__image">
-    <%= image_tag "LIK-hero.png" %>
+<%= partial "partials/chartist-js" %>
+<script src="/javascripts/vendor/zenscroll.min.js"></script>
+
+
+<!-- Hero -->
+<div class="hero js-hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 hero__text-space js-first-hero-text">
+        <p class="hero__text graphit-xl-regular fadeInUp">
+          <br>
+          Is there a better way to design the piano?
+        </p>
+      </div>
+    </div>
   </div>
-  <h1 class="hero__text">The Linear Isomorphic Keyboard</h1>
+  <div class="keyboard-space"></div>
+  <div class="col-12 hero__text-space js-second-hero-text-area">
+    <div id="second-hero-text" class="hero__text graphit-xl-regular js-second-hero-text is-hidden">
+      <p>This is the</p>
+      <h1 class="graphit-xl-bold">Linear Isomorphic Keyboard</h1>
+    </div>
+  </div>
+  <div class="keyboard-container">
+    <%= partial "/partials/keyboard" %>
+  </div>
+</div>
+
+<!-- Summary -->
+<div class="container section summary-section">
+  <div class="row">
+    <h2 class="col-sm-12 col-lg-6 section__header">This is an experiment</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-10 summary__text graphit-xl-regular">
+      <p>I am exploring how the Linear Isomorphic Keyboard (LIK) compares to the Traditional Keyboard (TK).</p>
+      <p>I am practicing both keyboards for the same amount of time, playing the same exercises, and recording everything.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Progress -->
+<div class="container section">
+  <div class="row">
+    <h2 class="col-12 section__header">The results so far</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-12 ct-chart ct-chart--full progress-chart"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 progress-footer ivar-soft-sm-regular">
+      <div class="">Last practice session: <a href="/practice-sessions/<%= data.practice_sessions.sort_by { |ps| ps.date }.last.id %>"><%= Date.parse(data.practice_sessions.sort_by { |ps| ps.date }.last.date).strftime("%b %e, %Y") %></a></div>
+      <div>
+        <a href="/progress" class="">more progress</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container section">
-  <div class="row justify-content-center">
-    <div class="col-8 main-description">Is there a better way to design the keyboard?
-      <br/>
-      <br/>
-      This is an experiment to determine if the <strong>Linear Isomorphic Keyboard</strong> is the answer.
-    </div>
-  </div>
-</div>
-  
-  <section class="container">
-    <hr class="hr-top"/><hr class="hr-bottom"/>
-  </section>
-
-  <div class="container section">
-    <div class="row">
-      <div class="col col-md-8">
-        <div>
-          <h2>Two keyboards</h2>
-        </div>
-        <div>
-          <img src="/images/mini-lik.svg" class="summary__keyboard" />
-          <img src="/images/mini-tk.svg" class="summary__keyboard" />
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-end summary-section">
-      <div class="col col-md-8">
-        <div>
-          <h2>Recorded practicing the same content  for the same amount of time</h2>
-        </div>
-        <div class="summary-icons" style="margin-top: 0">
-          <img src="/images/microphone.svg" class="summary__icon" />
-          <img src="/images/sheet-music.svg" class="summary__icon" />
-          <img src="/images/stopwatch.svg" class="summary__icon"/>
-        </div>
-      </div>
-    </div>
-    <div class="row summary-section">
-      <div class="col col-md-8">
-        <div>
-          <h2>Results are graphed, analyzed, and reflected upon.</h2>
-        </div>
-        <div class="summary-icons"> 
-          <img src="/images/bar-chart.svg" class="summary__icon"/>
-          <img src="/images/contract.svg" class="summary__icon"/>
-        </div>
-      </div>
-    </div>
+  <div class="row">
+    <h2 class="col-12 section__header">Still curious?</h2>
   </div>
 
-  <section class="container">
-    <hr class="hr-top"/><hr class="hr-bottom"/>
-  </section>
+  <div class="row" style="margin-top: 2rem;">
+    <div class="col-sm-12 col-md-6">
+      <a href="/articles#reflections"><h3 class="articles__subheader graphit-xl-bold">Reflections</h3></a>
+      <div class="articles">
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/reflections/reflection-3", 
+          title: "Reflection #3: 33 Hours", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;I reflect on why the Linear Isomorphic Keyboard’s meteoric improvement, as well as strategies for sight reading and playing by ear that are tailored to each keyboard." 
+        } %>
 
-  <div class="container section">
-    <div>
-      <h1>Articles</h1>
-    </div>
-    <div class="row justify-content-end">
-      <div class="col">
-        <ul>
-          <li class="article">
-            <div><h3><a href="/articles/the-idea">The Idea</a></h3></div>
-            <div class="article-content">There may be a better way to design the piano. It is known that to master an instrument you must learn to play it in every key. The first key a new pianist will learn to play is the key of C major. It is wonderfully simple: just play the white notes. But...</div>
-          </li>
-          <li class="article">
-            <div><h3><a href="/articles/the-hypotheses">The Hypotheses</a></h3></div>
-            <div class="article-content">I think that the linear isomorphic keyboard (LIK) will outperform the traditional keyboard (TK). I predict that I will improve faster on the LIK than on the traditional keyboard and that the LIK will not have significant technical limitations...</div>
-          </li>
-          <li class="article">
-            <div><h3><a href="/articles/the-experiment">The Experiment</a></h3></div>
-            <div class="article-content">I am conducting an experiment to determine whether or not the Linear Isomorphic Keyboard is easier to play than the traditional piano keyboard. In order to compare the Linear Isomorphic Keyboard (LIK) and the traditional keyboard (TK)... </div>
-          </li>
-        </ul>
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/reflections/reflection-2", 
+          title: "Reflection #2: 15 Hours", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;I reflect on my slow progress on the Linear Isomorphic Keyboard, how I can improve exercises that use software, as well as my philosophy of how I should practice to improve depending on the content." 
+        } %>
+
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/reflections/reflection-1/", 
+          title: "Reflection #1: The Assessment", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;In my efforts to get the experiment underway the initial assessment was done hastily, causing several small mistakes, as well as a blunder that was as interesting as it was humbling." 
+        } %>
+      </div>
+      <div class="articles__footer ivar-soft-sm-regular">
+        <a href="/articles" class="">more reflections</a>
       </div>
     </div>
-    <div class="section__footer">
-      <a href="/articles">More Articles...</a>
-    </div>
-  </div>
+    <div class="col-sm-12 col-md-6">
+      <a href="/articles"><h3 class="articles__subheader articles__subheader--second graphit-xl-bold">Articles</h3></a>
+      <div class="articles"> 
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/articles/the-idea", 
+          title: "The Idea", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;The Traditional Keyboard design was fantastic for its time, but music changed radically since, and now the Linear Isomorphic Keyboard offers a possible improvement." 
+        } %>
 
-  <section class="container">
-    <hr class="hr-top"/><hr class="hr-bottom"/>
-  </section>
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/articles/the-hypotheses", 
+          title: "The Hypotheses", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;I have a handful of predictions of how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage." 
+        } %>
 
-  <div class="container section">
-    <div><h1>Progress</h1></div>
-
-    <div class="row justify-content-center progress">
-      <div class="col col-sm-8">
-        <div class="ct-chart chart--medium"></div>
+        <%= partial "/partials/article-preview", locals: { 
+          link: "/articles/the-experiment", 
+          title: "The Experiment", 
+          description: "&nbsp;&nbsp;&nbsp;&nbsp;I have a handful of predictions of how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage." 
+        } %>
       </div>
-    </div>
-
-    <div class="section__footer">
-      <a href="/progress">More Progress Coming Soon</a>
+      <div class="articles__footer ivar-soft-sm-regular">
+        <a href="/articles" class="">more articles</a>
+      </div>
     </div>
   </div>
 </div>
 
-<footer class="footer">
-  <div>
-    <h4 class="footer__contact">Contact: linearisomorphickeyboard@gmail.com</h4>
+<div class="container section">
+  <div class="row" style="margin-top: 2rem;">
+    <h2 class="col-12 section__header">Contact</h2>
   </div>
-  <div class="footer__credits">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-</footer>
 
-<script src="/javascripts/blocks/chartist-options.js"></script>
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <div class="contact-text">
+        Have any questions, comments, propositions, qualms, or exclamations? I'm happy to talk, you can reach me at <a href="mailto:linearisomorphickeyboard@gmail.com">linearisomorphickeyboard@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>var data = <%= all_progress.to_json %></script>
-<script src="/javascripts/pages/application-index.js"></script>
+<script src="/javascripts/pages/homepage.js"></script>

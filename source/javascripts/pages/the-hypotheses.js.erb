@@ -1,3 +1,5 @@
+// Shapes + Sounds Graph
+
 // Set data from data file
 var edges = <%= data.intervals_and_shapes.to_json %>
 
@@ -50,13 +52,13 @@ function getCenter(node) {
 
 function createLineFromEdge(edgeData) {
   var interval = $("#" + edgeData.data.source)
-  var intervalNode = interval.querySelector(".node__visual")
+  var intervalNode = interval.querySelector(".node__circle")
   var intervalNodeCenter = getCenter(intervalNode);
   var intervalNodeCenterX = intervalNodeCenter[0];
   var intervalNodeCenterY = intervalNodeCenter[1];
 
   var shape = $("#" + edgeData.data.target);
-  var shapeNode = shape.querySelector(".node__visual");
+  var shapeNode = shape.querySelector(".node__circle");
   var shapeNodeCenter = getCenter(shapeNode);
   var shapeNodeCenterX = shapeNodeCenter[0];
   var shapeNodeCenterY = shapeNodeCenter[1];
@@ -85,6 +87,13 @@ function renderLinesAndEdges() {
   });
 }
 
+// Remove graph that I'm not using
+console.log(document.body.offsetWidth < 576)
+if (document.body.offsetWidth < 576) {
+  deleteElement($(".js-intervals-shapes-section")[0]);
+} else {
+  deleteElement($(".js-mobile-intervals-shapes-section")[0]);
+}
 
 renderLinesAndEdges();
 
@@ -95,4 +104,3 @@ window.addEventListener("resize", () => {
 
   renderLinesAndEdges();
 });
-

@@ -1,0 +1,96 @@
+.article-show {
+  font-family: $ivar-text;
+  font-weight: 400;
+  font-size: 1.125rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.3125rem;
+  }
+
+  // Make these 
+  // Same as .graphit-xxl-bold
+  h1 {
+    // Escape the grid on the right side
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 4rem;
+
+    font-family: $graphit;
+    font-weight: 600;
+    font-size: 3rem;
+    @media screen and (min-width: 576px) {
+      font-size: 4.5rem;
+    }
+  }
+  h2 {
+    margin: 4rem 0 2rem;
+
+    font-family: $ivar-display;
+    font-weight: 600;
+    font-size: 2rem;
+    @media screen and (min-width: 576px) {
+      font-size: 3rem
+    }
+  }
+  h3 {
+    margin: 2.5rem 0 1rem;
+
+    font-family: $ivar-display;
+    font-weight: 600;
+    font-size: 1.3125rem;
+    @media screen and (min-width: 576px) {
+      font-size: 2rem
+    }
+  }
+
+  a {
+    white-space: pre-wrap; /* css-3 */    
+    word-wrap: break-word;
+    text-decoration: underline;
+  }
+
+  img {
+    margin: 4rem 0;
+  }
+
+  p {
+    margin: 2rem 0;
+    line-height: 1.5;
+    @media screen and (min-width: 576px) {
+      line-height: 1.7;
+    }
+  }
+
+  .footnotes {
+    margin-top: 8rem;
+    font-size: 0.8rem;
+    @media screen and (min-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    margin: 4rem 0;
+    @media screen and (max-width: 575px) {
+      padding-left: 1rem;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  ul.ct-legend {
+    margin: 0;
+  }
+
+  // Escaping the layout
+  .breakout {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+

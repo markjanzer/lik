@@ -35,6 +35,10 @@ data.practice_sessions.each do |practice_session|
   proxy "/practice-sessions/#{practice_session.id}/index.html", "/practice-sessions/show.html", :locals => { :practice_session => practice_session }, layout: "layout", :ignore => true
 end
 
+# Articles use article layout, except for index
+page "/articles/*", :layout => "article-layout"
+page "/reflections/*", :layout => "article-layout"
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
@@ -49,16 +53,32 @@ helpers do
   end
 end
 
+configure :development do
+  config[:base_url] = "http://localhost:4567"
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
+  config[:base_url] = "https://likeyboard.io"
+
   import_data
 
   if data[:intervals_shapes].nil?
     generate_elements_json
   end
 
-  # activate :minify_css
+  # Enable cache buster
+  activate :asset_hash, exts: %w(.js .css)
+  # activate :asset_hash
+
+  # Minify CSS on build
+  activate :minify_css
+
+  # Minify Javascript on build
   # activate :minify_javascript
+
+  # GZIP files for even better compression
+  activate :gzip, exts: %w(.js .css .html .htm .xml .txt)
 end

@@ -1,0 +1,125 @@
+.practice-session__show {
+  font-family: $graphit;
+
+  .practice-session__header {
+    margin: 0;
+  }
+  .practice-session__name {
+    display: inline-block;
+    margin: 0;
+  }
+  .practice-session__date {
+    color: $color-gray;
+    display: block;
+    font-size: 1.5rem;
+    @media screen and (min-width: 576px) {
+      display: inline-block;
+      font-size: inherit;
+    }
+  }
+  .practice-session__notes {
+    margin: 1rem;
+    @media screen and (min-width: 576px) {
+      margin: 0 2rem;
+    }
+  }
+
+  .domains {
+    margin-top: 0rem;
+    @media screen and (min-width: 576px) {
+      margin-top: 2rem;
+    }
+  }
+  .domain {
+    margin: 2rem 0 3rem;
+  }
+  // graphit-xl-regular
+  .domain-header, 
+  .total-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: $graphit;
+    font-weight: 400;
+    font-size: 1.8rem;
+    @media screen and (min-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+  .domain-header__time,
+  .total-header__time {
+    color: $color-gray;
+  }
+  .domain-header__divider {
+    flex-grow: 1;
+    height: 0;
+    border-top: 1.5px solid $color-gray;
+    border-bottom: 1.5px solid $color-gray;
+    margin: 0 0.5rem 0;
+    @media screen and (min-width: 576px) {
+      border-top: 3px solid $color-gray;
+      border-bottom: 3px solid $color-gray;
+      margin: 0 1.5rem 0;
+    }
+  }
+
+  .exercise-set {
+    margin: 1rem 0;
+  }
+  .exercise-set__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .exercise-set__time {
+    color: $color-gray;
+  }
+  .exercise-set__divider {
+    flex-grow: 1;
+    height: 0;
+  
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+    margin: 0 0.5rem 0;
+    @media screen and (min-width: 576px) {
+      border-top: 1.5px solid $color-gray;
+      border-bottom: 1.5px solid $color-gray;
+      margin: 0 1.5rem 0;
+    }
+  }
+
+  .exercise-set__data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .exercise-set__increment {
+    margin: 0.3rem;
+  }
+  .exercise-set__increments-summary {
+    max-width: 10rem;
+    text-align: right;
+    color: $color-gray;
+    margin: 0.3rem 0;
+  }
+
+
+  .total {
+    margin: 4rem 0 3rem;
+  }
+  .total-increments {
+    margin: 1rem 0 1rem 1rem;
+    @media screen and (min-width: 576px) {
+      margin: 1rem 0 1rem 40px;
+    }
+  }
+
+  ul {
+    padding-left: 1rem;
+    @media screen and (min-width: 576px) {
+      padding-left: 40px;
+    }
+  }
+
+}

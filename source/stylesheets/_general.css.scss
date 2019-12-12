@@ -1,0 +1,162 @@
+body {
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $graphit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.section {
+  margin-top: 5rem;
+  @media screen and (min-width: 576px) {
+    margin-top: 8rem;
+  }
+}
+
+.section--top {
+  margin-top: 12rem;
+}
+.section__header {
+  line-height: 1;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+// Makes it easy to change the color of the logo
+.logo__gray-bit {
+  fill: $color-gray;
+}
+
+
+// Graphit Thin----------- 100?
+// Graphit Light---------- 300
+// Graphit Regular-------- 400
+// Graphit Medium--------- 500
+// Graphit Bold----------- 600
+// Graphit Black---------- 800
+
+// Ivar Regular----------- 400
+// Ivar Medium------------ 500
+// Ivar SemiBold---------- 600
+// Ivar Bold-------------- 700
+
+.graphit-xxl-bold,
+.section__header {
+  font-family: $graphit;
+  font-weight: 600;
+  font-size: 3rem;
+  @media screen and (min-width: 576px) {
+    font-size: 4.5rem;
+  }
+}
+.graphit-xxl-regular {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 3rem;
+  @media screen and (min-width: 576px) {
+    font-size: 4.5rem;
+  }
+}
+.graphit-xl-bold {
+  font-family: $graphit;
+  font-weight: 600;
+  font-size: 2rem;
+  @media screen and (min-width: 576px) {
+    font-size: 3rem;
+  }
+}
+.graphit-xl-regular {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 2rem;
+  @media screen and (min-width: 576px) {
+    font-size: 3rem;
+  }
+}
+.graphit-lg-regular,
+.article__title {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  @media screen and (min-width: 576px) {
+    font-size: 2rem;
+  }
+}
+.graphit-md-regular {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 1rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.3125rem;
+  }
+}
+.graphit-sm-regular {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 0.9rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.125rem;
+  }
+}
+.graphit-xs-regular {
+  font-family: $graphit;
+  font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
+}
+.ivar-soft-md-regular,
+body {
+  font-family: $ivar-soft;
+  font-weight: 400;
+  font-size: 1.125rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.3125rem;
+  }
+}
+.ivar-soft-sm-regular {
+  font-family: $ivar-soft;
+  font-weight: 400;
+  font-size: 0.9rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1.125rem;
+  }
+}
+.ivar-soft-xs-regular {
+  font-family: $ivar-soft;
+  font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
+}
+.ivar-display-xs-regular,
+.ct-axis-title,
+.ct-legend {
+  font-family: $ivar-display;
+  font-weight: 400;
+  font-size: 0.8rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
+}

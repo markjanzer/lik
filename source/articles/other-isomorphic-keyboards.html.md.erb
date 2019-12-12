@@ -1,110 +1,67 @@
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-8">
-      <div class="section section--top article-body" markdown="1">
-      
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "Other Isomorphic Keyboards",
+    description: "Why not another isomorphic keyboard? The first isomorphic keyboard was designed in 1882, and there have been plenty of other designed since. I expand on why the Linear Isomorphic Keyboard’s similarities with the Traditional Keyboard could give it an advantage over other isomorphic keyboards.",
+  } %>
+<% end %>
+
+<% partial "/partials/article-layout" do %>
+
 # Other Isomorphic Keyboards
 
-One of the cardinal sins of productivity is to do what has already been
-done. But in my quest to test an isomorphic keyboard against the
-traditional keyboard, I appear to have sinned.
+One of the cardinal sins of productivity is to do what has already been done. But in my quest to test an isomorphic keyboard against the traditional keyboard, I appear to have sinned. 
 
-Isomorphic keyboards have existed since the the early nineteenth century
-when an isomorphic layout was applied to the button accordions or
-concertina.<sup>1</sup> [Many](http://daskin.com/page2/page2.html)
-[different](http://www.shiverware.com/musixpro/)
-[isomorphic](https://chromatone.jp/online-shop/index.html)
-[keyboards](http://www.lippenskeyboard.com/purchase/) can
-be purchased today, but instead of purchasing someone else's, I designed
-and built my own.
+Isomorphic keyboards have existed since the early nineteenth century when an isomorphic layout was applied to the button accordion.[^1] [<ins>Many</ins>](http://daskin.com/page2/page2.html) [<ins>different</ins>](http://www.shiverware.com/musixpro/) [<ins>isomorphic</ins>](https://chromatone.jp/online-shop/index.html) [<ins>keyboards</ins>](https://www.dodekamusic.com/stellar/) can be purchased today, but instead of purchasing someone else’s, I built my own.[^2] 
 
-But I would argue that I am not a sinner. Well, at least in this
-particular instance.
+But I would argue that I am not a sinner. Well, at least in this  instance.
 
 ## The Similarity Advantage
 
-The similarities the LIK shares with the traditional keyboard make the
-LIK easier to adopt in comparison to other isomorphic keyboards. This
-advantage manifests itself in two aspects of adopting the LIK.
+The similarities the Linear Isomorphic Keyboard (LIK) shares with the traditional keyboard (TK) make it easier to adopt than other isomorphic keyboards. This advantage manifests itself in two aspects of adopting the LIK.
 
-## Ease of playing
+### Ease of playing
 
-The likeness of the keyboards make the LIK easier for pianists to play,
-as the skills needed to play the LIK are more transferable with the
-traditional keyboard than the skills needed for other isomorphic
-keyboards.
+The likeness of the keyboards make the LIK easier for pianists to play. The skills needed to play the LIK are more similar to the TK than the skills needed for other isomorphic keyboards.
 
-Other isomorphic keyboards have a two dimensional grid-like structure
-composed of squares or hexagons. Each key maintains a particular
-intervallic relationship between itself and adjacent keys. For instance,
-on the Wicki-Hayden layout, any given key is surrounded by six other
-keys. The key above and to the left is a fourth higher, the key above
-and to the right is a fifth higher, and the key to the right is a whole
-step higher.<sup>2</sup> Different isomorphic keyboards generally have different
-interval relationships between adjacent keys.
+Unlike the mostly one-dimensional layouts of the TK and LIK, other isomorphic keyboards have a two dimensional grid-like structure. This added dimension changes the nature of performance on these keyboards.
 
-To compare performance on keyboards, here is one octave of the C major
-scale played with the right hand, with the fingers numbered as such: 1
--- thumb, 2 -- index, 3 -- middle, 4 -- ring, 5 -- pinkie. This is the
-most common fingering, shared between six of the twelve major scales.
+To compare keyboards, here is the fingering for one octave of the C major scale played with the right hand. The fingers numbered from 1 to 5 counting from the thumb to the pinky finger.
 
 
-**Traditional keyboard**: 1-2-3-1-2-3-4-5.
+<img src="/images/fingerings/tk-c-major.svg" />
 
-<img src="/images/tk-c-major.svg" />
+Traditional keyboard: 1-2-3-1-2-3-4-5.
 
-**LIK**: 1-2-3-1-2-3-4-5
+<img src="/images/fingerings/lik-c-major.svg" />
 
-<img src="/images/lik-c-major.svg" />
+LIK: 1-2-3-1-2-3-4-5
 
-**Wiki-Hayden**: 1-2-3-(shift hand forward)-1-2-3-4-(shift hand forward)-1
+<img src="/images/fingerings/wiki-hayden-c-major.svg" />
 
-<img src="/images/wiki-hayden-c-major.svg" />
+Wiki-Hayden: 2-3-4-(shift hand forward)-2-3-4-5-(shift hand forward)-2
 
-**Janko**: 1-2-3-(shift hand back)-1-2-3-4-(shift hand forward)-1
+<img src="/images/fingerings/janko-c-major.svg" />
 
-<img src="/images/janko-c-major.svg" />
+Janko: 1-2-3-(shift hand back)-1-2-3-4-(shift hand forward)-5
 
-The LIK and the traditional keyboard share nearly identical shapes and
-identical fingerings, while the other isomorphic keyboards require the
-pianist to shift forward on a completely new plane (the sagittal plane).
-I am not claiming that the LIK has better fingerings than the other
-isomorphic layouts, but that the similarities to the traditional
-keyboard will make it easier to adopt.
+The LIK and TK share nearly identical fingerings, while the other isomorphic keyboards require the pianist to navigate a completely different dimensional plane. I am not claiming that the LIK is innately better than the other isomorphic layouts. But I do think that the similarities it shares with the traditional keyboard will make it easier to adopt.
 
-## Ease of creation
+### Ease of creation
 
-The LIK is much easier to create than other isomorphic keyboards,
-because you don't have to start from scratch.
+The LIK is much easier to create than other isomorphic keyboards, because the LIK can share components with the TK.
 
-When creating your own isomorphic keyboard, you have to create the case,
-the keys, the action for the keys, velocity sensitivity, wiring for the
-triggers, and more. If you are DIY-inclined,
-[this](http://rainboard.shiverware.com/Rainboard_-_DIY_Dynamic_Rainbow_Isomorphic_Keyboard)
-is an awesome project. But for the rest of us, the process of making an
-LIK is much more appealing, because instead of creating the keyboard
-from scratch, you buy a keyboard, open it up, and replace the keys.
+When creating your own isomorphic keyboard, you have to create the case, the keys, the triggers (hopefully at least with velocity sensitivity), wiring and more. If you are DIY-inclined, [<ins>this</ins>](http://rainboard.shiverware.com/Rainboard_-_DIY_Dynamic_Rainbow_Isomorphic_Keyboard) is an awesome project. But for the rest of us, the process of making an LIK is much more appealing. Instead of creating the keyboard from scratch, you buy a keyboard, open it up, and replace the keys.
 
-Okay it isn't *that* simple. Someone has to create the keys, and mass producing keys be difficult/expensive. I made mine by buying replacement black keys ($25 + shipping), and then 3D printing extensions for the black keys ($360). It ends up being expensive and time intensive to improve a $100 keyboard. I have some ideas for making the LIK more accessible but initially I'm going to focus on the experiment itself. If the LIK proves to be an improvement then I'll be focusing more on making it accessible to the public.
+Okay it isn't that simple, for the independent layman it is still time intensive and expensive. Someone has to create the keys, and mass producing keys be difficult/expensive. I made mine by buying replacement black keys ($25 + shipping), and then 3D printing extensions for the black keys ($360). It ends up being expensive and time intensive to improve a $100 keyboard. I have some ideas for making the LIK more accessible, but initially I'm going to focus on the experiment itself.
 
-The LIK also will be easy for manufacturers to make. They could create
-the new key (by altering the model of their black keys to have the
-length of the white keys), and apply those keys to an existing keyboard.
-Creating a new product is never a small undertaking, but the
-infrastructure the LIK shares with the traditional keyboard should make it easier to produce.
+The ease of creation should be noticable when mass producing the LIK. Manufacturers could create the new key by altering the model of their black keys to have the length of the white keys. Then they only need to apply these keys to an existing keyboard. Creating a new product is never a small undertaking, but the structure the LIK shares with the TK should make it easier to produce.
 
 ## Conclusion
 
-I have no reason to believe that the LIK is inherently superior to other
-isomorphic keyboards. But in a world dominated by the traditional
-keyboard, its similarity to the norm uniquely positions the LIK to be
-the isomorphic keyboard that disrupts the reign of the traditional
-keyboard.
+I have no reason to believe that the LIK is inherently superior to other isomorphic keyboards. But in the shadow of the ubiquitous traditional keyboard, similarity to the norm grants the Linear Isomorphic Keyboard an advantage in the ease of adoption.
 
-1.  ["Hexagonal isomorphic keyboards in a musical instrument probably stem from the early 19th century accordion or concertina."](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
+[^1]: [<ins>“Hexagonal isomorphic keyboards in a musical instrument probably stem from the early 19th century accordion or concertina.”</ins>](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
 
-2.  [https://en.wikipedia.org/wiki/Wicki-Hayden\_note\_layout\#/media/File:Wicki-Hayden\_Musical\_Note\_Layout.png](https://en.wikipedia.org/wiki/Wicki-Hayden_note_layout#/media/File:Wicki-Hayden_Musical_Note_Layout.png)
+[^2]: You might have realized that the last link is in fact a link to Dodeka, a company that is selling a Linear Isomorphic Keyboard, which does kind of make  my work somewhat redundant. In my defense, they weren't selling this when I made the LIK.
 
-</div>
-</div>
-</div>
+<% end %>

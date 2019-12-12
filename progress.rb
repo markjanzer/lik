@@ -7,7 +7,7 @@ def progress_data(practice_sessions, select_proc=nil)
   }
 
   practice_sessions.sort { |ps1, ps2| ps1.number <=> ps2.number }.each do |ps|
-    completed_increments = completed_increments(ps)
+    completed_increments = practice_session_completed_increments(ps)
     if select_proc
       completed_increments.select! { |ci| select_proc.call(ci) }
     end
@@ -16,10 +16,15 @@ def progress_data(practice_sessions, select_proc=nil)
     acronym = find(:keyboards, ps.keyboard).acronym.to_sym
     cumulative_completed_increment_count = progress_data[acronym].last ? progress_data[acronym].last + completed_increment_count : completed_increment_count
     progress_data[acronym].push(cumulative_completed_increment_count)
-  end 
+  end
+
+  labels = practice_sessions.sort { |ps1, ps2| ps1.number <=> ps2.number }.map(&:number).uniq
+  # We can do this for tighter ones.
+  # labels = labels.map { |label| label.to_i % 2 == 0 ? label : ""}
 
   return {
-    series: [progress_data[:TK], progress_data[:LIK]]
+    series: [progress_data[:TK], progress_data[:LIK]],
+    labels: labels,
   }
 end
 
@@ -34,12 +39,18 @@ def progress_until_practice_session(practice_session)
   progress_data(practice_sessions)
 end
 
-def domain_progress(domain)
+def domain_progress(domain, practice_sessions=data.practice_sessions)
+  # if practice_sessions.nil?
+  #   practice_sessions = data.practice_sessions
+  # end
   select_proc = proc { |ci| find(:domains, ci.domain) == domain }
-  progress_data(data.practice_sessions, select_proc)
+  progress_data(practice_sessions, select_proc)
 end
 
-def exercise_set_progress(exercise_set)
+def exercise_set_progress(exercise_set, practice_sessions=data.practice_sessions)
+  # if practice_sessions.nil?
+  #   practice_sessions = data.practice_sessions
+  # end
   select_proc = proc { |ci| find(:exercise_sets, ci.exercise_set) == exercise_set }
-  progress_data(data.practice_sessions, select_proc)
+  progress_data(practice_sessions, select_proc)
 end

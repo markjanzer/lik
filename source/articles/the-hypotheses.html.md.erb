@@ -1,412 +1,153 @@
+<% content_for :metatags do %>
+  <%= partial "partials/metatags", locals: {
+    title: "The Hypotheses",
+    description: "Why would the Linear Isomorphic Keyboard perform better than the traditional keyboard? I have a handful of theories about how the Linear Isomorphic Keyboard will compare to the Traditional Keyboard, and these hypotheses are based on yet another hypothesis: the isomorphic advantage. With words, graphs, and charts, I attempt to explain my predictions for the experiment.",
+  } %>
+<% end %>
+
+<%= partial "partials/chartist-js" %>
 <script src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
 
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-8 section section--top article-body" markdown="1">
+<% partial "/partials/article-layout" do %>
+
 # The Hypotheses
 
-I think that the linear isomorphic keyboard (LIK) will outperform the traditional keyboard (TK). I predict that I will improve faster on the LIK than on the traditional keyboard and that the LIK will not have significant technical limitations in comparison to the traditional keyboard. More specifically, I hypothesize that the LIK will outperform the TK on fundamentals, be slightly better at sight reading, and greatly outperform the TK when playing by ear.
+I predict that the Linear Isomorphic Keyboard (LIK) will outperform the traditional keyboard (TK). More specifically, I think that I will improve faster on the LIK than on the TK and I don’t foresee the LIK having significant technical limitations.
 
-The reasonings behind these hypotheses are based on yet another hypothesis: I believe that isomorphic keyboards have an advantage over non-isomorphic keyboards in regards to playability.
+These hypotheses stem from another hypothesis: that isomorphic keyboards are easier to play than non-isomorphic keyboards. 
 
-## Isomorphic Instruments
+## The advantage of isomorphism
 
-When applied to the keyboard, &quot;Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location.&quot;<sup>1 2</sup> Each musical pattern only has one shape, regardless of key or location. The LIK and other (equal temperament) isomorphic keyboards have another quality: each shape correlates to one musical pattern.<sup>3</sup>
+When applied to the keyboard, “Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location.”[^1][^2] To put this another way, each sound can be performed by one or more shapes,[^3] but those shapes always play the same sound.
 
-This one-to-one correlation of shapes to sounds provides an advantage for the LIK. The implications are far reaching and amorphous, but I have done my best to break the idea down into three advantages the transpositional, the observational, and the rudimentary.
+The isomorphic advantage is rather amorphous. To understand how this advantage manifests, it helps to think of the keyboard as a function. It takes two variables—shape and location (the starting note)—and returns a sound. 
 
-### The transpositional advantage
+**f(shape, location) => sound**
 
-The most obvious benefit of isomorphism is that transposition becomes as simple as shifting your hand. On non-isomorphic keyboards, each musical idea can have up to twelve different shapes, meaning that there are twelve different ways to play the musical idea, each correct depending on the starting note. On the LIK, there is a one to one relationship between musical ideas and shapes.
+Isomorphic keyboards remove the variable of location. Shapes make the same sound regardless of the starting note.
 
-Practice one scale and you practice all twelve. Learn a solo and you can play it in any key. When reading jazz chord symbols, you don&#39;t need to learn all twelve fingerings for each chord. Instead, you learn to play the chord once, and then you move your hand to the starting note. The transpositional benefit does not mean that the isomorphic keyboard easier to play, but that there is less to learn. You learn the same amount of music, but one twelfth the shapes.
+**f(shape) => sound**
 
-Well, okay maybe not one twelfth the shapes, that&#39;s a little dishonest. Sure, most songs can be played by twelve different shapes depending on key, while the LIK only has one shape per performance of a song. But the keys are not all so different. G major is considerably easier to learn once you know C major as the scales are identical in shape save for one note.
+I have identified three different musical skills: fundamentals, sight reading, and playing by ear. I am going to imagine the keyboard as a function as I predict the how the isomorphic advantage applies to each domain of musical prowess.
 
-To compare the quantity of patterns more honestly, we can look not towards the number of keys, but to the building blocks of all melodic/harmonic musical patterns: intervals.
+## Fundamentals
 
-On the TK there are twelve different shapes for any given scale, but how many shapes are there for a given interval? The median is four. In addition, each shape correlates to a median of two intervals. To see this in practice, we can look at the major 2nd on the TK. There are four different shapes that can make this interval (white key to white key, black key to black key, white key to black key and black key to white key). Also, the white key to white key shape (of adjacent white keys) is not always a major 2nd. 2/7ths of the time this shape will play a minor 2nd. You can observe all of these relationships within an octave below.
+The removal of location from the equation benefits isomorphic keyboards in a few ways, the most obvious of which is transposition.
 
-</div>
-</div>
-</div>
+### Ease of transposition
 
-<div class="intervals-shapes-section">
-  <div class="intervals-shapes-graph__label"><h2>TK</h2></div>
-  <div class="intervals-shapes-graph intervals-shapes-graph--tk">
-    <div class="nodes intervals">
-      <div class="node interval" id="rec0vNdSsnZkIcA4X" name="Minor 2nd">
-        <span class="label-temp">Minor 2nd</span>
-        <div class="node__visual" style="background-color: #cfdfff"></div>
-      </div>
-      <div class="node interval" id="recS58DmkLKu2grR9" name="Major 2nd">
-        <span class="label-temp">Major 2nd</span>
-        <div class="node__visual" style="background-color: #d0f0fd"></div>
-      </div>
-      <div class="node interval" id="recdeN9izKLz6FxLx" name="Minor 3rd">
-        <span class="label-temp">Minor 3rd</span>
-        <div class="node__visual" style="background-color: #c2f5e9"></div>
-      </div>
-      <div class="node interval" id="reckvpdIs6Xuq1HVj" name="Major 3rd">
-        <span class="label-temp">Major 3rd</span>
-        <div class="node__visual" style="background-color: #d1f7c4"></div>
-      </div>
-      <div class="node interval" id="recH91UnZq5M46BN2" name="Perfect 4th">
-        <span class="label-temp">Perfect 4th</span>
-        <div class="node__visual" style="background-color: #ffeab6"></div>
-      </div>
-      <div class="node interval" id="receqRQ6G8fmCtEVx" name="Tritone">
-        <span class="label-temp">Tritone</span>
-        <div class="node__visual" style="background-color: #fee2d5"></div>
-      </div>
-      <div class="node interval" id="recZbKFnM0QfVkOmm" name="Perfect 5th">
-        <span class="label-temp">Perfect 5th</span>
-        <div class="node__visual" style="background-color: #ffdce5"></div>
-      </div>
-      <div class="node interval" id="recyMPEnGXy97mxll" name="Minor 6th">
-        <span class="label-temp">Minor 6th</span>
-        <div class="node__visual" style="background-color: #ffdaf6"></div>
-      </div>
-      <div class="node interval" id="recLsI9cI3dAimpvR" name="Major 6th">
-        <span class="label-temp">Major 6th</span>
-        <div class="node__visual" style="background-color: #ede2fe"></div>
-      </div>
-      <div class="node interval" id="reczsYyfXWbFv1v1d" name="Minor 7th">
-        <span class="label-temp">Minor 7th</span>
-        <div class="node__visual" style="background-color: #9cc7ff"></div>
-      </div>
-      <div class="node interval" id="recyyC3ERyaf28Xn6" name="Major 7th">
-        <span class="label-temp">Major 7th</span>
-        <div class="node__visual" style="background-color: #77d1f3"></div>
-      </div>
-      <div class="node interval" id="rec8sFmzq4bUF9g3D" name="Octave">
-        <span class="label-temp">Octave</span>
-        <div class="node__visual" style="background-color: #72ddc3"></div>
-      </div>
-    </div>
-    <div class="nodes shapes">
-      <div class="node" id="recwYr1BR7SJOhV2K" name="WB1">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">1</span>
-      </div>
-      <div class="node" id="recpPTjrPCoWEqHqc" name="BW1">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">1</span>
-      </div>
-      <div class="node" id="recuYrPcvwNMSr4Sy" name="WW2">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">2</span>
-      </div>
-      <div class="node" id="recstZnrrXgGG0YOa" name="BB2">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">2</span>
-      </div>
-      <div class="node" id="reca2z9JHoJ599b0e" name="WB3">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">3</span>
-      </div>
-      <div class="node" id="recVEelstSUtfbWsw" name="BW3">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">3</span>
-      </div>
-      <div class="node" id="recI4GQgm65zG0mWf" name="WW4">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">4</span>
-      </div>
-      <div class="node" id="recIhXSA4YZRwrq4w" name="BB4">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">4</span>
-      </div>
-      <div class="node" id="recG4t1WiOR1DM2tc" name="WB5">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">5</span>
-      </div>
-      <div class="node" id="reclgFxnI22C1BFhd" name="BW5">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">5</span>
-      </div>
-      <div class="node" id="rec9HUG3nu1eZHs1L" name="WW6">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">6</span>
-      </div>
-      <div class="node" id="recEVTjwd7ySM8R4J" name="BB6">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">6</span>
-      </div>
-      <div class="node" id="rec7EU4KfVep7D6Sa" name="WB7">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">7</span>
-      </div>
-      <div class="node" id="recBxv0fvY0pkuVkJ" name="BW7">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">7</span>
-      </div>
-      <div class="node" id="recY743bibqUglxhX" name="WW8">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">8</span>
-      </div>
-      <div class="node" id="rectMuASyozV4jN2j" name="BB8">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">8</span>
-      </div>
-      <div class="node" id="rec4lvBafSjpf6iUm" name="WB9">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">9</span>
-      </div>
-      <div class="node" id="recOz4xQj9DEV4olt" name="BW9">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">9</span>
-      </div>
-      <div class="node" id="recQVcnBLRQycKSkz" name="WW10">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">10</span>
-      </div>
-      <div class="node" id="recxRi3kOFTsWucav" name="BB10">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">10</span>
-      </div>
-      <div class="node" id="recwgjsitkTZuMC7l" name="WB11">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">11</span>
-      </div>
-      <div class="node" id="recB9zg5H5TwGtp7e" name="BW11">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">11</span>
-      </div>
-      <div class="node" id="recppuCcNqM6FkJyH" name="WW12">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">12</span>
-      </div>
-      <div class="node" id="recBe3PY2ElHu4G6x" name="BB12">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">12</span>
-      </div>
-      <div class="node" id="reciaFs54NU3QcW5a" name="WB13">
-        <div class="node__visual"><%= svg "wb-circle" %></div>
-        <span class="label-temp">13</span>
-      </div>
-      <div class="node" id="recwnb2NblRpgcTQH" name="BW13">
-        <div class="node__visual"><%= svg "bw-circle" %></div>
-        <span class="label-temp">13</span>
-      </div>
-      <div class="node" id="recCBGfwxnRisN5v6" name="WW14">
-        <div class="node__visual"><%= svg "ww-circle" %></div>
-        <span class="label-temp">14</span>
-      </div>
-      <div class="node" id="recwkWJhG5WlEHqAw" name="BB14">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">14</span>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col col-lg-6">
-        <img src="/images/legend.png" alt="Legend for intervals-shapes graph" class="legend"/>
-      </div>
-    </div>
-  </div>
+Transposition is the act of taking a musical pattern, changing the starting note, then recalculating the shape. The isomorphic advantage shines under this light. Anything learned on the LIK can be applied to any starting note, there is no recalculation necessary.
 
-  <div class="intervals-shapes-graph__label"><h2>LIK</h2></div>
-  <div class="intervals-shapes-graph intervals-shapes-graph--lik">
-    <div class="nodes intervals">
-      <div class="node interval" id="lik-minor-2nd" name="Minor 2nd">
-        <span class="label-temp">Minor 2nd</span>
-        <div class="node__visual" style="background-color: #cfdfff"></div>
-      </div>
-      <div class="node interval" id="lik-major-2nd" name="Major 2nd">
-        <span class="label-temp">Major 2nd</span>
-        <div class="node__visual" style="background-color: #d0f0fd"></div>
-      </div>
-      <div class="node interval" id="lik-minor-3rd" name="Minor 3rd">
-        <span class="label-temp">Minor 3rd</span>
-        <div class="node__visual" style="background-color: #c2f5e9"></div>
-      </div>
-      <div class="node interval" id="lik-major-3rd" name="Major 3rd">
-        <span class="label-temp">Major 3rd</span>
-        <div class="node__visual" style="background-color: #d1f7c4"></div>
-      </div>
-      <div class="node interval" id="lik-perfect-4th" name="Perfect 4th">
-        <span class="label-temp">Perfect 4th</span>
-        <div class="node__visual" style="background-color: #ffeab6"></div>
-      </div>
-      <div class="node interval" id="lik-tritone" name="Tritone">
-        <span class="label-temp">Tritone</span>
-        <div class="node__visual" style="background-color: #fee2d5"></div>
-      </div>
-      <div class="node interval" id="lik-perfect-5th" name="Perfect 5th">
-        <span class="label-temp">Perfect 5th</span>
-        <div class="node__visual" style="background-color: #ffdce5"></div>
-      </div>
-      <div class="node interval" id="lik-minor-6th" name="Minor 6th">
-        <span class="label-temp">Minor 6th</span>
-        <div class="node__visual" style="background-color: #ffdaf6"></div>
-      </div>
-      <div class="node interval" id="lik-major-6th" name="Major 6th">
-        <span class="label-temp">Major 6th</span>
-        <div class="node__visual" style="background-color: #ede2fe"></div>
-      </div>
-      <div class="node interval" id="lik-minor-7th" name="Minor 7th">
-        <span class="label-temp">Minor 7th</span>
-        <div class="node__visual" style="background-color: #9cc7ff"></div>
-      </div>
-      <div class="node interval" id="lik-major-7th" name="Major 7th">
-        <span class="label-temp">Major 7th</span>
-        <div class="node__visual" style="background-color: #77d1f3"></div>
-      </div>
-      <div class="node interval" id="lik-octave" name="Octave">
-        <span class="label-temp">Octave</span>
-        <div class="node__visual" style="background-color: #72ddc3"></div>
-      </div>
-    </div>
+This has a clear impact on the LIK’s performance of fundamentals. Anything that has to be learned in every key becomes far more simple. Instead of learning the major scale in all twelve keys, you learn the major scale once.
 
-    <div class="nodes shapes">
-      <div class="node" id="lik-1">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">1</span>
-      </div>
-      <div class="node" id="lik-2">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">2</span>
-      </div>
-      <div class="node" id="lik-3">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">3</span>
-      </div>
-      <div class="node" id="lik-4">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">4</span>
-      </div>
-      <div class="node" id="lik-5">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">5</span>
-      </div>
-      <div class="node" id="lik-6">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">6</span>
-      </div>
-      <div class="node" id="lik-7">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">7</span>
-      </div>
-      <div class="node" id="lik-8">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">8</span>
-      </div>
-      <div class="node" id="lik-9">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">9</span>
-      </div>
-      <div class="node" id="lik-10">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">10</span>
-      </div>
-      <div class="node" id="lik-11">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">11</span>
-      </div>
-      <div class="node" id="lik-12">
-        <div class="node__visual"><%= svg "bb-circle" %></div>
-        <span class="label-temp">12</span>
-      </div>
-    </div>
-  </div>
+At first glance, it appears that the LIK has 1/12th the amount of shapes to learn compared to TK. Most complex musical patterns (such as scales) have twelve different shapes on the TK and one on the LIK. But, this is not quite the case. Although G major and C major have unique shapes on the TK, they share 6/7 of their notes. To find the true difference in complexity we can turn towards to the building blocks of musical patterns: intervals.
+
+Below is a graph of all twelve intervals within an octave and all the shapes that perform those intervals.
+
+<% end %>
+
+<%= partial "partials/mobile-interval-shapes-section" %>
+<%= partial "partials/interval-shapes-section" %>
+
+
+<% partial "/partials/article-layout" do %>
+
+The graphs above illustrate the complexities of the TK that stem from the many-to-many relationship of shapes and sounds. On the TK, each interval can be performed by an average of 3.58 different shapes (43 relationships between sounds and shapes / 12 sounds). Each interval on the TK has a median of four different ways to perform it, only one of which is correct depending on the starting note. 
+
+The LIK only has one shape per sound. Thus it only has 28% (12/43) the number of relationships between sounds and shapes as the TK. I predict that when practicing patterns in every key or patterns that are chromatic, the LIK will improve at 3.58 times the speed of the TK.
+
+### When the shape is known
+
+Though the graphs above show the complexity of the relationship between sounds and shapes, perhaps what is more noticeable is the number of shapes for each keyboard. The LIK has 12 shapes to play all 12 intervals in an octave, while the TK has 28\. This means that there are 2.33 (7/3) times the amount of shapes to learn on the TK as there are on the LIK.
+
+I stated earlier that the LIK was 3.58 times less complex than the TK, but the LIK has 2.33 times fewer shapes than the TK. Which is the true advantage? What rate of improvement should I expect from the LIK?
+
+These differences of complexity and quantity will impact the LIK in different ways. The function of the keyboard doesn't measure the difficulty of playing the keyboard when all sides of the equation are already known. When practicing familiar content the difficulty isn't determining which notes to play. The challenge comes in playing the notes correctly.
+
+I am going to posit yet another hypothesis, albeit one that I think is more widely accepted. We improve by learning patterns, and once learned, anything that has these patterns becomes easier. I would hypothesize that as we practice the keyboard, we learn fingerings. The more we learn, the more likely a new song or pattern will have these fingerings.
+
+As there are 2.33 times more shapes on the TK than the LIK, I predict that the TK will take 2.33 times as long to learn as the LIK. 
+
+<% end %>
+
+<div class="improvement-chart ct-chart ct-chart--full breakout">
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-8 section article-body" markdown="1">
-These graphs illustrate two advantages of the LIK:
+<% partial "/partials/article-layout" do %>
 
-1. There is only one interval for any given shape
-2. There is only one shape for any given interval
+The chart above illustrates the speed of improvement between the keyboards. In this radically simplified simulation, the LIK has 300 shapes and the TK has 700 shapes to learn. Each practice session practices 15 randomly selected shapes. Once practiced, it becomes a known shape. This graph shows how many practice sessions it takes to learn 90% of the shapes on the LIK. It also shows the percent of known content for each practice session along the way.
 
+The advantage of having less content could take a while to actualize. The keyboards have similar percentages of known content in the early practice sessions. Only after a considerable amount of practice does the LIK start to consistently have a higher percent known in the practice sessions. If this isn't shown in the chart above then refresh the page, each page load generates new data.
 
+It will not be easier to play a given passage on the LIK than on the TK. Completely new content will be roughly equally difficult on both keyboards. But because there are fewer shapes on the LIK, it will be more likely that new content will be familiar, and thus easier.
 
-### The Observational Advantage: identifying intervals from shapes
+I predict that chromatic exercises will improve at 3.58 times the speed of the TK and all other fundamentals will improve at 2.33 times the rate of the TK.
 
-The LIK makes it easier to identify intervals (and thus musical patterns) from shapes. Many shapes on the TK can make two different sounds (15/28 shapes within an octave), while on the LIK each shape only makes one sound, and there are fewer shapes to make (12 instead of 28 within an octave).
+## Playing by Ear
 
-These advantages are realized when a performer knows the shapes but not the intervals. You might not know that F# to a Bb is a major 3rd, but you can recognize the shape. You might not notice that the melody you are sight reading is merely a transposition of an earlier melody, but your fingers will. You might not recognize a chord progression as a ii-V-I when sight reading it, but it will become obvious the moment your hands feel it&#39;s familiar shape.
+When playing by ear, the pianist is reverse engineering the function of the piano. The pianist hears the sound and has to determine the shape (and sometimes the starting note too). 
 
-This recognition of shapes is the result of a tradeoff. The irregular shape of the TK makes it easier to identify notes, but also obfuscates musical patterns. Thus, removing the irregular shape of the TK makes notes harder to identify, but musical patterns become more recognizable.
+On the LIK there is only one possible shape for every sound. The TK has a median of four shapes per sound (and an average of 3.58), only one of is correct given the starting note. Because of this, it seems that isomorphic keyboards would be 3.58 times better at playing by ear. Yet this is not the case.
 
-The impact of this advantage is not as clear cut as the others. It obviously helps with analysis and pattern recognition once the performer plays the intervals, but I don&#39;t predict that it will bring a noticeable advantage on first performance of any song. The ease of analysis might facilitate a more thorough theoretical understanding of practiced music, which could provide other advantages like more effective chunking in sight reading (which I will cover in my hypotheses of sight reading). The extent to which this might help is unknown.
+Once the pianist knows the starting note on the TK, the number of possible shapes are pruned. The shapes for a given sound are either white key to white key, white to black, black to black, or black to white. Given the starting note, the pianist should be able identify the color of the starting note by the feel. This usually halves the number of possible shapes. For instance, if I know start on a white key, I can rule out the black to white and black to black shapes. This leaves only white to black and white to white shapes as possible options.
 
-Identifying intervals from shapes does seem like a potentially beneficial skill, but the more obvious advantage comes from its inverse idea, identifying shapes from intervals.
+There are 23 different ways to play the 12 different intervals starting on white keys ( 7 / 12 of the keys are white). There are 20 ways to play the 12 intervals starting on black keys (5 / 12 keys are black). We can determine that when given the shape of the starting key, there is an average of 1.8125 possible shapes that can play each interval (and a median of 2).
 
-### The Rudimentary Advantage: identifying shapes from intervals
-
-The LIK makes it easier to identify shapes from musical patterns. The transpositional advantage and the rudimentary are similar in nature, but they have different points of origin.
-
-Transposition (in performance) is the ability to take the knowledge of a shape for a musical idea and generate the shape for the same musical idea shifted to a new starting note. The fundamental advantage is the the ability to take the knowledge of a musical idea and generate the shape for that musical idea.
-
-Transposition would be knowing the how to play the C major scale, and then wanting to play it in another key. The rudimentary advantage could be a song that&#39;s stuck in your head or a melodic line that is being formed as you improvise. On the TK, most intervals can be played with four different shapes. On the LIK, each interval can only be played with one shape. This makes the calculation of the shape easier, as the internalized intervals, the rudimentary building blocks of a musical idea, have a one to one association with shape.
-
-
-## How the Benefits of Isomorphism apply to the experiment
-
-Now that I have covered the hypotheses of the benefits of isomorphism in regard to playability, I am going to apply them as the logic supporting my hypotheses for the experiment.
-
-### Fundamentals
-
-I think that my fundamentals will improve faster on the LIK, primarily because of the transpositional advantage. Scales won&#39;t be easier to play on the isomorphic keyboard, but there are one twelfth the amount of shapes to learn to play all of the scales. In addition, chromatic ascending/descending patterns will be easier to learn because once the first iteration of the pattern is learned, the other iterations will have the same shape.
+Because pianists on the TK can determine the color of the starting note, the LIK should only improve at playing by ear 1.8125 times faster than the TK.
 
 ### Sight reading
 
-I think that initially the TK will outperform the LIK at sight reading, but as I gain experience the LIK will catch up and they will perform equally well. This is the hypothesis that I am least sure of, as there are many factors and I don&#39;t know to what degree the factors will have an effect.
+To predict how the LIK will perform at sight reading, first we have to understand the process of sight reading. Unfortunately, it does not fit neatly into our function of a keyboard.
 
-TK has two notable advantages over the LIK when it comes to sight reading, and they are derived from the irregular shape of the keys.
+When sight reading, the first two things I do are identify the key signature and the starting note. To calculate the shape I need to play the notes, I don’t identify the note by name and find it on the keyboard. Instead I do this:
 
-As mentioned earlier, the shape of the keys makes the identification of notes easier, as the player has both the shape and color to indicate the note (as opposed to color alone). As a bonus, this irregular pattern of black and white keys is reflected by the notation itself. Both notation and the TK make the C major scale the simplest to play/read, with no black keys and no sharps or flats. This correlation of black keys with sharps and flats (although not perfect eg. Cb) might also aid in the guessing of notes when sight reading.
+1.  Identify the rough interval between the current note and the next. This means determine whether it is a 2nd or 3rd (not whether it is a minor or major 3rd).
+2.  Find the white note that corresponds to the rough interval.
+3.  If there is an accidental, alter the note accordingly. Otherwise consider the key signature and alter the note.
 
-In addition, the irregular shape of the keyboard it adds tactile landmarks for pianists, which is particularly useful when reading music. This tactile feedback allows pianists to know where they are within an octave without looking at the keyboard.
+This is the easiest method for me to sight read on the TK because the notation of lines and spaces makes it easy to identify rough intervals. Also it is easy to find the white keys without looking at the keyboard.
 
-To understand the potential advantage of the LIK, imagine sight reading as a three step process. The first step is reading the sheet music and internalizing it. The second is calculating the shape (and perhaps the fingering), and the third is performing the imagined shape.
+This process will be challenging for the LIK, because you can’t find the white keys by feel. You can still determine the color by sight, but it is difficult to look at the keyboard while sight reading.
 
-The LIK might have an advantage on the third step, as a result of having stronger fundamentals due to my other practice, but that is not what I am trying to test with sight reading.
+The current notation imitates the TK in its obfuscation of patterns. If you move from a line to the adjacent space, five out of seven times it is a whole step, and two of the times it is half step. This same pattern occurs when moving between adjacent white keys. The only way to determine the true interval from muscal notation is to take into consideration the key signature and accidentals. For the LIK to sight read as well as the TK, it would need to use music notation that clarifies the true intervals. A good example of this is [Dodeka's](https://www.dodekamusic.com/how-to-learn-music-faster/) music notation. 
 
-The LIK could have a significant advantage in step two. It shouldn&#39;t be any easier to find the notes C, E and G on the LIK as it is on the TK, but it might be easier to find come up with the notes for a major triad starting on C (the same set of notes). It has been shown that experienced sight readers do chunking like this to ease cognitive load, rather than keep track of three different notes, they think of one relationship. The LIK should have an easier time finding the shapes for given musical patterns, providing a greater benefit for chunking. This might actually make sight readers prioritize chunking even more, changing the first step: the way our brains internalize sheet music.
+If there was a small advantage for sight reading on the LIK, it would be easier chunking. As someone improves at sight reading, they get better at identifying chunks of notes as musical patterns. Then they don't have to read every detail, but instead play the musical pattern. On the either keyboard, if you identify a familiar chord progression  then you can chunk it and free up some mental bandwidth. Because you don't need to transpose on the LIK, it should be easier to chunk familiar content. For instance, if you recognize a chord progression, it doesn't matter what keys you have played it in before. But this advantage is seems to be an intrusion of the isomorphic advantage for fundamentals. The advantage lies in the familiarity of shapes rather than the ability to calculate shapes from written music.
 
-I am apprehensive about all three of these advantages.
-
-The TK advantages—the recognition of notes and the tactile feedback for location—will be helpful at first, but I imagine the more that I play the LIK the better I will get at keeping track of my location on the keyboards and of the notes. After a while this advantage might be rendered obsolete.
-
-The same goes for the LIK&#39;s advantage. LIK encourages chunking, but perhaps by the time I am quick enough with my musical theory and sight reading to chunks chords, I might already have been able to learn how to play said chord on the TK. For instance, it&#39;ll take me a little time for me to unconsciously recognize C# E# and G# as a C# major triad, and perhaps by the time that I can do that, I would already be able to play the C# major triad on the TK without much thought.
-
-My hypothesis is that initially the TK will be better at sight reading, but as I improve at chunking, learning to play musical patterns on the TK, and keeping track of where I am on the LIK, the aforementioned advantages will be nullified, and they will perform equally.
-
-### Playing by ear
-
- I think that the rudimentary advantage of isomorphic keyboards will make playing by ear significantly easier on the LIK than on the traditional piano. The one to one relationship of sounds to shapes will make the LIK superior at interfacing musical concepts to real sounds.
+Despite this small advantage, I think that the LIK will be worse than the TK at sight reading because of the traditional musical notation. 
 
 ## Conclusion
 
-I believe that isomorphic keyboard have advantages with transposing, recognizing musical patterns, and calculating shapes for musical patterns (the rudimentary advantage). Because of these hypothetical advantages, I predict that the LIK will outperform the TK on fundamentals (transpositional advantage), perform slightly worse before slowly improving to be equal to the TK on sight reading (no clear advantages), and outperform significantly at playing by ear thanks to the rudimentary advantage.
+I predict that the LIK will improve at 3.58 times the rate of the TK on chromatic patterns and exercises played in every key. All other fundamentals will improve at 2.33 times the rate (although the latter may take a while to actualize). I predict that the LIK will perform worse than the TK at sight reading as it will be reading traditional sheet music. Finally, I predict that the LIK will perform at 1.8125 times the rate of the TK at playing by ear.
 
-<br>
-<br>
+### Notes from 3/24/2019
 
-1. [&quot;Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location.&quot;](http://smcnetwork.org/system/files/smc2011_submission_169.pdf)
+I originally wrote this article on October 17th, 2018, but since then I have revised the article to the point that it has been practically rewritten. I have decided to change my hypotheses while keeping the spirit of the original article. I did not including discoveries that I have made from practicing the keyboards since. Instead, I rewrote the hypotheses with a revisited understanding of what I knew at the time.
 
-2. There are competing definitions of isomorphism, and according to some the LIK isn&#39;t truly isomorphic. [Wikipedia&#39;s definition ](https://en.wikipedia.org/wiki/Isomorphic_keyboard), which I assume uses [this article](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15) as a source asserts that isomorphic keyboards must be tuning invariant, which the LIK is not (the LIK is only isomorphic for equal tone temperaments). I intend on exploring this more fully in the future.
+ For transparency, I’m leaving the original article on the site, so you can read it [here](/articles/the-hypotheses-old).
 
-3. Geometry or shape, when applied to keyboards describes the shape made by the physical location of the keys. Fingering describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
-<div>
-  <img src="/images/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
-</div>
+[^1]: [<ins>“Isomorphism applied to musical instruments means that every distinct musical performance is executed in the same way, regardless of key or location.”</ins>](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.599.5813)
 
-But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
+[^2]: There seem to be competing definitions of isomorphism, and according to some the LIK isn’t truly isomorphic. [<ins>This article</ins>](https://www.mitpressjournals.org/doi/pdf/10.1162/comj.2007.31.4.15) asserts that isomorphic keyboards must be tuning invariant, which the LIK is not (as the LIK is only isomorphic for equal tone temperaments). 
 
-<div>
-  <img src="/images/second-fingering.svg" style="margin: 0 0 2rem;"/>
-</div>
+[^3]: Shape, when applied to keyboards, describes the organization of the physical layout of the keys. Fingering is similar but different, as it describes how and with what fingers this shape is played. In this example, the shape of the notes is the same, the first five notes of the major scale. The typical fingering is to play this with all five fingers 1-2-3-4-5.
 
-The shape is the same, but the fingering is different.
 
-</div>
-</div>
-</div>
+    <div>
+    <img src="/images/fingerings/first-fingering.svg" style="width: 50%; margin: 0 0 2rem;" />
+    </div>
+
+    But if you wanted to complete the major scale, you would finger the same shape as 1-2-3-1-2, so that you could finish the scale with 3-4-5.
+
+    <div>
+    <img src="/images/fingerings/second-fingering.svg" style="margin: 0 0 2rem;"/>
+    </div>
+
+
+    The shape is the same, but the fingering is different.
+
+[^4]: If a shape plays more than one sound then piano either has different ways of altering notes (like a pitch bending wheel), or there is randomness, meaning you can perform the same shape twice and it would sound different each time.
+
+<% end %>
 
 <script src="/javascripts/pages/the-hypotheses.js"></script>
+<script src="/javascripts/blocks/improvement-chart.js"></script>

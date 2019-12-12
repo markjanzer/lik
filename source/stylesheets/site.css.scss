@@ -1,238 +1,27 @@
-// @import "settings.scss";
-// @import "grid.scss";
+// Vendor
+@import "normalize.css";
 
-// @import "foundation.css";
-@import "index.css.scss";
-@import "chartist.css.scss";
-@import "the-hypotheses.css.scss";
-@import "grid.css";
+// Settings
+@import "settings.css.scss";
 
-body {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 0;
-  // margin-top: 4rem;
-}
+// General styles
+@import "general.css.scss";
 
-.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  overflow: hidden;
-  font-size: 1rem;
-  align-items: center;
-}
+// Blocks
+@import "blocks/chartist-settings.css.scss";
+@import "blocks/chartist.css.scss";
+@import "blocks/chart.css.scss";
+@import "blocks/footer.css.scss";
+@import "blocks/grid.css.scss";
+@import "blocks/navbar.css.scss";
+@import "blocks/truncate.css.scss";
 
-.navbar--translucent {
-  &::after {
-    background: rgba(white,.6);
-    position: absolute;
-    display: block;
-    content: '';
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: 4;
-  }
-}
-
-.navbar__logo {
-  display: inline-block;
-  height: 3rem;
-  width: 6rem;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  // margin-right: 1rem;
-  // font-size: 1.25rem;
-  height: 3rem;
-  line-height: inherit;
-  white-space: nowrap;
-  z-index: 6;
-}
-
-.navbar__nav {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  z-index: 6;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #333
-}
-
-.navbar__link {
-  margin-left: 0.6rem;
-  font-size: 0.8rem;
-  @media screen and (min-width: 641px) {
-    margin-left: 2.5rem;
-    font-size: 1rem;
-  }
-  color: #000;
-}
-
-.navbar__link:hover {
-  color: #333;
-}
-
-// Refactor this, text-decoration underline shouldn't be the exception.
-.recording-link,
-.reflection-link {
-  text-decoration: underline;
-}
-
-.article-body a {
-  white-space: pre-wrap; /* css-3 */    
-  word-wrap: break-word;
-}
-
-.article-body p {
-  margin: 1rem 0;
-}
-.article-body h1,
-.article-body h2,
-.article-body h3,
-.article-body h4 {
-  margin: 3rem 0 2rem;
-  @media screen and (max-width: 640px) {
-    font-weight: 600;
-  }
-}
-
-img {
-  max-width: 100%;
-}
-
-
-
-// http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
-/* styles for '...' */ 
-.two-line-clamp {
-  /* hide text if it more than N lines  */
-  overflow: hidden;
-  /* for set '...' in absolute position */
-  position: relative; 
-  /* use this value to count block height */
-  line-height: 1.6em;
-  /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 3.2em; 
-  /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: justify;  
-  /* place for '...' */
-  margin-right: -1em;
-  padding-right: 1em;
-}
-/* create the ... */
-.two-line-clamp:before {
-  /* points in the end */
-  content: '...';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-/* hide ... if we have text, which is less than or equal to max lines */
-.two-line-clamp:after {
-  /* points in the end */
-  content: '';
-  /* absolute position */
-  position: absolute;
-  /* set position to right bottom corner of text */
-  right: 0;
-  /* set width and height */
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  /* bg color = bg color under block */
-  background: white;
-}
-
-
-// Chartist legend css
-.ct-legend {
-  display: flex;
-  justify-content: center;
-
-  li {
-    position: relative;
-    padding-left: 23px;
-    margin-bottom: 3px;
-    display: flex;
-    align-items: center;
-    padding-right: 2rem;
-  }
-
-  li:before {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    left: 0;
-    content: '';
-    border: 3px solid transparent;
-    border-radius: 2px;
-  }
-
-  li.inactive:before {
-    background: transparent;
-  }
-
-  &.ct-legend-inside {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  @for $i from 0 to length($ct-series-colors) {
-    .ct-series-#{$i}:before {
-      background-color: nth($ct-series-colors, $i + 1);
-      border-color: nth($ct-series-colors, $i + 1);
-    }
-  }
-}
-
-// This overwrites top: 0 on .ct-golden-section > svg
-// Gives space for the legend
-// .ct-golden-section > svg {
-//   top: auto;
-// }
-
-.chart--medium {
-  height: 26rem;
-  margin-bottom: 4rem;
-}
-
-.draft-tag {
-  color: #848484; 
-}
-
-.progress-alert {
-  width: 100%;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-body {
-  font-size: 20px;
-}
-
-.article-body a {
-  text-decoration: underline;
-}
+// Custom
+@import "custom/article.css.scss";
+@import "custom/articles-index.css.scss";
+@import "custom/index.css.scss";
+@import "custom/the-hypotheses.css.scss";
+@import "custom/practice-sessions-index.css.scss";
+@import "custom/practice-session-show.css.scss";
+@import "custom/progress.css.scss";
+// @import "custom/transform-keyboard.css.scss";
