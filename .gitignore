@@ -7,4 +7,5 @@
 .netlify
 build/
 data/
+!data/.keep
 source/fonts
