@@ -116,7 +116,6 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rb-readline (0.5.5)
-    redcarpet (3.4.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -137,7 +136,7 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
@@ -154,7 +153,6 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets
   rb-readline
-  redcarpet
   sass
   sprockets-es6
 
